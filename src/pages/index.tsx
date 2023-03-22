@@ -1,3 +1,7 @@
 export default function Main() {
-    return <main>Welcome to bhavan GPT</main>;
+    return (
+        <main>
+            <p className="text-3xl font-bold underline">Welcome to Bhavan GPT!</p>
+        </main>
+    );
 }
