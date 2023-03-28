@@ -1,16 +1,25 @@
 import { Editor } from '@/components';
 import { OpenAIService } from '@/config';
-import { Button, Select, Option } from '@material-tailwind/react';
+import { Button, Option, Select } from '@material-tailwind/react';
 import { useCallback, useEffect, useState } from 'react';
-import { DropdownOptions } from './../constants/AppTypes';
 import { AiOutlineSend } from 'react-icons/ai';
+import { DropdownOptions } from './../constants/AppTypes';
 
 export default function Main() {
     const [response, setReponse] = useState('');
     const [text, setText] = useState<string>('');
     const [submitting, setSubmitting] = useState<boolean>(false);
     const [options, setModelOptions] = useState<DropdownOptions[]>([]);
+    const [command, setCommand] = useState('default');
     const [model, setModel] = useState<string>('text-davinci-003');
+
+    const CUSTOM_GPT_OPTIONS = [
+        { value: 'default', label: 'Default' },
+        { value: 'comments', label: 'Add Code Comments' },
+        { value: 'refactor', label: 'Refactor Code' },
+        { value: 'explain', label: 'Explain Code' },
+        { value: 'issues', label: 'Find Code Bugs' },
+    ];
 
     useEffect(() => {
         const getAll = async () => {
@@ -23,10 +32,30 @@ export default function Main() {
     }, []);
 
     const searchGpt = useCallback(() => {
+        let customText = '';
+
+        switch (command) {
+            case 'comments':
+                customText = `'''${text}''' \n\n add comments to the above code.`;
+                break;
+            case 'refactor':
+                customText = `'''${text}''' \n\n refactor the above code.`;
+                break;
+            case 'explain':
+                customText = `'''${text}''' \n\n explain the above code.`;
+                break;
+            case 'issues':
+                customText = `'''${text}''' \n\n find the bugs in the above code.`;
+                break;
+            default:
+                customText = text;
+                break;
+        }
+
         const openAiTest = async () => {
             const { data } = await OpenAIService.createCompletion({
                 model: model,
-                prompt: text,
+                prompt: customText,
                 max_tokens: 2048,
                 n: 1,
                 stop: '',
@@ -42,7 +71,7 @@ export default function Main() {
         openAiTest().finally(() => {
             setSubmitting(false);
         });
-    }, [model, text]);
+    }, [command, model, text]);
 
     const gptOptions = [];
 
@@ -69,6 +98,23 @@ export default function Main() {
                             }}
                         >
                             {options.map((option, i) => (
+                                <Option key={i} value={option.value}>
+                                    {option.label}
+                                </Option>
+                            ))}
+                        </Select>
+                    </div>
+                    <div>
+                        <Select
+                            size="lg"
+                            color="blue"
+                            defaultValue={command}
+                            label="Select Custom Command"
+                            onChange={(command: any) => {
+                                setCommand(command);
+                            }}
+                        >
+                            {CUSTOM_GPT_OPTIONS.map((option, i) => (
                                 <Option key={i} value={option.value}>
                                     {option.label}
                                 </Option>
