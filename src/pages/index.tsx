@@ -1,13 +1,14 @@
 import { Editor } from '@/components';
 import { OpenAIService } from '@/config';
-import { Button } from '@material-tailwind/react';
+import { Button, Select, Option } from '@material-tailwind/react';
 import { useCallback, useEffect, useState } from 'react';
+import { DropdownOptions } from './../constants/AppTypes';
 
 export default function Main() {
     const [response, setReponse] = useState('');
     const [text, setText] = useState<string>('');
     const [submitting, setSubmitting] = useState<boolean>(false);
-    const [options, setModelOptions] = useState<any>([]);
+    const [options, setModelOptions] = useState<DropdownOptions[]>([]);
     const [model, setModel] = useState<string>('text-davinci-003');
 
     useEffect(() => {
@@ -42,6 +43,8 @@ export default function Main() {
         });
     }, [model, text]);
 
+    const gptOptions = [];
+
     return (
         <main>
             <div className="bg-gray-900 text-white h-screen">
@@ -53,10 +56,28 @@ export default function Main() {
                         <Editor response={response} setReponse={setReponse} />
                     </div>
                 </div>
-                <div className="mx-4">
-                    <Button onClick={searchGpt} variant="gradient">
-                        Submit
-                    </Button>
+                <div className="mx-4 flex gap-5">
+                    <div>
+                        <Select
+                            color="blue"
+                            defaultValue={model}
+                            label="Select Model"
+                            onChange={(model: any) => {
+                                setModel(model);
+                            }}
+                        >
+                            {options.map((option, i) => (
+                                <Option key={i} value={option.value}>
+                                    {option.label}
+                                </Option>
+                            ))}
+                        </Select>
+                    </div>
+                    <div>
+                        <Button onClick={searchGpt} variant="gradient">
+                            Submit
+                        </Button>
+                    </div>
                 </div>
             </div>
         </main>

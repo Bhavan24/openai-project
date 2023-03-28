@@ -1,4 +1,6 @@
-export const MONOCO_LANGUAGES = [
+import { DropdownOptions } from './AppTypes';
+
+export const MONOCO_LANGUAGES: DropdownOptions[] = [
     {
         value: 'plaintext',
         label: 'Plain Text',
@@ -349,12 +351,7 @@ export const MONOCO_LANGUAGES = [
     },
 ];
 
-export enum MONOCO_THEMES {
-    VSDARK = 'vs-dark',
-    LIGHT = 'light',
-}
-
-export const MONOCO_THEMES_LIST = [
+export const MONOCO_THEMES_LIST: DropdownOptions[] = [
     {
         value: 'vs-dark',
         label: 'vs-dark',

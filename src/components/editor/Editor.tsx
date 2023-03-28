@@ -32,7 +32,7 @@ const Editor: React.FC<IEditor> = ({ response, setReponse }) => {
     }, [response]);
 
     return (
-        <div className="py-2">
+        <div className="my-2">
             <div className="flex my-2 justify-between ">
                 <div className="flex gap-5">
                     <Select
