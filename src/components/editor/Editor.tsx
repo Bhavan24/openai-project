@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { AiOutlineCopy } from 'react-icons/ai';
 import { MONOCO_LANGUAGES } from '../../constants';
 import { MONOCO_THEMES_LIST } from './../../constants/MonocoConstants';
+import { camelCase } from 'lodash';
 
 interface IEditor {
     response: any;
@@ -19,7 +20,7 @@ const Editor: React.FC<IEditor> = ({ response, setReponse }) => {
         if (monaco && theme) {
             import(`monaco-themes/themes/${theme}.json`)
                 .then(data => {
-                    monaco.editor.defineTheme(theme, data);
+                    monaco.editor.defineTheme(camelCase(theme), data);
                 })
                 .catch(e => {
                     console.log(e);
