@@ -209,6 +209,7 @@ export const MONOCO_LANGUAGES = [
     },
     {
         value: 'pla',
+        label: 'PLA',
     },
     {
         value: 'postiats',
@@ -353,55 +354,205 @@ export enum MONOCO_THEMES {
     LIGHT = 'light',
 }
 
-export const MONOCO_THEMES_LIST = {
-    active4d: 'Active4D',
-    'all-hallows-eve': 'All Hallows Eve',
-    amy: 'Amy',
-    'birds-of-paradise': 'Birds of Paradise',
-    blackboard: 'Blackboard',
-    'brilliance-black': 'Brilliance Black',
-    'brilliance-dull': 'Brilliance Dull',
-    'chrome-devtools': 'Chrome DevTools',
-    'clouds-midnight': 'Clouds Midnight',
-    clouds: 'Clouds',
-    cobalt: 'Cobalt',
-    dawn: 'Dawn',
-    dreamweaver: 'Dreamweaver',
-    eiffel: 'Eiffel',
-    'espresso-libre': 'Espresso Libre',
-    github: 'GitHub',
-    idle: 'IDLE',
-    katzenmilch: 'Katzenmilch',
-    'kuroir-theme': 'Kuroir Theme',
-    lazy: 'LAZY',
-    'magicwb--amiga-': 'MagicWB (Amiga)',
-    'merbivore-soft': 'Merbivore Soft',
-    merbivore: 'Merbivore',
-    'monokai-bright': 'Monokai Bright',
-    monokai: 'Monokai',
-    'night-owl': 'Night Owl',
-    'oceanic-next': 'Oceanic Next',
-    'pastels-on-dark': 'Pastels on Dark',
-    'slush-and-poppies': 'Slush and Poppies',
-    'solarized-dark': 'Solarized-dark',
-    'solarized-light': 'Solarized-light',
-    spacecadet: 'SpaceCadet',
-    sunburst: 'Sunburst',
-    'textmate--mac-classic-': 'Textmate (Mac Classic)',
-    'tomorrow-night-blue': 'Tomorrow-Night-Blue',
-    'tomorrow-night-bright': 'Tomorrow-Night-Bright',
-    'tomorrow-night-eighties': 'Tomorrow-Night-Eighties',
-    'tomorrow-night': 'Tomorrow-Night',
-    tomorrow: 'Tomorrow',
-    twilight: 'Twilight',
-    'upstream-sunburst': 'Upstream Sunburst',
-    'vibrant-ink': 'Vibrant Ink',
-    'vs-dark': 'vs-dark',
-    light: 'light',
-    'xcode-default': 'Xcode_default',
-    zenburnesque: 'Zenburnesque',
-    iplastic: 'iPlastic',
-    idlefingers: 'idleFingers',
-    krtheme: 'krTheme',
-    monoindustrial: 'monoindustrial',
-};
+export const MONOCO_THEMES_LIST = [
+    {
+        value: 'vs-dark',
+        label: 'vs-dark',
+    },
+    {
+        value: 'light',
+        label: 'light',
+    },
+    {
+        value: 'Active4D',
+        label: 'Active4D',
+    },
+    {
+        value: 'All Hallows Eve',
+        label: 'All Hallows Eve',
+    },
+    {
+        value: 'Amy',
+        label: 'Amy',
+    },
+    {
+        value: 'Birds of Paradise',
+        label: 'Birds of Paradise',
+    },
+    {
+        value: 'Blackboard',
+        label: 'Blackboard',
+    },
+    {
+        value: 'Brilliance Black',
+        label: 'Brilliance Black',
+    },
+    {
+        value: 'Brilliance Dull',
+        label: 'Brilliance Dull',
+    },
+    {
+        value: 'Chrome DevTools',
+        label: 'Chrome DevTools',
+    },
+    {
+        value: 'Clouds Midnight',
+        label: 'Clouds Midnight',
+    },
+    {
+        value: 'Clouds',
+        label: 'Clouds',
+    },
+    {
+        value: 'Cobalt',
+        label: 'Cobalt',
+    },
+    {
+        value: 'Dawn',
+        label: 'Dawn',
+    },
+    {
+        value: 'Dreamweaver',
+        label: 'Dreamweaver',
+    },
+    {
+        value: 'Eiffel',
+        label: 'Eiffel',
+    },
+    {
+        value: 'Espresso Libre',
+        label: 'Espresso Libre',
+    },
+    {
+        value: 'GitHub',
+        label: 'GitHub',
+    },
+    {
+        value: 'IDLE',
+        label: 'IDLE',
+    },
+    {
+        value: 'Katzenmilch',
+        label: 'Katzenmilch',
+    },
+    {
+        value: 'Kuroir Theme',
+        label: 'Kuroir Theme',
+    },
+    {
+        value: 'LAZY',
+        label: 'LAZY',
+    },
+    {
+        value: 'MagicWB (Amiga)',
+        label: 'MagicWB (Amiga)',
+    },
+    {
+        value: 'Merbivore Soft',
+        label: 'Merbivore Soft',
+    },
+    {
+        value: 'Merbivore',
+        label: 'Merbivore',
+    },
+    {
+        value: 'Monokai Bright',
+        label: 'Monokai Bright',
+    },
+    {
+        value: 'Monokai',
+        label: 'Monokai',
+    },
+    {
+        value: 'Night Owl',
+        label: 'Night Owl',
+    },
+    {
+        value: 'Oceanic Next',
+        label: 'Oceanic Next',
+    },
+    {
+        value: 'Pastels on Dark',
+        label: 'Pastels on Dark',
+    },
+    {
+        value: 'Slush and Poppies',
+        label: 'Slush and Poppies',
+    },
+    {
+        value: 'Solarized-dark',
+        label: 'Solarized-dark',
+    },
+    {
+        value: 'Solarized-light',
+        label: 'Solarized-light',
+    },
+    {
+        value: 'SpaceCadet',
+        label: 'SpaceCadet',
+    },
+    {
+        value: 'Sunburst',
+        label: 'Sunburst',
+    },
+    {
+        value: 'Textmate (Mac Classic)',
+        label: 'Textmate (Mac Classic)',
+    },
+    {
+        value: 'Tomorrow-Night-Blue',
+        label: 'Tomorrow-Night-Blue',
+    },
+    {
+        value: 'Tomorrow-Night-Bright',
+        label: 'Tomorrow-Night-Bright',
+    },
+    {
+        value: 'Tomorrow-Night-Eighties',
+        label: 'Tomorrow-Night-Eighties',
+    },
+    {
+        value: 'Tomorrow-Night',
+        label: 'Tomorrow-Night',
+    },
+    {
+        value: 'Tomorrow',
+        label: 'Tomorrow',
+    },
+    {
+        value: 'Twilight',
+        label: 'Twilight',
+    },
+    {
+        value: 'Upstream Sunburst',
+        label: 'Upstream Sunburst',
+    },
+    {
+        value: 'Vibrant Ink',
+        label: 'Vibrant Ink',
+    },
+    {
+        value: 'Xcode_default',
+        label: 'Xcode_default',
+    },
+    {
+        value: 'Zenburnesque',
+        label: 'Zenburnesque',
+    },
+    {
+        value: 'iPlastic',
+        label: 'iPlastic',
+    },
+    {
+        value: 'idleFingers',
+        label: 'idleFingers',
+    },
+    {
+        value: 'krTheme',
+        label: 'krTheme',
+    },
+    {
+        value: 'monoindustrial',
+        label: 'monoindustrial',
+    },
+];

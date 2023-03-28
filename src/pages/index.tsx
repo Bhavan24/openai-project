@@ -1,5 +1,6 @@
 import { Editor } from '@/components';
 import { OpenAIService } from '@/config';
+import { Button } from '@material-tailwind/react';
 import { useCallback, useEffect, useState } from 'react';
 
 export default function Main() {
@@ -46,19 +47,16 @@ export default function Main() {
             <div className="bg-gray-900 text-white h-screen">
                 <div className="flex flex-row">
                     <div className="m-4 w-1/2">
-                        <Editor response={text} setReponse={setText} height={450} lang={'plaintext'} />
+                        <Editor response={text} setReponse={setText} />
                     </div>
                     <div className="m-4 w-1/2">
-                        <Editor response={response} setReponse={setReponse} height={450} lang={'plaintext'} />
+                        <Editor response={response} setReponse={setReponse} />
                     </div>
                 </div>
                 <div className="mx-4">
-                    <button
-                        className="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded mt-4"
-                        onClick={searchGpt}
-                    >
+                    <Button onClick={searchGpt} variant="gradient">
                         Submit
-                    </button>
+                    </Button>
                 </div>
             </div>
         </main>
