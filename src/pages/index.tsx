@@ -60,11 +60,11 @@ export default function Main() {
                     </div>
                 </div>
                 <div className="mx-4 flex gap-5">
-                    <div>
+                    {/* <div>
                         <Select
                             size="lg"
                             color="blue"
-                            defaultValue={model}
+                            value={model}
                             label="Select Model"
                             onChange={(model: any) => {
                                 setModel(model);
@@ -76,12 +76,12 @@ export default function Main() {
                                 </Option>
                             ))}
                         </Select>
-                    </div>
+                    </div> */}
                     <div>
                         <Select
                             size="lg"
                             color="blue"
-                            defaultValue={command}
+                            value={command}
                             label="Select Custom Command"
                             onChange={(command: any) => {
                                 setCommand(command);
