@@ -49,8 +49,8 @@ export default function Main() {
     }, [command, model, text]);
 
     return (
-        <main>
-            <div className="bg-gray-900 text-white h-screen">
+        <main className="bg-gray-900 h-full">
+            <div className="text-white h-screen">
                 <div className="flex flex-row">
                     <div className="m-4 w-1/2">
                         <Editor response={text} setReponse={setText} />
