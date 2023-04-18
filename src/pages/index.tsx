@@ -56,7 +56,7 @@ export default function Main() {
 
     return (
         <main className="h-full">
-            <div className="text-white h-screen p-2">
+            <div className="text-white h-screen p-3">
                 <div className="flex flex-row mx-4 gap-5">
                     {/* <div>
                         <Select
