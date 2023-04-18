@@ -1,19 +1,18 @@
+import { Editor } from '@/components';
 import { OpenAIService } from '@/config';
-import { Button, Select, Option, Textarea } from '@material-tailwind/react';
+import { CUSTOM_GPT_OPTIONS } from '@/constants';
+import { Button, Option, Select } from '@material-tailwind/react';
 import { useCallback, useEffect, useState } from 'react';
-import { AiOutlineCopy, AiOutlineSend } from 'react-icons/ai';
+import { AiOutlineSend } from 'react-icons/ai';
 import { DropdownOptions } from './../constants/AppTypes';
 
-export default function Main() {
+export default function New() {
     const [response, setReponse] = useState('');
     const [text, setText] = useState<string>('');
     const [submitting, setSubmitting] = useState<boolean>(false);
     const [options, setModelOptions] = useState<DropdownOptions[]>([]);
+    const [command, setCommand] = useState('');
     const [model, setModel] = useState<string>('text-davinci-003');
-
-    const copyResults = useCallback(() => {
-        navigator.clipboard.writeText(response);
-    }, [response]);
 
     useEffect(() => {
         const getAll = async () => {
@@ -26,17 +25,12 @@ export default function Main() {
     }, []);
 
     const searchGpt = useCallback(() => {
-        const customText: string = text.trim();
-
-        if (customText == '') {
-            alert('Please enter something!');
-            return;
-        }
+        const customText: string = `'''${text}''' \n\n ${command}`;
 
         const openAiTest = async () => {
             const { data } = await OpenAIService.createCompletion({
                 model: model,
-                prompt: customText,
+                prompt: customText.trim(),
                 max_tokens: 2048,
                 n: 1,
                 stop: '',
@@ -52,21 +46,28 @@ export default function Main() {
         openAiTest().finally(() => {
             setSubmitting(false);
         });
-    }, [model, text]);
+    }, [command, model, text]);
 
     return (
-        <main className="h-full">
-            <div className="text-white h-screen p-2">
-                <div className="flex flex-row mx-4 gap-5">
+        <main className="bg-gray-900 h-full">
+            <div className="text-white h-screen">
+                <div className="flex flex-row">
+                    <div className="m-4 w-1/2">
+                        <Editor response={text} setReponse={setText} />
+                    </div>
+                    <div className="m-4 w-1/2">
+                        <Editor response={response} setReponse={setReponse} />
+                    </div>
+                </div>
+                <div className="mx-4 flex gap-5">
                     {/* <div>
                         <Select
                             size="lg"
                             color="blue"
                             value={model}
                             label="Select Model"
-                            onChange={model => {
-                                console.log(model);
-                                setModel(model || 'text-davinci-003');
+                            onChange={(model: any) => {
+                                setModel(model);
                             }}
                         >
                             {options.map((option, i) => (
@@ -77,8 +78,25 @@ export default function Main() {
                         </Select>
                     </div> */}
                     <div>
+                        <Select
+                            size="lg"
+                            color="blue"
+                            value={command}
+                            label="Select Custom Command"
+                            onChange={(command: any) => {
+                                setCommand(command);
+                            }}
+                        >
+                            {CUSTOM_GPT_OPTIONS.map((option, i) => (
+                                <Option key={i} value={option.value}>
+                                    {option.label}
+                                </Option>
+                            ))}
+                        </Select>
+                    </div>
+                    <div>
                         <Button onClick={searchGpt} disabled={submitting} variant="gradient">
-                            <div className="flex gap-2 items-center">
+                            <div className="flex gap-2 items-center ">
                                 {submitting && (
                                     <svg
                                         aria-hidden="true"
@@ -101,35 +119,6 @@ export default function Main() {
                                 Ask Query <AiOutlineSend />
                             </div>
                         </Button>
-                    </div>
-                    <div>
-                        <Button variant="outlined" onClick={copyResults}>
-                            <div className="flex gap-2 items-center">
-                                Copy Results <AiOutlineCopy />
-                            </div>
-                        </Button>
-                    </div>
-                </div>
-                <div className="flex flex-row">
-                    <div className="m-4 w-1/2">
-                        <Textarea
-                            className="border border-black rounded-none"
-                            value={text}
-                            rows={30}
-                            onChange={e => {
-                                setText(e.target.value);
-                            }}
-                        />
-                    </div>
-                    <div className="m-4 w-1/2">
-                        <Textarea
-                            className="border border-black rounded-none"
-                            value={response}
-                            rows={30}
-                            onChange={e => {
-                                setReponse(e.target.value);
-                            }}
-                        />
                     </div>
                 </div>
             </div>
