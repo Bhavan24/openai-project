@@ -86,7 +86,7 @@ export default function Main() {
                         </Select>
                     </div> */}
                     <div>
-                        <Button onClick={searchGpt} disabled={submitting} variant="gradient">
+                        <Button onClick={searchGpt} disabled={submitting} variant="gradient" className="m-2">
                             <div className="flex gap-2 items-center">
                                 {submitting && (
                                     <svg
@@ -109,6 +109,15 @@ export default function Main() {
                                 )}
                                 Ask Query <AiOutlineSend />
                             </div>
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            onClick={() => {
+                                setText('');
+                            }}
+                            className="m-2"
+                        >
+                            <div className="flex gap-2 items-center">Clear</div>
                         </Button>
                     </div>
                     <div>
