@@ -34,35 +34,39 @@ const Editor: React.FC<IEditor> = ({ response, setReponse }) => {
 
     return (
         <div className="my-2">
-            <div className="flex my-2 justify-between gap-5">
-                <Select
-                    color="blue"
-                    value={language}
-                    label="Select Language"
-                    onChange={(lang: any) => {
-                        setLanguage(lang);
-                    }}
-                >
-                    {MONOCO_LANGUAGES.map((language, i) => (
-                        <Option key={i} value={language.value}>
-                            {language.label}
-                        </Option>
-                    ))}
-                </Select>
-                <Select
-                    color="blue"
-                    value={theme}
-                    label="Select Theme"
-                    onChange={(theme: any) => {
-                        setTheme(theme);
-                    }}
-                >
-                    {MONOCO_THEMES_LIST.map((theme, i) => (
-                        <Option key={i} value={theme.value}>
-                            {theme.label}
-                        </Option>
-                    ))}
-                </Select>
+            <div className="flex my-2 justify-between gap-5 sm:flex-row flex-col">
+                <div>
+                    <Select
+                        color="blue"
+                        value={language}
+                        label="Select Language"
+                        onChange={(lang: any) => {
+                            setLanguage(lang);
+                        }}
+                    >
+                        {MONOCO_LANGUAGES.map((language, i) => (
+                            <Option key={i} value={language.value}>
+                                {language.label}
+                            </Option>
+                        ))}
+                    </Select>
+                </div>
+                <div>
+                    <Select
+                        color="blue"
+                        value={theme}
+                        label="Select Theme"
+                        onChange={(theme: any) => {
+                            setTheme(theme);
+                        }}
+                    >
+                        {MONOCO_THEMES_LIST.map((theme, i) => (
+                            <Option key={i} value={theme.value}>
+                                {theme.label}
+                            </Option>
+                        ))}
+                    </Select>
+                </div>
                 <div>
                     <Button variant="outlined" className="text-lg" onClick={copyResults}>
                         <AiOutlineCopy />
