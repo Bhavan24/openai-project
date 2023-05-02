@@ -34,6 +34,24 @@ const Editor: React.FC<IEditor> = ({ response, setReponse }) => {
 
     return (
         <div className="my-2">
+            <div>
+                <MonacoEditor
+                    height={'75vh'}
+                    language={language}
+                    theme={theme}
+                    value={response}
+                    options={{
+                        fontSize: 12,
+                        wordWrap: 'on',
+                        minimap: {
+                            enabled: false,
+                        },
+                    }}
+                    onChange={newValue => {
+                        setReponse(newValue!);
+                    }}
+                />
+            </div>
             <div className="flex my-2 justify-between gap-5 sm:flex-row flex-col">
                 <div>
                     <Select
@@ -72,24 +90,6 @@ const Editor: React.FC<IEditor> = ({ response, setReponse }) => {
                         <AiOutlineCopy />
                     </Button>
                 </div>
-            </div>
-            <div>
-                <MonacoEditor
-                    height={'75vh'}
-                    language={language}
-                    theme={theme}
-                    value={response}
-                    options={{
-                        fontSize: 12,
-                        wordWrap: 'on',
-                        minimap: {
-                            enabled: false,
-                        },
-                    }}
-                    onChange={newValue => {
-                        setReponse(newValue!);
-                    }}
-                />
             </div>
         </div>
     );
