@@ -1,7 +1,7 @@
 import { Editor } from '@/components';
 import { CustomButton } from '@/components/custom-button';
 import { OpenAIService } from '@/config';
-import { CUSTOM_GPT_OPTIONS } from '@/constants';
+import { CUSTOM_GPT_MODELS, CUSTOM_GPT_OPTIONS } from '@/constants';
 import { Button, Option, Select } from '@material-tailwind/react';
 import { useCallback, useEffect, useState } from 'react';
 import { AiOutlineSend } from 'react-icons/ai';
@@ -53,24 +53,6 @@ export default function AdvancedPage() {
         <main className="h-full">
             <div className="text-white h-screen p-3">
                 <div className="flex flex-row justify-between mx-4 gap-5">
-                    {/* <div>
-                        <Select
-                            size="lg"
-                            color="blue"
-                            value={model}
-                            label="Select Model"
-                            onChange={model => {
-                                console.log(model);
-                                setModel(model || 'text-davinci-003');
-                            }}
-                        >
-                            {options.map((option, i) => (
-                                <Option key={i} value={option.value}>
-                                    {option.label}
-                                </Option>
-                            ))}
-                        </Select>
-                    </div> */}
                     <div>
                         <CustomButton
                             loading={submitting}
@@ -89,7 +71,23 @@ export default function AdvancedPage() {
                             <div className="flex gap-2 items-center">Clear</div>
                         </Button>
                     </div>
-                    <div className="m-2">
+                    <div className="flex gap-2 m-2 sm:flex-row flex-col">
+                        <Select
+                            size="lg"
+                            color="blue"
+                            value={model}
+                            label="Select Model"
+                            onChange={model => {
+                                console.log(model);
+                                setModel(model || 'text-davinci-003');
+                            }}
+                        >
+                            {CUSTOM_GPT_MODELS.map((model, i) => (
+                                <Option key={i} value={model}>
+                                    {model}
+                                </Option>
+                            ))}
+                        </Select>
                         <Select
                             size="lg"
                             color="blue"
