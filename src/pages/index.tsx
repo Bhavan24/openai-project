@@ -8,13 +8,15 @@ export default function Dashboard() {
 
     return (
         <div className="p-2">
-            <div className="flex justify-end m-2">
-                <Switch
-                    onChange={e => setDisplayMode(e.target.checked)}
-                    label={displayMode ? 'Advanced Mode' : 'Basic Mode'}
-                />
+            <div className="m-2">
+                <div className="flex justify-end mx-4">
+                    <Switch
+                        onChange={e => setDisplayMode(e.target.checked)}
+                        label={displayMode ? 'Advanced Mode' : 'Basic Mode'}
+                    />
+                </div>
+                {displayMode ? <AdvancedPage /> : <BasicPage />}
             </div>
-            <div className="m-2">{displayMode ? <AdvancedPage /> : <BasicPage />}</div>
         </div>
     );
 }
