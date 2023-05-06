@@ -9,7 +9,7 @@ export const CUSTOM_GPT_OPTIONS = [
     { value: 'add unit test for the above code.', label: 'Add Unit Test' },
 ];
 
-export const CUSTOM_GPT_MODELS =[
+export const CUSTOM_GPT_MODELS = [
     'babbage',
     'davinci',
     'text-davinci-edit-001',
@@ -75,3 +75,5 @@ export const CUSTOM_GPT_MODELS =[
     'text-curie:001',
     'text-babbage:001',
 ];
+
+export const DEFAULT_MODEL = 'text-davinci-003';

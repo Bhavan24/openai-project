@@ -1,32 +1,19 @@
-import { CustomButton } from '@/components/custom-button';
 import { OpenAIService } from '@/config';
-import { CUSTOM_GPT_MODELS } from '@/constants';
-import { Button, Select, Option, Textarea } from '@material-tailwind/react';
-import { useCallback, useEffect, useRef, useState } from 'react';
-import { AiOutlineCopy, AiOutlineSend } from 'react-icons/ai';
-import { DropdownOptions } from '../../constants/AppTypes';
+import { CUSTOM_GPT_MODELS, DEFAULT_MODEL } from '@/constants';
+import { Button, Option, Select, Textarea } from '@material-tailwind/react';
+import { useCallback, useRef, useState } from 'react';
+import { AiOutlineCopy } from 'react-icons/ai';
 
 export default function BasicPage() {
     const resultElement = useRef<any>(null);
     const [response, setReponse] = useState('');
     const [text, setText] = useState<string>('');
     const [submitting, setSubmitting] = useState<boolean>(false);
-    const [options, setModelOptions] = useState<DropdownOptions[]>([]);
-    const [model, setModel] = useState<string>('text-davinci-003');
+    const [model, setModel] = useState<string>(DEFAULT_MODEL);
 
     const copyResults = useCallback(() => {
         navigator.clipboard.writeText(response);
     }, [response]);
-
-    useEffect(() => {
-        const getAll = async () => {
-            const { data } = await OpenAIService.listModels();
-            const modelOptions = data.data.map(model => model.id).map(m => ({ value: m, label: m }));
-            setModelOptions(modelOptions);
-        };
-
-        getAll();
-    }, []);
 
     const searchGpt = useCallback(() => {
         const customText: string = text.trim();
@@ -70,13 +57,7 @@ export default function BasicPage() {
             <div className="text-white h-screen p-3">
                 <div className="flex flex-row justify-between mx-4 gap-5">
                     <div>
-                        <CustomButton
-                            loading={submitting}
-                            disabled={submitting}
-                            text={'Ask Query'}
-                            icon={<AiOutlineSend />}
-                            onClick={searchGpt}
-                        />
+                        <Button onClick={searchGpt}>Ask Query </Button>
                         <Button
                             variant="outlined"
                             onClick={() => {
@@ -95,7 +76,7 @@ export default function BasicPage() {
                             label="Select Model"
                             onChange={model => {
                                 console.log(model);
-                                setModel(model || 'text-davinci-003');
+                                setModel(model || DEFAULT_MODEL);
                             }}
                         >
                             {CUSTOM_GPT_MODELS.map((model, i) => (
@@ -114,7 +95,7 @@ export default function BasicPage() {
                 <div className="flex sm:flex-row flex-col">
                     <div className="m-4 sm:w-1/2">
                         <Textarea
-                            className="border border-black rounded-none"
+                            className="text-white border border-black rounded-none"
                             value={text}
                             rows={30}
                             onChange={e => {
@@ -125,7 +106,7 @@ export default function BasicPage() {
                     <div className="m-4 sm:w-1/2">
                         <Textarea
                             ref={resultElement}
-                            className="border border-black rounded-none"
+                            className="text-white border border-black rounded-none"
                             value={response}
                             rows={30}
                             onChange={e => {
