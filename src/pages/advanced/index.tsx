@@ -1,9 +1,10 @@
-import { AskQueryButton, ClearButton, Editor, SettingsButton, SettingsDialog } from '@/components';
+import { AskQueryButton, ClearButton, CommandsDropDown, Editor, SettingsButton, SettingsDialog } from '@/components';
 import { SettingsContext } from '@/context';
+import { Input } from '@material-tailwind/react';
 import { useContext, useState } from 'react';
 
 export default function AdvancedPage() {
-    const { settings } = useContext(SettingsContext);
+    const { settings, updateSettings } = useContext(SettingsContext);
 
     const [text, setText] = useState<string>('');
     const [response, setReponse] = useState('');
@@ -21,6 +22,7 @@ export default function AdvancedPage() {
 
     return (
         <>
+            <SettingsDialog open={open} handleOpen={handleOpen} />
             <div className="text-white">
                 <div className="flex flex-row justify-between mx-4 gap-5">
                     <div>
@@ -29,9 +31,23 @@ export default function AdvancedPage() {
                             text={`${settings.command} ${settings.subCommand || ''} <|endofprompt|>  \n\n  ${text}`}
                             onComplete={onComplete}
                         />
+                        <ClearButton onClear={onClear} />
                         <SettingsButton onSettingsClick={handleOpen} />
                     </div>
-                    <ClearButton onClear={onClear} />
+                    <div className="flex flex-row justify-between mx-4 gap-5 align-middle">
+                        <div className="my-2">
+                            <CommandsDropDown />
+                        </div>
+                        <div className="my-2">
+                            <Input
+                                value={settings.subCommand}
+                                label="Sub Command"
+                                onChange={event => {
+                                    updateSettings({ ...settings, subCommand: event.target.value });
+                                }}
+                            />
+                        </div>
+                    </div>
                 </div>
                 <div className="flex sm:flex-row flex-col">
                     <div className="m-4 sm:w-1/2 border border-blue-gray-50 px-2">
@@ -41,7 +57,6 @@ export default function AdvancedPage() {
                         <Editor response={response} setReponse={setReponse} />
                     </div>
                 </div>
-                <SettingsDialog open={open} handleOpen={handleOpen} />
             </div>
         </>
     );

@@ -23,6 +23,84 @@ const AskQueryButton: React.FC<AskQueryButtonProps> = ({ model, text, onComplete
                 temperature: 0.5,
             });
 
+            // await OpenAIService.createChatCompletion({
+            //     model: '',
+            //     messages: []
+            // });
+
+            // await OpenAIService.createEdit({
+            //     model: '',
+            //     instruction: ''
+            // });
+
+            // await OpenAIService.createEmbedding({
+            //     model: '',
+            //     input: ''
+            // });
+
+            // await OpenAIService.createFile({});
+
+            // await OpenAIService.createImage({
+            //     prompt: ''
+            // });
+
+            // await OpenAIService.createFineTune({
+            //     training_file: ''
+            // });
+
+            // await OpenAIService.createImageEdit();
+
+            // await OpenAIService.createImageVariation({
+            //     lastModified: 0,
+            //     name: '',
+            //     webkitRelativePath: '',
+            //     size: 0,
+            //     type: '',
+            //     arrayBuffer: function (): Promise<ArrayBuffer> {
+            //         throw new Error('Function not implemented.');
+            //     },
+            //     slice: function (start?: number | undefined, end?: number | undefined, contentType?: string | undefined): Blob {
+            //         throw new Error('Function not implemented.');
+            //     },
+            //     stream: function (): ReadableStream<Uint8Array> {
+            //         throw new Error('Function not implemented.');
+            //     },
+            //     text: function (): Promise<string> {
+            //         throw new Error('Function not implemented.');
+            //     },
+            //     prototype: undefined
+            // });
+
+            // await OpenAIService.createModeration({
+            //     input: ''
+            // });
+
+            // await OpenAIService.createTranscription({
+
+            // });
+
+            // await OpenAIService.createTranslation();
+
+            // await OpenAIService.deleteFile();
+
+            // await OpenAIService.deleteModel();
+
+            // await OpenAIService.downloadFile();
+
+            // await OpenAIService.listFiles();
+
+            // await OpenAIService.listFineTuneEvents();
+
+            // await OpenAIService.listFineTunes();
+
+            // await OpenAIService.listModels();
+
+            // await OpenAIService.retrieveFile();
+
+            // await OpenAIService.retrieveFineTune();
+
+            // await OpenAIService.retrieveModel();
+
             const response = data.choices[0].text?.trim() || '';
             onComplete(response);
         };

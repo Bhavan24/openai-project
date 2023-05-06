@@ -1,8 +1,12 @@
-import { AskQueryButton, ClearButton, CopyButton, CustomTextArea } from '@/components';
+import { AskQueryButton, ClearButton, CommandsDropDown, CopyButton, CustomTextArea } from '@/components';
 import { DEFAULT_MODEL } from '@/constants';
-import { useState } from 'react';
+import { SettingsContext } from '@/context';
+import { Input } from '@material-tailwind/react';
+import { useContext, useState } from 'react';
 
 export default function BasicPage() {
+    const { settings, updateSettings } = useContext(SettingsContext);
+
     const [response, setReponse] = useState('');
     const [text, setText] = useState<string>('');
 
@@ -19,11 +23,29 @@ export default function BasicPage() {
             <div className="text-white">
                 <div className="flex flex-row justify-between mx-4 gap-5">
                     <div>
-                        <AskQueryButton model={DEFAULT_MODEL} text={text} onComplete={onComplete} />
+                        <AskQueryButton
+                            model={DEFAULT_MODEL}
+                            text={`${settings.command} ${settings.subCommand || ''} <|endofprompt|>  \n\n  ${text}`}
+                            onComplete={onComplete}
+                        />
                         <ClearButton onClear={onClear} />
                     </div>
-                    <div>
-                        <CopyButton text={response} />
+                    <div className="flex flex-row justify-between mx-4 gap-5 align-middle">
+                        <div className="my-2">
+                            <CommandsDropDown />
+                        </div>
+                        <div className="my-2">
+                            <Input
+                                value={settings.subCommand}
+                                label="Sub Command"
+                                onChange={event => {
+                                    updateSettings({ ...settings, subCommand: event.target.value });
+                                }}
+                            />
+                        </div>
+                        <div>
+                            <CopyButton text={response} />
+                        </div>
                     </div>
                 </div>
                 <div className="flex sm:flex-row flex-col">

@@ -1,25 +1,8 @@
 import { DEFAULT_MODEL } from '@/constants';
 import { SettingsContext } from '@/context';
-import { BanknotesIcon, CreditCardIcon, LockClosedIcon } from '@heroicons/react/24/solid';
-import {
-    Button,
-    Card,
-    CardBody,
-    CardHeader,
-    Dialog,
-    DialogBody,
-    DialogFooter,
-    DialogHeader,
-    Input,
-    Tab,
-    TabPanel,
-    Tabs,
-    TabsBody,
-    TabsHeader,
-    Typography,
-} from '@material-tailwind/react';
+import { Button, Dialog, DialogBody, DialogFooter, DialogHeader } from '@material-tailwind/react';
 import React, { useContext } from 'react';
-import { CommandsDropDown, ModelsDropDown } from '../dropdown';
+import { ModelsDropDown } from '../dropdown';
 
 interface SettingsDialogProps {
     open: boolean;
@@ -44,18 +27,6 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({ open, handleOpen }) => 
                 <form className="flex flex-col gap-4">
                     <div className="my-1">
                         <ModelsDropDown />
-                    </div>
-                    <div className="my-1">
-                        <CommandsDropDown />
-                    </div>
-                    <div className="my-1">
-                        <Input
-                            value={settings.subCommand}
-                            label="Sub Command (Ex: Code to be converted)"
-                            onChange={event => {
-                                updateSettings({ ...settings, subCommand: event.target.value });
-                            }}
-                        />
                     </div>
                 </form>
             </DialogBody>

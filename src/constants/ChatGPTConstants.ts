@@ -8,7 +8,7 @@ export const CUSTOM_GPT_OPTIONS = [
     { value: 'compile and run the below code.', label: 'Compile & Run Code' },
     { value: 'add unit test for the below code.', label: 'Add Unit Test' },
     { value: 'convert the below code to ', label: 'Convert Code' },
-    { value: 'translate the below sentance to ', label: 'Translatee' },
+    { value: 'translate the below sentance to ', label: 'Translate' },
     { value: 'what is the meaning of', label: 'Find Meaning' },
     { value: 'paraphrase the below paragraph.', label: 'Paraphrase' },
     { value: 'simplify the below paragraph.', label: 'Simplify Complex Paragraph' },
