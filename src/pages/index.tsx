@@ -5,7 +5,7 @@ import BasicPage from './basic';
 export default function Dashboard() {
     const data = [
         {
-            label: 'Noob',
+            label: 'Basic',
             value: 'basic',
             desc: <BasicPage />,
         },

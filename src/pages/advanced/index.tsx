@@ -1,12 +1,13 @@
-import { AskQueryButton, ClearButton, CommandsDropDown, Editor, ModelsDropDown } from '@/components';
-import { DEFAULT_MODEL } from '@/constants';
-import { useState } from 'react';
+import { AskQueryButton, ClearButton, Editor, SettingsButton, SettingsDialog } from '@/components';
+import { SettingsContext } from '@/context';
+import { useContext, useState } from 'react';
 
 export default function AdvancedPage() {
+    const { settings } = useContext(SettingsContext);
+
     const [text, setText] = useState<string>('');
     const [response, setReponse] = useState('');
-    const [command, setCommand] = useState('');
-    const [model, setModel] = useState(DEFAULT_MODEL);
+    const [open, setOpen] = useState(false);
 
     const onComplete = (response: string) => {
         setReponse(response);
@@ -16,26 +17,21 @@ export default function AdvancedPage() {
         setText('');
     };
 
+    const handleOpen = () => setOpen(!open);
+
     return (
         <>
             <div className="text-white">
                 <div className="flex flex-row justify-between mx-4 gap-5">
                     <div>
-                        <AskQueryButton model={model} text={`'''${text}''' \n\n ${command}`} onComplete={onComplete} />
-                        <ClearButton onClear={onClear} />
-                    </div>
-                    <div className="flex gap-2 m-2 sm:flex-row flex-col">
-                        <ModelsDropDown
-                            onChange={(model: string) => {
-                                setModel(model);
-                            }}
+                        <AskQueryButton
+                            model={settings.model}
+                            text={`'''${text}''' \n\n ${settings.command}`}
+                            onComplete={onComplete}
                         />
-                        <CommandsDropDown
-                            onChange={(command: string) => {
-                                setCommand(command);
-                            }}
-                        />
+                        <SettingsButton onSettingsClick={handleOpen} />
                     </div>
+                    <ClearButton onClear={onClear} />
                 </div>
                 <div className="flex sm:flex-row flex-col">
                     <div className="m-4 sm:w-1/2 border border-blue-gray-50 px-2">
@@ -45,6 +41,7 @@ export default function AdvancedPage() {
                         <Editor response={response} setReponse={setReponse} />
                     </div>
                 </div>
+                <SettingsDialog open={open} handleOpen={handleOpen} />
             </div>
         </>
     );

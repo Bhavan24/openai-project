@@ -55,6 +55,7 @@ const Editor: React.FC<IEditor> = ({ response, setReponse }) => {
                 <div className="my-2">
                     <Select
                         color="blue"
+                        className="text-white"
                         value={language}
                         label="Select Language"
                         onChange={(lang: any) => {
@@ -71,6 +72,7 @@ const Editor: React.FC<IEditor> = ({ response, setReponse }) => {
                 {/* <div>
                     <Select
                         color="blue"
+                        className="text-white"
                         value={theme}
                         label="Select Theme"
                         onChange={(theme: any) => {

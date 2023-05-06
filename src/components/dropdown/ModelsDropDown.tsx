@@ -1,26 +1,27 @@
 import { CUSTOM_GPT_MODELS, DEFAULT_MODEL } from '@/constants';
-import { Select, Option } from '@material-tailwind/react';
-import React, { useState } from 'react';
+import { SettingsContext } from '@/context';
+import { Option, Select } from '@material-tailwind/react';
+import React, { useContext } from 'react';
 
 interface ModelsDropDownProps {
-    onChange: Function;
-    className?: string;
 }
 
-const ModelsDropDown: React.FC<ModelsDropDownProps> = ({ onChange, className }) => {
-    const [model, setModel] = useState<string>(DEFAULT_MODEL);
+const ModelsDropDown: React.FC<ModelsDropDownProps> = () => {
+    const { settings, updateSettings } = useContext(SettingsContext);
 
     return (
         <Select
             size="lg"
             color="blue"
-            value={model}
-            className={className}
+            className="text-white"
+            value={settings.model}
             label="Select Model"
             onChange={model => {
                 const currentModel = model || DEFAULT_MODEL;
-                setModel(currentModel);
-                onChange(currentModel);
+                updateSettings({
+                    model: currentModel,
+                    command: settings.command,
+                });
             }}
         >
             {CUSTOM_GPT_MODELS.map((model, i) => (

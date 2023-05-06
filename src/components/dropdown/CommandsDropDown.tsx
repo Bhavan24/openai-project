@@ -1,23 +1,25 @@
 import { CUSTOM_GPT_OPTIONS } from '@/constants';
+import { SettingsContext } from '@/context';
 import { Option, Select } from '@material-tailwind/react';
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 
-interface CommandsDropDownProps {
-    onChange: Function;
-}
+interface CommandsDropDownProps {}
 
-const CommandsDropDown: React.FC<CommandsDropDownProps> = ({ onChange }) => {
-    const [command, setCommand] = useState('');
+const CommandsDropDown: React.FC<CommandsDropDownProps> = () => {
+    const { settings, updateSettings } = useContext(SettingsContext);
 
     return (
         <Select
             size="lg"
             color="blue"
-            value={command}
+            className="text-white"
+            value={settings.command}
             label="Select Custom Command"
             onChange={(command: any) => {
-                setCommand(command);
-                onChange(command);
+                updateSettings({
+                    model: settings.model,
+                    command: command,
+                });
             }}
         >
             {CUSTOM_GPT_OPTIONS.map((option, i) => (
