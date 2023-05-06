@@ -35,7 +35,7 @@ export default function AdvancedPage() {
                         <ClearButton onClear={onClear} />
                         <SettingsButton onSettingsClick={handleOpen} />
                     </div>
-                    <div className="flex flex-row justify-between mx-4 gap-5 align-middle">
+                    <div className="flex sm:flex-row flex-col justify-between mx-4 gap-5 align-middle">
                         <div className="my-2">
                             <CommandsDropDown />
                         </div>
