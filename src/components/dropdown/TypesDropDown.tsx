@@ -13,12 +13,12 @@ const TypesDropDownProps: React.FC<TypesDropDownProps> = () => {
             size="md"
             color="blue"
             className="text-white"
-            value={settings.command}
+            value={settings.type}
             label="Select Type"
-            onChange={(command: any) => {
+            onChange={(type: any) => {
                 updateSettings({
-                    model: settings.model,
-                    command: command,
+                    ...settings,
+                    type: type,
                 });
             }}
         >

@@ -3,8 +3,7 @@ import { SettingsContext } from '@/context';
 import { Option, Select } from '@material-tailwind/react';
 import React, { useContext } from 'react';
 
-interface ModelsDropDownProps {
-}
+interface ModelsDropDownProps {}
 
 const ModelsDropDown: React.FC<ModelsDropDownProps> = () => {
     const { settings, updateSettings } = useContext(SettingsContext);
@@ -19,8 +18,8 @@ const ModelsDropDown: React.FC<ModelsDropDownProps> = () => {
             onChange={model => {
                 const currentModel = model || DEFAULT_MODEL;
                 updateSettings({
+                    ...settings,
                     model: currentModel,
-                    command: settings.command,
                 });
             }}
         >

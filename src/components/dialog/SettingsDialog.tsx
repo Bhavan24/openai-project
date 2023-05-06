@@ -42,6 +42,7 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({ open, handleOpen }) => 
                             model: DEFAULT_MODEL,
                             command: '',
                             subCommand: '',
+                            type: '',
                         });
                         handleOpen();
                     }}

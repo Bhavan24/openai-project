@@ -17,7 +17,7 @@ const CommandsDropDown: React.FC<CommandsDropDownProps> = () => {
             label="Select Custom Prompt"
             onChange={(command: any) => {
                 updateSettings({
-                    model: settings.model,
+                    ...settings,
                     command: command,
                 });
             }}

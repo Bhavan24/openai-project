@@ -42,6 +42,7 @@ export const GPT_API_TYPES = [
 ];
 
 export const CUSTOM_GPT_MODELS = [
+    'text-davinci-003',
     'babbage',
     'davinci',
     'text-davinci-edit-001',
@@ -88,7 +89,6 @@ export const CUSTOM_GPT_MODELS = [
     'text-search-babbage-query-001',
     'curie-similarity',
     'curie',
-    'text-davinci-003',
     'text-similarity-davinci-001',
     'text-davinci-002',
     'davinci-similarity',
@@ -108,7 +108,8 @@ export const CUSTOM_GPT_MODELS = [
     'text-babbage:001',
 ];
 
-export const DEFAULT_MODEL = 'text-davinci-003';
+export const DEFAULT_MODEL = CUSTOM_GPT_MODELS[0];
+export const DEFAULT_API_TYPE = GPT_API_TYPES[0].value;
 
 export const getFinalCommand = (command: string, subCommand: string, text: string): string => {
     return command ? `${command} ${subCommand || ''} <|endofprompt|>  \n\n  ${text}` : `${text}`;
