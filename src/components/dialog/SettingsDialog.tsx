@@ -1,6 +1,23 @@
 import { DEFAULT_MODEL } from '@/constants';
 import { SettingsContext } from '@/context';
-import { Button, Dialog, DialogBody, DialogFooter, DialogHeader } from '@material-tailwind/react';
+import { BanknotesIcon, CreditCardIcon, LockClosedIcon } from '@heroicons/react/24/solid';
+import {
+    Button,
+    Card,
+    CardBody,
+    CardHeader,
+    Dialog,
+    DialogBody,
+    DialogFooter,
+    DialogHeader,
+    Input,
+    Tab,
+    TabPanel,
+    Tabs,
+    TabsBody,
+    TabsHeader,
+    Typography,
+} from '@material-tailwind/react';
 import React, { useContext } from 'react';
 import { CommandsDropDown, ModelsDropDown } from '../dropdown';
 
@@ -10,7 +27,7 @@ interface SettingsDialogProps {
 }
 
 const SettingsDialog: React.FC<SettingsDialogProps> = ({ open, handleOpen }) => {
-    const { updateSettings } = useContext(SettingsContext);
+    const { settings, updateSettings } = useContext(SettingsContext);
 
     return (
         <Dialog
@@ -23,11 +40,24 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({ open, handleOpen }) => 
             }}
         >
             <DialogHeader className="text-white">Settings</DialogHeader>
-            <DialogBody divider>
-                <div className="flex gap-2 m-2 sm:flex-row flex-col">
-                    <ModelsDropDown />
-                    <CommandsDropDown />
-                </div>
+            <DialogBody divider className="h-[15rem] overflow-y-scroll">
+                <form className="flex flex-col gap-4">
+                    <div className="my-1">
+                        <ModelsDropDown />
+                    </div>
+                    <div className="my-1">
+                        <CommandsDropDown />
+                    </div>
+                    <div className="my-1">
+                        <Input
+                            value={settings.subCommand}
+                            label="Sub Command (Ex: Code to be converted)"
+                            onChange={event => {
+                                updateSettings({ ...settings, subCommand: event.target.value });
+                            }}
+                        />
+                    </div>
+                </form>
             </DialogBody>
             <DialogFooter className="gap-5">
                 <Button
@@ -37,6 +67,7 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({ open, handleOpen }) => 
                         updateSettings({
                             model: DEFAULT_MODEL,
                             command: '',
+                            subCommand: '',
                         });
                         handleOpen();
                     }}

@@ -7,6 +7,7 @@ export const CUSTOM_GPT_OPTIONS = [
     { value: 'provide documentation for the above code.', label: 'Document Code' },
     { value: 'compile and run the above code.', label: 'Compile & Run Code' },
     { value: 'add unit test for the above code.', label: 'Add Unit Test' },
+    { value: 'convert the above code to ', label: 'Convert Code' },
 ];
 
 export const CUSTOM_GPT_MODELS = [

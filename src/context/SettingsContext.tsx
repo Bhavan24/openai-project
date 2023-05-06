@@ -5,6 +5,7 @@ import React, { createContext, ReactNode, useState } from 'react';
 interface Settings {
     model: string;
     command: string;
+    subCommand?: string;
 }
 
 interface SettingsProviderProps {
@@ -15,6 +16,7 @@ interface SettingsProviderProps {
 const initialSettings: Settings = {
     model: DEFAULT_MODEL,
     command: '',
+    subCommand: '',
 };
 
 // Create the context

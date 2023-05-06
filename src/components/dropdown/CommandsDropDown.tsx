@@ -10,11 +10,11 @@ const CommandsDropDown: React.FC<CommandsDropDownProps> = () => {
 
     return (
         <Select
-            size="lg"
+            size="md"
             color="blue"
             className="text-white"
             value={settings.command}
-            label="Select Custom Command"
+            label="Select Custom Prompt"
             onChange={(command: any) => {
                 updateSettings({
                     model: settings.model,
