@@ -1,10 +1,9 @@
-import { Button, Option, Select } from '@material-tailwind/react';
+import { Option, Select } from '@material-tailwind/react';
 import MonacoEditor, { useMonaco } from '@monaco-editor/react';
-import { useCallback, useEffect, useState } from 'react';
-import { AiOutlineCopy } from 'react-icons/ai';
-import { MONOCO_LANGUAGES } from '../../constants';
-import { MONOCO_THEMES_LIST } from './../../constants/MonocoConstants';
 import { camelCase } from 'lodash';
+import { useCallback, useEffect, useState } from 'react';
+import { MONOCO_LANGUAGES } from '../../constants';
+import { CopyButton } from '../button';
 
 interface IEditor {
     response: any;
@@ -36,7 +35,7 @@ const Editor: React.FC<IEditor> = ({ response, setReponse }) => {
         <div className="my-2">
             <div>
                 <MonacoEditor
-                    height={'75vh'}
+                    height={'55vh'}
                     language={language}
                     theme={theme}
                     value={response}
@@ -53,7 +52,7 @@ const Editor: React.FC<IEditor> = ({ response, setReponse }) => {
                 />
             </div>
             <div className="flex my-2 justify-between gap-5 sm:flex-row flex-col">
-                <div>
+                <div className="my-2">
                     <Select
                         color="blue"
                         value={language}
@@ -69,7 +68,7 @@ const Editor: React.FC<IEditor> = ({ response, setReponse }) => {
                         ))}
                     </Select>
                 </div>
-                <div>
+                {/* <div>
                     <Select
                         color="blue"
                         value={theme}
@@ -84,11 +83,9 @@ const Editor: React.FC<IEditor> = ({ response, setReponse }) => {
                             </Option>
                         ))}
                     </Select>
-                </div>
+                </div> */}
                 <div>
-                    <Button variant="outlined" className="text-lg" onClick={copyResults}>
-                        <AiOutlineCopy />
-                    </Button>
+                    <CopyButton text={response} />
                 </div>
             </div>
         </div>

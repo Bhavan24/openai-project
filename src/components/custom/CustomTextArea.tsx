@@ -7,7 +7,7 @@ interface CustomTextAreaProps {
     onChange: Function;
 }
 
-const CustomTextArea: React.FC<CustomTextAreaProps> = ({ text, rows = 30, onChange }) => {
+const CustomTextArea: React.FC<CustomTextAreaProps> = ({ text, rows = 20, onChange }) => {
     return (
         <Textarea
             className="text-white border border-black rounded-none"

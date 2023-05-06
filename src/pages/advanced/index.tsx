@@ -17,8 +17,8 @@ export default function AdvancedPage() {
     };
 
     return (
-        <main className="h-full">
-            <div className="text-white h-screen p-3">
+        <>
+            <div className="text-white">
                 <div className="flex flex-row justify-between mx-4 gap-5">
                     <div>
                         <AskQueryButton model={model} text={`'''${text}''' \n\n ${command}`} onComplete={onComplete} />
@@ -46,6 +46,6 @@ export default function AdvancedPage() {
                     </div>
                 </div>
             </div>
-        </main>
+        </>
     );
 }
