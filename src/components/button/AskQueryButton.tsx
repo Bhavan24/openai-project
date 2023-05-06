@@ -53,9 +53,12 @@ const AskQueryButton: React.FC<AskQueryButtonProps> = ({ model, text, onComplete
                     // await OpenAIService.createFile({});
                 }
                 case GPT_API_TYPES[5].value: {
-                    await OpenAIService.createImage({
+                    const { data } = await OpenAIService.createImage({
                         prompt: text.trim(),
                     });
+
+                    const response = data.data[0].url?.trim() || '';
+                    onComplete(response);
                 }
                 case GPT_API_TYPES[6].value: {
                     // await OpenAIService.createFineTune({
