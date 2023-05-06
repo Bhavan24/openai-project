@@ -2,7 +2,7 @@ import { DEFAULT_MODEL } from '@/constants';
 import { SettingsContext } from '@/context';
 import { Button, Dialog, DialogBody, DialogFooter, DialogHeader } from '@material-tailwind/react';
 import React, { useContext } from 'react';
-import { ModelsDropDown } from '../dropdown';
+import { ModelsDropDown, TypesDropDown } from '../dropdown';
 
 interface SettingsDialogProps {
     open: boolean;
@@ -10,7 +10,7 @@ interface SettingsDialogProps {
 }
 
 const SettingsDialog: React.FC<SettingsDialogProps> = ({ open, handleOpen }) => {
-    const { settings, updateSettings } = useContext(SettingsContext);
+    const { updateSettings } = useContext(SettingsContext);
 
     return (
         <Dialog
@@ -27,6 +27,9 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({ open, handleOpen }) => 
                 <form className="flex flex-col gap-4">
                     <div className="my-1">
                         <ModelsDropDown />
+                    </div>
+                    <div className="my-1">
+                        <TypesDropDown />
                     </div>
                 </form>
             </DialogBody>

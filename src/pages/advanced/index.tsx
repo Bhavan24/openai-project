@@ -1,4 +1,5 @@
 import { AskQueryButton, ClearButton, CommandsDropDown, Editor, SettingsButton, SettingsDialog } from '@/components';
+import { getFinalCommand } from '@/constants';
 import { SettingsContext } from '@/context';
 import { Input } from '@material-tailwind/react';
 import { useContext, useState } from 'react';
@@ -28,7 +29,7 @@ export default function AdvancedPage() {
                     <div>
                         <AskQueryButton
                             model={settings.model}
-                            text={`${settings.command} ${settings.subCommand || ''} <|endofprompt|>  \n\n  ${text}`}
+                            text={getFinalCommand(settings.command, settings.subCommand || '', text)}
                             onComplete={onComplete}
                         />
                         <ClearButton onClear={onClear} />

@@ -16,6 +16,31 @@ export const CUSTOM_GPT_OPTIONS = [
     { value: 'write an article on the below topic.', label: 'Write an article' },
 ];
 
+export const GPT_API_TYPES = [
+    { value: 'create_completion', label: 'Create completion' },
+    { value: 'create_chat_completion', label: 'Create chat completion' },
+    { value: 'create_edit', label: 'Create edit' },
+    { value: 'create_embedding', label: 'Create embedding' },
+    { value: 'create_file', label: 'Create file' },
+    { value: 'create_image', label: 'Create image' },
+    { value: 'create_finetune', label: 'Create finetune' },
+    { value: 'create_image_edit', label: 'Create image edit' },
+    { value: 'create_image_variation', label: 'Create image variation' },
+    { value: 'create_moderation', label: 'Create moderation' },
+    { value: 'create_transcription', label: 'Create transcription' },
+    { value: 'create_translation', label: 'Create translation' },
+    { value: 'delete_file', label: 'Delete file' },
+    { value: 'delete_model', label: 'Delete model' },
+    { value: 'download_file', label: 'Download file' },
+    { value: 'list_files', label: 'List files' },
+    { value: 'list_finetune_events', label: 'List finetune events' },
+    { value: 'list_finetunes', label: 'List finetunes' },
+    { value: 'list_models', label: 'List models' },
+    { value: 'retrieve_file', label: 'Retrieve file' },
+    { value: 'retrieve_finetune', label: 'Retrieve finetune' },
+    { value: 'retrieve_model', label: 'Retrieve model' },
+];
+
 export const CUSTOM_GPT_MODELS = [
     'babbage',
     'davinci',
@@ -84,3 +109,7 @@ export const CUSTOM_GPT_MODELS = [
 ];
 
 export const DEFAULT_MODEL = 'text-davinci-003';
+
+export const getFinalCommand = (command: string, subCommand: string, text: string): string => {
+    return command ? `${command} ${subCommand || ''} <|endofprompt|>  \n\n  ${text}` : `${text}`;
+};

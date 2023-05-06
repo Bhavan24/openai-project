@@ -1,5 +1,5 @@
 import { AskQueryButton, ClearButton, CommandsDropDown, CopyButton, CustomTextArea } from '@/components';
-import { DEFAULT_MODEL } from '@/constants';
+import { DEFAULT_MODEL, getFinalCommand } from '@/constants';
 import { SettingsContext } from '@/context';
 import { Input } from '@material-tailwind/react';
 import { useContext, useState } from 'react';
@@ -25,7 +25,7 @@ export default function BasicPage() {
                     <div>
                         <AskQueryButton
                             model={DEFAULT_MODEL}
-                            text={`${settings.command} ${settings.subCommand || ''} <|endofprompt|>  \n\n  ${text}`}
+                            text={getFinalCommand(settings.command, settings.subCommand || '', text)}
                             onComplete={onComplete}
                         />
                         <ClearButton onClear={onClear} />
