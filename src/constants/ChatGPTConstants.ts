@@ -1,13 +1,19 @@
 export const CUSTOM_GPT_OPTIONS = [
     { value: '', label: 'Default' },
-    { value: 'add comments to the above code.', label: 'Add Code Comments' },
-    { value: 'refactor the above code.', label: 'Refactor Code' },
-    { value: 'explain the above code.', label: 'Explain Code' },
-    { value: 'find the bugs in the above code.', label: 'Find Code Bugs' },
-    { value: 'provide documentation for the above code.', label: 'Document Code' },
-    { value: 'compile and run the above code.', label: 'Compile & Run Code' },
-    { value: 'add unit test for the above code.', label: 'Add Unit Test' },
-    { value: 'convert the above code to ', label: 'Convert Code' },
+    { value: 'add comments to the below code.', label: 'Add Code Comments' },
+    { value: 'refactor the below code.', label: 'Refactor Code' },
+    { value: 'explain the below code.', label: 'Explain Code' },
+    { value: 'find the bugs in the below code.', label: 'Find Code Bugs' },
+    { value: 'provide documentation for the below code.', label: 'Document Code' },
+    { value: 'compile and run the below code.', label: 'Compile & Run Code' },
+    { value: 'add unit test for the below code.', label: 'Add Unit Test' },
+    { value: 'convert the below code to ', label: 'Convert Code' },
+    { value: 'translate the below sentance to ', label: 'Translatee' },
+    { value: 'what is the meaning of', label: 'Find Meaning' },
+    { value: 'paraphrase the below paragraph.', label: 'Paraphrase' },
+    { value: 'simplify the below paragraph.', label: 'Simplify Complex Paragraph' },
+    { value: 'write an essay on the below topic.', label: 'Write an essay' },
+    { value: 'write an article on the below topic.', label: 'Write an article' },
 ];
 
 export const CUSTOM_GPT_MODELS = [

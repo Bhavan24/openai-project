@@ -26,7 +26,7 @@ export default function AdvancedPage() {
                     <div>
                         <AskQueryButton
                             model={settings.model}
-                            text={`'''${text}''' \n\n ${settings.command} ${settings.subCommand || ''}`}
+                            text={`${settings.command} ${settings.subCommand || ''} <|endofprompt|>  \n\n  ${text}`}
                             onComplete={onComplete}
                         />
                         <SettingsButton onSettingsClick={handleOpen} />
