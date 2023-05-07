@@ -1,64 +1,93 @@
-import { AskQueryButton, ClearButton, CommandsDropDown, Editor, SettingsButton, SettingsDialog } from '@/components';
-import { ADVANCED_GPT_OPTIONS, GET_GPT_INPUT } from '@/constants';
-import { SettingsContext } from '@/contexts';
-import { Input } from '@material-tailwind/react';
-import { useContext, useState } from 'react';
+import {
+    ChatBubbleBottomCenterTextIcon,
+    PencilSquareIcon,
+    PhotoIcon,
+    QuestionMarkCircleIcon,
+    UserCircleIcon,
+    FilmIcon,
+    MicrophoneIcon,
+    DocumentTextIcon,
+    InformationCircleIcon,
+} from '@heroicons/react/24/solid';
+import { Tab, TabPanel, Tabs, TabsBody, TabsHeader } from '@material-tailwind/react';
+import React from 'react';
+import { CompletionComponent } from './components';
 
 export default function AdvancedPage() {
-    const { settings, updateSettings } = useContext(SettingsContext);
-
-    const [text, setText] = useState<string>('');
-    const [response, setReponse] = useState('');
-    const [open, setOpen] = useState(false);
-
-    const onComplete = (response: string) => {
-        setReponse(response);
-    };
-
-    const onClear = () => {
-        setText('');
-    };
-
-    const handleOpen = () => setOpen(!open);
-
+    const data = [
+        {
+            label: 'Completions',
+            value: 'completions',
+            icon: QuestionMarkCircleIcon,
+            desc: <CompletionComponent />,
+        },
+        {
+            label: 'Chat',
+            value: 'chat',
+            icon: ChatBubbleBottomCenterTextIcon,
+            desc: <CompletionComponent />,
+        },
+        {
+            label: 'Edits',
+            value: 'edits',
+            icon: PencilSquareIcon,
+            desc: <CompletionComponent />,
+        },
+        {
+            label: 'Images',
+            value: 'images',
+            icon: PhotoIcon,
+            desc: <CompletionComponent />,
+        },
+        {
+            label: 'Embeddings',
+            value: 'embeddings',
+            icon: FilmIcon,
+            desc: <CompletionComponent />,
+        },
+        {
+            label: 'Audio',
+            value: 'audio',
+            icon: MicrophoneIcon,
+            desc: <CompletionComponent />,
+        },
+        {
+            label: 'Files',
+            value: 'files',
+            icon: DocumentTextIcon,
+            desc: <CompletionComponent />,
+        },
+        {
+            label: 'Fine-tunes',
+            value: 'fine-tunes',
+            icon: InformationCircleIcon,
+            desc: <CompletionComponent />,
+        },
+    ];
     return (
-        <>
-            <SettingsDialog open={open} handleOpen={handleOpen} />
-            <div className="text-white">
-                <div className="flex flex-row justify-between mx-4 gap-5">
-                    <div>
-                        <AskQueryButton
-                            model={settings.model}
-                            text={GET_GPT_INPUT(settings.command, settings.subCommand || '', text)}
-                            onComplete={onComplete}
-                        />
-                        <ClearButton onClear={onClear} />
-                        <SettingsButton onSettingsClick={handleOpen} />
-                    </div>
-                    <div className="flex sm:flex-row flex-col justify-between mx-4 gap-5 align-middle">
-                        <div className="my-2">
-                            <CommandsDropDown options={ADVANCED_GPT_OPTIONS} />
+        <Tabs value="dashboard" orientation="vertical">
+            <TabsHeader
+                className="w-[20em] bg-transparent"
+                indicatorProps={{
+                    className: 'bg-blue-500/10 shadow-blue text-blue-500',
+                }}
+            >
+                {data.map(({ label, value, icon }) => (
+                    <Tab key={value} value={value} className="place-items-start text-blue-300">
+                        <div className="flex items-center gap-2">
+                            {React.createElement(icon, { className: 'w-5 h-5' })}
+                            {label}
                         </div>
-                        <div className="my-2">
-                            <Input
-                                value={settings.subCommand}
-                                label="Sub Command"
-                                onChange={event => {
-                                    updateSettings({ ...settings, subCommand: event.target.value });
-                                }}
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div className="flex sm:flex-row flex-col">
-                    <div className="m-4 sm:w-1/2 border border-blue-gray-50 px-2">
-                        <Editor response={text} setReponse={setText} />
-                    </div>
-                    <div className="m-4 sm:w-1/2  border border-blue-gray-50 px-2">
-                        <Editor response={response} setReponse={setReponse} />
-                    </div>
-                </div>
-            </div>
-        </>
+                    </Tab>
+                ))}
+            </TabsHeader>
+            <TabsBody>
+                {data.map(({ value, desc }) => (
+                    <TabPanel key={value} value={value} className="py-0">
+                        {desc}
+                    </TabPanel>
+                ))}
+            </TabsBody>
+        </Tabs>
     );
 }

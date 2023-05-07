@@ -30,9 +30,9 @@ export default function Dashboard() {
         <main className="h-full p-2 m-2">
             <Tabs id="custom-animation" value="basic">
                 <TabsHeader
-                    className="bg-transparent"
+                    className="rounded-none border-b border-blue-gray-50 bg-transparent p-0"
                     indicatorProps={{
-                        className: 'bg-blue-500/10 shadow-blue text-blue-500',
+                        className: 'bg-transparent border-b-2 border-blue-500 shadow-none rounded-none',
                     }}
                 >
                     {data.map(({ label, value }) => (
