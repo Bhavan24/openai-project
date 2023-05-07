@@ -1,9 +1,7 @@
 import React from 'react';
 
-interface FineTunesComponentProps {}
-
-const FineTunesComponent: React.FC<FineTunesComponentProps> = () => {
-    return <>FineTunesComponent</>;
+const FineTunesComponent: React.FC = () => {
+    return <div>FineTunesComponent</div>;
 };
 
 export default FineTunesComponent;

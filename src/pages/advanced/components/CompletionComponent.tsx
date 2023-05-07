@@ -2,7 +2,7 @@ import { CustomTextArea } from '@/components';
 import { OpenAIService } from '@/config';
 import { CUSTOM_GPT_MODELS, DEFAULT_MODEL } from '@/constants';
 import { Button, Checkbox, Input, Option, Select, Spinner, Textarea, Typography } from '@material-tailwind/react';
-import { useCallback, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { AiOutlineSend } from 'react-icons/ai';
 
@@ -24,7 +24,7 @@ interface ICompletionFormInput {
     user?: string;
 }
 
-const CompletionComponent = () => {
+const CompletionComponent: React.FC = () => {
     const [response, setReponse] = useState('');
     const [submitting, setSubmitting] = useState<boolean>(false);
 

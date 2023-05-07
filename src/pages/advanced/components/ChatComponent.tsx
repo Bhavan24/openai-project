@@ -3,9 +3,7 @@ import { Textarea, Typography } from '@material-tailwind/react';
 import React from 'react';
 import { AiOutlineSend } from 'react-icons/ai';
 
-interface ChatComponentProps {}
-
-const ChatComponent: React.FC<ChatComponentProps> = () => {
+const ChatComponent: React.FC = () => {
     const sendMessage = () => {
         alert('Not Implemented');
     };

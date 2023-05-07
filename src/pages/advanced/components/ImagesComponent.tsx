@@ -1,9 +1,7 @@
 import React from 'react';
 
-interface ImagesComponentProps {}
-
-const ImagesComponent: React.FC<ImagesComponentProps> = () => {
-    return <>ImagesComponent</>;
+const ImagesComponent: React.FC = () => {
+    return <div>ImagesComponent</div>;
 };
 
 export default ImagesComponent;

@@ -1,5 +1,5 @@
 import { Button, Input, Option, Select, Spinner, Textarea, Typography } from '@material-tailwind/react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { AiOutlineSend } from 'react-icons/ai';
 
@@ -13,7 +13,7 @@ interface IEditFormInput {
     n?: number | null;
 }
 
-const EditsComponent = () => {
+const EditsComponent: React.FC = () => {
     const [submitting, setSubmitting] = useState<boolean>(false);
 
     const { register, handleSubmit, setValue, watch, formState } = useForm<IEditFormInput>();

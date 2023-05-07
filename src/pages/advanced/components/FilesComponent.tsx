@@ -1,9 +1,7 @@
 import React from 'react';
 
-interface FilesComponentProps {}
-
-const FilesComponent: React.FC<FilesComponentProps> = () => {
-    return <>FilesComponent</>;
+const FilesComponent: React.FC = () => {
+    return <div>FilesComponent</div>;
 };
 
 export default FilesComponent;

@@ -1,9 +1,7 @@
 import React from 'react';
 
-interface EmbeddingsComponentProps {}
-
-const EmbeddingsComponent: React.FC<EmbeddingsComponentProps> = () => {
-    return <>EmbeddingsComponent</>;
+const EmbeddingsComponent: React.FC = () => {
+    return <div>EmbeddingsComponent</div>;
 };
 
 export default EmbeddingsComponent;

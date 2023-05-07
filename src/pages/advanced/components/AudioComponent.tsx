@@ -1,9 +1,7 @@
 import React from 'react';
 
-interface AudioComponentProps {}
-
-const AudioComponent: React.FC<AudioComponentProps> = () => {
-    return <>AudioComponent</>;
+const AudioComponent: React.FC = () => {
+    return <div>AudioComponent</div>;
 };
 
 export default AudioComponent;
