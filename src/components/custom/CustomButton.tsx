@@ -23,7 +23,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
 }) => {
     return (
         <Button onClick={onClick} disabled={disabled} variant={variant} className={className}>
-            <div className="flex gap-2 items-center">
+            <div className="flex gap-2 items-center justify-center">
                 {loading && <Spinner />}
                 {text} {icon}
             </div>

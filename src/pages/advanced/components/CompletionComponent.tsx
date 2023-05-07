@@ -1,32 +1,52 @@
-import { ClearButton, CommandsDropDown, CustomButton, Editor, SettingsButton, SettingsDialog } from '@/components';
+import { CustomTextArea } from '@/components';
 import { OpenAIService } from '@/config';
-import { ADVANCED_GPT_OPTIONS } from '@/constants';
-import { SettingsContext } from '@/contexts';
-import { Input } from '@material-tailwind/react';
-import { useCallback, useContext, useState } from 'react';
+import { CUSTOM_GPT_MODELS, DEFAULT_MODEL } from '@/constants';
+import { Button, Checkbox, Input, Option, Select, Spinner, Textarea, Typography } from '@material-tailwind/react';
+import { useCallback, useState } from 'react';
+import { SubmitHandler, useForm } from 'react-hook-form';
 import { AiOutlineSend } from 'react-icons/ai';
 
+interface ICompletionFormInput {
+    model: string;
+    prompt: string;
+    suffix?: string | null;
+    max_tokens?: number | null;
+    temperature?: number | null;
+    top_p?: number | null;
+    n?: number | null;
+    stream?: boolean | null;
+    logprobs?: number | null;
+    echo?: boolean | null;
+    stop?: string | null;
+    presence_penalty?: number | null;
+    frequency_penalty?: number | null;
+    best_of?: number | null;
+    user?: string;
+}
+
 const CompletionComponent = () => {
-    const { settings, updateSettings } = useContext(SettingsContext);
-
-    const [submitting, setSubmitting] = useState<boolean>(false);
-    const [text, setText] = useState<string>('');
     const [response, setReponse] = useState('');
-    const [open, setOpen] = useState(false);
+    const [submitting, setSubmitting] = useState<boolean>(false);
 
-    const searchGpt = useCallback(() => {
+    const { register, handleSubmit, setValue, watch, formState } = useForm<ICompletionFormInput>();
+
+    const onSubmit: SubmitHandler<ICompletionFormInput> = data => {
+        console.log(data);
+        // searchGpt(data);
+    };
+
+    const searchGpt = useCallback((input: ICompletionFormInput) => {
         const openAiTest = async () => {
             const { data } = await OpenAIService.createCompletion({
-                model: settings.model,
-                prompt: text.trim(),
-                max_tokens: 2048,
-                n: 1,
-                stop: '',
-                temperature: 0.5,
+                model: input.model,
+                prompt: input.prompt,
+                max_tokens: input.max_tokens,
+                n: input.n,
+                stop: input.stop,
+                temperature: input.temperature,
             });
 
-            const response = data.choices[0].text?.trim() || '';
-            setReponse(response);
+            setReponse(JSON.stringify(data));
         };
 
         setSubmitting(true);
@@ -39,54 +59,75 @@ const CompletionComponent = () => {
             console.log(error);
             setSubmitting(false);
         }
-    }, [settings, text]);
-
-    const onClear = () => {
-        setText('');
-    };
-
-    const handleOpen = () => setOpen(!open);
+    }, []);
 
     return (
         <>
-            <SettingsDialog open={open} handleOpen={handleOpen} />
             <div className="text-white">
-                <div className="flex flex-row justify-between mx-4 gap-5">
-                    <div>
-                        <CustomButton
-                            loading={submitting}
-                            disabled={submitting}
-                            variant="gradient"
-                            text={'Ask Query'}
-                            icon={<AiOutlineSend />}
-                            onClick={searchGpt}
-                            className={'m-2'}
-                        />
-                        <ClearButton onClear={onClear} />
-                        <SettingsButton onSettingsClick={handleOpen} />
-                    </div>
-                    <div className="flex sm:flex-row flex-col justify-between mx-4 gap-5 align-middle">
-                        <div className="my-2">
-                            <CommandsDropDown options={ADVANCED_GPT_OPTIONS} />
-                        </div>
-                        <div className="my-2">
-                            <Input
-                                value={settings.subCommand}
-                                label="Sub Command"
-                                onChange={event => {
-                                    updateSettings({ ...settings, subCommand: event.target.value });
-                                }}
-                            />
-                        </div>
-                    </div>
+                <div className="mb-2">
+                    <Typography variant="h5" color="white" className="my-2">
+                        Completion
+                    </Typography>
+                    <a
+                        href="https://platform.openai.com/docs/api-reference/completions/create"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-gray-500"
+                    >
+                        Click here for Documentation
+                    </a>
                 </div>
-                <div className="flex sm:flex-row flex-col">
-                    <div className="m-4 sm:w-1/2 border border-blue-gray-50 px-2">
-                        <Editor response={text} setReponse={setText} />
+                <form className="my-2" onSubmit={handleSubmit(onSubmit)}>
+                    <Textarea
+                        label="Prompt"
+                        className="text-white border border-black rounded-none"
+                        rows={5}
+                        {...register('prompt')}
+                    />
+                    <div className="grid grid-cols-3 justify-between gap-5">
+                        <Select
+                            className="text-white"
+                            value={watch('model')}
+                            label="Select Model"
+                            onChange={model => {
+                                const currentModel = model || DEFAULT_MODEL;
+                                setValue('model', currentModel);
+                            }}
+                        >
+                            {CUSTOM_GPT_MODELS.map((model, i) => (
+                                <Option key={i} value={model}>
+                                    {model}
+                                </Option>
+                            ))}
+                        </Select>
+                        <Input label="Suffix" type="text" {...register('suffix')} />
+                        <Input label="max_tokens" type="number" {...register('max_tokens')} />
+                        <Input label="temperature" type="number" {...register('temperature')} />
+                        <Input label="top_p" type="number" {...register('top_p')} />
+                        <Input label="n" type="number" {...register('n')} />
+                        <Input label="logprobs" type="number" {...register('logprobs')} />
+                        <Input label="stop" type="text" {...register('stop')} />
+                        <Input label="presence_penalty" type="number" {...register('presence_penalty')} />
+                        <Input label="frequency_penalty" type="number" {...register('frequency_penalty')} />
+                        <Input label="best_of" type="number" {...register('best_of')} />
+                        <Input label="user" type="text" {...register('user')} />
+                        <Checkbox label="stream" type="checkbox" {...register('stream')} />
+                        <Checkbox label="echo" type="checkbox" {...register('echo')} />
+                        <Button type="submit" disabled={submitting} variant={'gradient'} className={'my-2 w-100'}>
+                            <div className="flex gap-2 items-center justify-center">
+                                {submitting && <Spinner />}
+                                Submit {<AiOutlineSend />}
+                            </div>
+                        </Button>
                     </div>
-                    <div className="m-4 sm:w-1/2  border border-blue-gray-50 px-2">
-                        <Editor response={response} setReponse={setReponse} />
-                    </div>
+                </form>
+                <div className="flex flex-col">
+                    <CustomTextArea
+                        text={response}
+                        onChange={(text: string) => {
+                            setReponse(text);
+                        }}
+                    />
                 </div>
             </div>
         </>
