@@ -16,14 +16,15 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({ open, handleOpen }) => 
         <Dialog
             open={open}
             handler={handleOpen}
-            className="bg-gray-900"
+            className="bg-gray-900 overflow-y-scroll"
+            size="xxl"
             animate={{
                 mount: { scale: 1, y: 0 },
                 unmount: { scale: 0.9, y: -100 },
             }}
         >
             <DialogHeader className="text-white">Settings</DialogHeader>
-            <DialogBody divider className="h-[15rem] overflow-y-scroll">
+            <DialogBody divider>
                 <form className="flex flex-col gap-4">
                     <div className="my-1">
                         <ModelsDropDown />
