@@ -1,11 +1,23 @@
-import { DEFAULT_MODEL, DEFAULT_API_TYPE } from '@/constants';
 import React, { createContext, ReactNode, useState } from 'react';
 
+interface CompletionConfig {
+    suffix?: string | null;
+    max_tokens?: number | null;
+    temperature?: number | null;
+    top_p?: number | null;
+    n?: number | null;
+    stream?: boolean | null;
+    logprobs?: number | null;
+    echo?: boolean | null;
+    stop?: string | null;
+    presence_penalty?: number | null;
+    frequency_penalty?: number | null;
+    best_of?: number | null;
+    user?: string;
+}
+
 interface GPTConfigs {
-    model: string;
-    command: string;
-    subCommand?: string;
-    type?: string;
+    completion: CompletionConfig;
 }
 
 interface GPTConfigProviderProps {
@@ -13,10 +25,21 @@ interface GPTConfigProviderProps {
 }
 
 const initialGPTConfigs: GPTConfigs = {
-    model: DEFAULT_MODEL,
-    command: '',
-    subCommand: '',
-    type: DEFAULT_API_TYPE,
+    completion: {
+        suffix: '',
+        max_tokens: 2048,
+        temperature: 0.5,
+        top_p: 1,
+        n: 1,
+        stream: true,
+        logprobs: 1,
+        echo: true,
+        stop: '',
+        presence_penalty: 1,
+        frequency_penalty: 1,
+        best_of: 1,
+        user: '',
+    },
 };
 
 // Create the context

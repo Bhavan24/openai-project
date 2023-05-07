@@ -1,6 +1,6 @@
 import { OpenAIService } from '@/config';
 import { GPT_API_TYPES } from '@/constants';
-import { SettingsContext } from '@/contexts';
+import { GPTConfigContext, SettingsContext } from '@/contexts';
 import React, { useCallback, useContext, useState } from 'react';
 import { AiOutlineSend } from 'react-icons/ai';
 import { CustomButton } from '../custom';
@@ -12,8 +12,10 @@ interface AskQueryButtonProps {
 }
 
 const AskQueryButton: React.FC<AskQueryButtonProps> = ({ model, text, onComplete }) => {
-    const [submitting, setSubmitting] = useState<boolean>(false);
     const { settings } = useContext(SettingsContext);
+    const { config } = useContext(GPTConfigContext);
+
+    const [submitting, setSubmitting] = useState<boolean>(false);
 
     const searchGpt = useCallback(() => {
         const openAiTest = async () => {
@@ -22,10 +24,19 @@ const AskQueryButton: React.FC<AskQueryButtonProps> = ({ model, text, onComplete
                     const { data } = await OpenAIService.createCompletion({
                         model: model,
                         prompt: text.trim(),
-                        max_tokens: 2048,
-                        n: 1,
-                        stop: '',
-                        temperature: 0.5,
+                        suffix: config.completion.suffix,
+                        max_tokens: config.completion.max_tokens,
+                        temperature: config.completion.temperature,
+                        top_p: config.completion.top_p,
+                        n: config.completion.n,
+                        stream: config.completion.stream,
+                        logprobs: config.completion.logprobs,
+                        echo: config.completion.echo,
+                        stop: config.completion.stop,
+                        presence_penalty: config.completion.presence_penalty,
+                        frequency_penalty: config.completion.frequency_penalty,
+                        best_of: config.completion.best_of,
+                        user: config.completion.user,
                     });
 
                     const response = data.choices[0].text?.trim() || '';
@@ -137,10 +148,15 @@ const AskQueryButton: React.FC<AskQueryButtonProps> = ({ model, text, onComplete
 
         setSubmitting(true);
 
-        openAiTest().finally(() => {
+        try {
+            openAiTest().finally(() => {
+                setSubmitting(false);
+            });
+        } catch (error) {
+            console.log(error);
             setSubmitting(false);
-        });
-    }, [model, onComplete, settings.type, text]);
+        }
+    }, [model, onComplete, settings, config, text]);
 
     return (
         <CustomButton
