@@ -34,15 +34,17 @@ export default function CodePage() {
                         <div className="my-2">
                             <CommandsDropDown options={CODE_GPT_OPTIONS} />
                         </div>
-                        <div className="my-2">
-                            <Input
-                                value={settings.subCommand}
-                                label="Sub Command"
-                                onChange={event => {
-                                    updateSettings({ ...settings, subCommand: event.target.value });
-                                }}
-                            />
-                        </div>
+                        {settings.command === CODE_GPT_OPTIONS[8].value && (
+                            <div className="my-2">
+                                <Input
+                                    value={settings.subCommand}
+                                    label="Convert To"
+                                    onChange={event => {
+                                        updateSettings({ ...settings, subCommand: event.target.value });
+                                    }}
+                                />
+                            </div>
+                        )}
                     </div>
                 </div>
                 <div className="flex sm:flex-row flex-col">

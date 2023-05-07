@@ -134,6 +134,7 @@ export const CUSTOM_GPT_MODELS: string[] = [
 
 export const DEFAULT_MODEL: string = CUSTOM_GPT_MODELS[0];
 export const DEFAULT_API_TYPE: string = GPT_API_TYPES[0].value;
+export const DEFAULT_GPT_OPTION: string = ADVANCED_GPT_OPTIONS[0].value;
 
 export const GET_GPT_INPUT = (command: string, subCommand: string, text: string): string => {
     return command ? `${command} ${subCommand || ''} <|endofprompt|>  \n\n  ${text}` : `${text}`;

@@ -34,15 +34,17 @@ export default function BasicPage() {
                         <div className="my-2">
                             <CommandsDropDown options={BASIC_GPT_OPTIONS} />
                         </div>
-                        <div className="my-2">
-                            <Input
-                                value={settings.subCommand}
-                                label="Sub Command"
-                                onChange={event => {
-                                    updateSettings({ ...settings, subCommand: event.target.value });
-                                }}
-                            />
-                        </div>
+                        {settings.command === BASIC_GPT_OPTIONS[1].value && (
+                            <div className="my-2">
+                                <Input
+                                    value={settings.subCommand}
+                                    label="Translate To"
+                                    onChange={event => {
+                                        updateSettings({ ...settings, subCommand: event.target.value });
+                                    }}
+                                />
+                            </div>
+                        )}
                         <div>
                             <CopyButton text={response} />
                         </div>
