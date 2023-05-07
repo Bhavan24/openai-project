@@ -1,8 +1,7 @@
-import { GPT_API_TYPES } from '@/constants';
 import { SettingsContext } from '@/contexts';
 import { Button, Dialog, DialogBody, DialogFooter, DialogHeader } from '@material-tailwind/react';
-import React, { useCallback, useContext } from 'react';
-import { ModelsDropDown, TypesDropDown } from '../dropdown';
+import React, { useContext } from 'react';
+import { ModelsDropDown } from '../dropdown';
 import { CompletionForm } from '../form';
 
 interface SettingsDialogProps {
@@ -11,22 +10,7 @@ interface SettingsDialogProps {
 }
 
 const SettingsDialog: React.FC<SettingsDialogProps> = ({ open, handleOpen }) => {
-    const { settings, resetSettings } = useContext(SettingsContext);
-
-    const getCurrentContent = useCallback(() => {
-        switch (settings.type) {
-            case GPT_API_TYPES[0].value: {
-                return (
-                    <div className="my-1">
-                        <CompletionForm />
-                    </div>
-                );
-            }
-            default: {
-                return <></>;
-            }
-        }
-    }, [settings]);
+    const { resetSettings } = useContext(SettingsContext);
 
     return (
         <Dialog
@@ -45,10 +29,10 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({ open, handleOpen }) => 
                     <div className="my-1">
                         <ModelsDropDown />
                     </div>
+
                     <div className="my-1">
-                        <TypesDropDown />
+                        <CompletionForm />
                     </div>
-                    {getCurrentContent()}
                 </form>
             </DialogBody>
             <DialogFooter className="gap-5">

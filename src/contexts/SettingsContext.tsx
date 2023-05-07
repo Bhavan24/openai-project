@@ -1,4 +1,4 @@
-import { DEFAULT_MODEL, DEFAULT_API_TYPE } from '@/constants';
+import { DEFAULT_MODEL } from '@/constants';
 import React, { createContext, ReactNode, useState } from 'react';
 
 // Define the type for your settings
@@ -6,7 +6,6 @@ interface Settings {
     model: string;
     command: string;
     subCommand?: string;
-    type?: string;
 }
 
 interface SettingsProviderProps {
@@ -18,7 +17,6 @@ const initialSettings: Settings = {
     model: DEFAULT_MODEL,
     command: '',
     subCommand: '',
-    type: DEFAULT_API_TYPE,
 };
 
 // Create the context

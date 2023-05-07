@@ -1,19 +1,45 @@
-import { AskQueryButton, ClearButton, CommandsDropDown, Editor, SettingsButton, SettingsDialog } from '@/components';
-import { ADVANCED_GPT_OPTIONS, GET_GPT_INPUT } from '@/constants';
+import { ClearButton, CommandsDropDown, CustomButton, Editor, SettingsButton, SettingsDialog } from '@/components';
+import { OpenAIService } from '@/config';
+import { ADVANCED_GPT_OPTIONS } from '@/constants';
 import { SettingsContext } from '@/contexts';
 import { Input } from '@material-tailwind/react';
-import { useContext, useState } from 'react';
+import { useCallback, useContext, useState } from 'react';
+import { AiOutlineSend } from 'react-icons/ai';
 
 const CompletionComponent = () => {
     const { settings, updateSettings } = useContext(SettingsContext);
 
+    const [submitting, setSubmitting] = useState<boolean>(false);
     const [text, setText] = useState<string>('');
     const [response, setReponse] = useState('');
     const [open, setOpen] = useState(false);
 
-    const onComplete = (response: string) => {
-        setReponse(response);
-    };
+    const searchGpt = useCallback(() => {
+        const openAiTest = async () => {
+            const { data } = await OpenAIService.createCompletion({
+                model: settings.model,
+                prompt: text.trim(),
+                max_tokens: 2048,
+                n: 1,
+                stop: '',
+                temperature: 0.5,
+            });
+
+            const response = data.choices[0].text?.trim() || '';
+            setReponse(response);
+        };
+
+        setSubmitting(true);
+
+        try {
+            openAiTest().finally(() => {
+                setSubmitting(false);
+            });
+        } catch (error) {
+            console.log(error);
+            setSubmitting(false);
+        }
+    }, [settings, text]);
 
     const onClear = () => {
         setText('');
@@ -27,10 +53,14 @@ const CompletionComponent = () => {
             <div className="text-white">
                 <div className="flex flex-row justify-between mx-4 gap-5">
                     <div>
-                        <AskQueryButton
-                            model={settings.model}
-                            text={GET_GPT_INPUT(settings.command, settings.subCommand || '', text)}
-                            onComplete={onComplete}
+                        <CustomButton
+                            loading={submitting}
+                            disabled={submitting}
+                            variant="gradient"
+                            text={'Ask Query'}
+                            icon={<AiOutlineSend />}
+                            onClick={searchGpt}
+                            className={'m-2'}
                         />
                         <ClearButton onClear={onClear} />
                         <SettingsButton onSettingsClick={handleOpen} />
