@@ -1,4 +1,14 @@
 import {
+    AudioComponent,
+    ChatComponent,
+    CompletionComponent,
+    EditsComponent,
+    EmbeddingsComponent,
+    FilesComponent,
+    FineTunesComponent,
+    ImagesComponent,
+} from '@/components';
+import {
     ChatBubbleBottomCenterTextIcon,
     DocumentTextIcon,
     FilmIcon,
@@ -10,16 +20,6 @@ import {
 } from '@heroicons/react/24/solid';
 import { Tab, TabPanel, Tabs, TabsBody, TabsHeader } from '@material-tailwind/react';
 import React from 'react';
-import {
-    AudioComponent,
-    ChatComponent,
-    CompletionComponent,
-    EditsComponent,
-    EmbeddingsComponent,
-    FilesComponent,
-    FineTunesComponent,
-    ImagesComponent,
-} from './components';
 
 export default function AdvancedPage() {
     const data = [
