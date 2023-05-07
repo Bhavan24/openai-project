@@ -29,36 +29,40 @@ const AskQueryButton: React.FC<AskQueryButtonProps> = ({ model, text, onComplete
                         temperature: config.completion.temperature,
                         top_p: config.completion.top_p,
                         n: config.completion.n,
-                        stream: config.completion.stream,
-                        logprobs: config.completion.logprobs,
-                        echo: config.completion.echo,
-                        stop: config.completion.stop,
-                        presence_penalty: config.completion.presence_penalty,
-                        frequency_penalty: config.completion.frequency_penalty,
-                        best_of: config.completion.best_of,
-                        user: config.completion.user,
+                        // stream: config.completion.stream,
+                        // logprobs: config.completion.logprobs,
+                        // echo: config.completion.echo,
+                        // stop: config.completion.stop,
+                        // presence_penalty: config.completion.presence_penalty,
+                        // frequency_penalty: config.completion.frequency_penalty,
+                        // best_of: config.completion.best_of,
+                        // user: config.completion.user,
                     });
 
                     const response = data.choices[0].text?.trim() || '';
                     onComplete(response);
+                    break;
                 }
                 case GPT_API_TYPES[1].value: {
                     await OpenAIService.createChatCompletion({
                         model: model, // 'gpt-3.5-turbo'
                         messages: [{ role: 'user', content: text.trim() }],
                     });
+                    break;
                 }
                 case GPT_API_TYPES[2].value: {
                     await OpenAIService.createEdit({
                         model: '',
                         instruction: '',
                     });
+                    break;
                 }
                 case GPT_API_TYPES[3].value: {
                     await OpenAIService.createEmbedding({
                         model: '',
                         input: '',
                     });
+                    break;
                 }
                 case GPT_API_TYPES[4].value: {
                     // await OpenAIService.createFile({});
@@ -70,14 +74,17 @@ const AskQueryButton: React.FC<AskQueryButtonProps> = ({ model, text, onComplete
 
                     const response = data.data[0].url?.trim() || '';
                     onComplete(response);
+                    break;
                 }
                 case GPT_API_TYPES[6].value: {
                     // await OpenAIService.createFineTune({
                     //     training_file: ''
                     // });
+                    break;
                 }
                 case GPT_API_TYPES[7].value: {
                     // await OpenAIService.createImageEdit();
+                    break;
                 }
                 case GPT_API_TYPES[8].value: {
                     // await OpenAIService.createImageVariation({
@@ -100,48 +107,62 @@ const AskQueryButton: React.FC<AskQueryButtonProps> = ({ model, text, onComplete
                     //     },
                     //     prototype: undefined
                     // });
+                    break;
                 }
                 case GPT_API_TYPES[9].value: {
                     // await OpenAIService.createModeration({
                     //     input: ''
                     // });
+                    break;
                 }
                 case GPT_API_TYPES[10].value: {
                     // await OpenAIService.createTranscription({
                     // });
+                    break;
                 }
                 case GPT_API_TYPES[11].value: {
                     // await OpenAIService.createTranslation();
+                    break;
                 }
                 case GPT_API_TYPES[12].value: {
                     // await OpenAIService.deleteFile();
+                    break;
                 }
                 case GPT_API_TYPES[13].value: {
                     // await OpenAIService.deleteModel();
+                    break;
                 }
                 case GPT_API_TYPES[14].value: {
                     // await OpenAIService.downloadFile();
+                    break;
                 }
                 case GPT_API_TYPES[15].value: {
                     // await OpenAIService.listFiles();
+                    break;
                 }
                 case GPT_API_TYPES[16].value: {
                     // await OpenAIService.listFineTuneEvents();
+                    break;
                 }
                 case GPT_API_TYPES[17].value: {
                     // await OpenAIService.listFineTunes();
+                    break;
                 }
                 case GPT_API_TYPES[18].value: {
                     // await OpenAIService.listModels();
+                    break;
                 }
                 case GPT_API_TYPES[19].value: {
                     // await OpenAIService.retrieveFile();
+                    break;
                 }
                 case GPT_API_TYPES[20].value: {
                     // await OpenAIService.retrieveFineTune();
+                    break;
                 }
                 case GPT_API_TYPES[21].value: {
                     // await OpenAIService.retrieveModel();
+                    break;
                 }
             }
         };
