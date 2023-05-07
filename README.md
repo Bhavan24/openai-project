@@ -17,7 +17,7 @@ To learn more about Next.js, take a look at the following resources:
 -   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 -   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome! 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Firebase
 
@@ -39,3 +39,7 @@ firebase deploy --only hosting:bhavan-gpt
 https://bhavan-gpt.web.app/
 
 https://github.dev/suren-atoyan/monaco-react
+
+https://tailwindcomponents.com/cheatsheet/
+
+https://www.material-tailwind.com/docs/react/installation
