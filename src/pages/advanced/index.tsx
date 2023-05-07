@@ -1,17 +1,25 @@
 import {
     ChatBubbleBottomCenterTextIcon,
+    DocumentTextIcon,
+    FilmIcon,
+    InformationCircleIcon,
+    MicrophoneIcon,
     PencilSquareIcon,
     PhotoIcon,
     QuestionMarkCircleIcon,
-    UserCircleIcon,
-    FilmIcon,
-    MicrophoneIcon,
-    DocumentTextIcon,
-    InformationCircleIcon,
 } from '@heroicons/react/24/solid';
 import { Tab, TabPanel, Tabs, TabsBody, TabsHeader } from '@material-tailwind/react';
 import React from 'react';
-import { CompletionComponent } from './components';
+import {
+    AudioComponent,
+    ChatComponent,
+    CompletionComponent,
+    EditsComponent,
+    EmbeddingsComponent,
+    FilesComponent,
+    FineTunesComponent,
+    ImagesComponent,
+} from './components';
 
 export default function AdvancedPage() {
     const data = [
@@ -25,47 +33,47 @@ export default function AdvancedPage() {
             label: 'Chat',
             value: 'chat',
             icon: ChatBubbleBottomCenterTextIcon,
-            desc: <CompletionComponent />,
+            desc: <ChatComponent />,
         },
         {
             label: 'Edits',
             value: 'edits',
             icon: PencilSquareIcon,
-            desc: <CompletionComponent />,
+            desc: <EditsComponent />,
         },
         {
             label: 'Images',
             value: 'images',
             icon: PhotoIcon,
-            desc: <CompletionComponent />,
+            desc: <ImagesComponent />,
         },
         {
             label: 'Embeddings',
             value: 'embeddings',
             icon: FilmIcon,
-            desc: <CompletionComponent />,
+            desc: <EmbeddingsComponent />,
         },
         {
             label: 'Audio',
             value: 'audio',
             icon: MicrophoneIcon,
-            desc: <CompletionComponent />,
+            desc: <AudioComponent />,
         },
         {
             label: 'Files',
             value: 'files',
             icon: DocumentTextIcon,
-            desc: <CompletionComponent />,
+            desc: <FilesComponent />,
         },
         {
             label: 'Fine-tunes',
             value: 'fine-tunes',
             icon: InformationCircleIcon,
-            desc: <CompletionComponent />,
+            desc: <FineTunesComponent />,
         },
     ];
     return (
-        <Tabs value="dashboard" orientation="vertical">
+        <Tabs value="completions" orientation="vertical">
             <TabsHeader
                 className="w-[20em] bg-transparent"
                 indicatorProps={{
