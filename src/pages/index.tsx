@@ -1,9 +1,13 @@
+import { SettingsContext } from '@/contexts';
 import { Tab, TabPanel, Tabs, TabsBody, TabsHeader } from '@material-tailwind/react';
+import { useContext } from 'react';
 import AdvancedPage from './advanced';
 import BasicPage from './basic';
 import CodePage from './code';
 
 export default function Dashboard() {
+    const { resetSettings } = useContext(SettingsContext);
+
     const data = [
         {
             label: 'Basic',
@@ -32,7 +36,14 @@ export default function Dashboard() {
                     }}
                 >
                     {data.map(({ label, value }) => (
-                        <Tab key={value} value={value} className="text-white">
+                        <Tab
+                            key={value}
+                            value={value}
+                            className="text-white"
+                            onClick={() => {
+                                resetSettings();
+                            }}
+                        >
                             {label}
                         </Tab>
                     ))}

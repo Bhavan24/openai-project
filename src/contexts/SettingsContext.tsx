@@ -25,9 +25,11 @@ const initialSettings: Settings = {
 export const SettingsContext = createContext<{
     settings: Settings;
     updateSettings: (newSettings: Settings) => void;
+    resetSettings: () => void;
 }>({
     settings: initialSettings,
     updateSettings: () => {},
+    resetSettings: () => {},
 });
 
 // Create a provider component to wrap your app
@@ -39,5 +41,13 @@ export const SettingsProvider: React.FC<SettingsProviderProps> = ({ children }) 
         setSettings(newSettings);
     };
 
-    return <SettingsContext.Provider value={{ settings, updateSettings }}>{children}</SettingsContext.Provider>;
+    const resetSettings = () => {
+        setSettings(initialSettings);
+    };
+
+    return (
+        <SettingsContext.Provider value={{ settings, updateSettings, resetSettings }}>
+            {children}
+        </SettingsContext.Provider>
+    );
 };
