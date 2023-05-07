@@ -1,15 +1,14 @@
-import { AskQueryButton, ClearButton, CommandsDropDown, Editor, SettingsButton, SettingsDialog } from '@/components';
-import { ADVANCED_GPT_OPTIONS, GET_GPT_INPUT } from '@/constants';
+import { AskQueryButton, ClearButton, CommandsDropDown, Editor } from '@/components';
+import { CODE_GPT_OPTIONS, DEFAULT_MODEL, GET_GPT_INPUT } from '@/constants';
 import { SettingsContext } from '@/contexts';
 import { Input } from '@material-tailwind/react';
 import { useContext, useState } from 'react';
 
-export default function AdvancedPage() {
+export default function CodePage() {
     const { settings, updateSettings } = useContext(SettingsContext);
 
-    const [text, setText] = useState<string>('');
     const [response, setReponse] = useState('');
-    const [open, setOpen] = useState(false);
+    const [text, setText] = useState<string>('');
 
     const onComplete = (response: string) => {
         setReponse(response);
@@ -19,25 +18,21 @@ export default function AdvancedPage() {
         setText('');
     };
 
-    const handleOpen = () => setOpen(!open);
-
     return (
         <>
-            <SettingsDialog open={open} handleOpen={handleOpen} />
             <div className="text-white">
                 <div className="flex flex-row justify-between mx-4 gap-5">
                     <div>
                         <AskQueryButton
-                            model={settings.model}
+                            model={DEFAULT_MODEL}
                             text={GET_GPT_INPUT(settings.command, settings.subCommand || '', text)}
                             onComplete={onComplete}
                         />
                         <ClearButton onClear={onClear} />
-                        <SettingsButton onSettingsClick={handleOpen} />
                     </div>
                     <div className="flex sm:flex-row flex-col justify-between mx-4 gap-5 align-middle">
                         <div className="my-2">
-                            <CommandsDropDown options={ADVANCED_GPT_OPTIONS} />
+                            <CommandsDropDown options={CODE_GPT_OPTIONS} />
                         </div>
                         <div className="my-2">
                             <Input

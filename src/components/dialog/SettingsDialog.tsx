@@ -1,5 +1,5 @@
 import { DEFAULT_MODEL } from '@/constants';
-import { SettingsContext } from '@/context';
+import { SettingsContext } from '@/contexts';
 import { Button, Dialog, DialogBody, DialogFooter, DialogHeader } from '@material-tailwind/react';
 import React, { useContext } from 'react';
 import { ModelsDropDown, TypesDropDown } from '../dropdown';

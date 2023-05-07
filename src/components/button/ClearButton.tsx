@@ -7,7 +7,6 @@ interface ClearButtonProps {
 }
 
 const ClearButton: React.FC<ClearButtonProps> = ({ onClear }) => {
-
     return (
         <CustomButton
             variant="outlined"

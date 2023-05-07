@@ -1,11 +1,13 @@
-import { CUSTOM_GPT_OPTIONS } from '@/constants';
-import { SettingsContext } from '@/context';
+import { SettingsContext } from '@/contexts';
+import { DropDownOption } from '@/types';
 import { Option, Select } from '@material-tailwind/react';
 import React, { useContext } from 'react';
 
-interface CommandsDropDownProps {}
+interface CommandsDropDownProps {
+    options: DropDownOption[];
+}
 
-const CommandsDropDown: React.FC<CommandsDropDownProps> = () => {
+const CommandsDropDown: React.FC<CommandsDropDownProps> = ({ options }) => {
     const { settings, updateSettings } = useContext(SettingsContext);
 
     return (
@@ -22,7 +24,7 @@ const CommandsDropDown: React.FC<CommandsDropDownProps> = () => {
                 });
             }}
         >
-            {CUSTOM_GPT_OPTIONS.map((option, i) => (
+            {options.map((option, i) => (
                 <Option key={i} value={option.value}>
                     {option.label}
                 </Option>

@@ -1,18 +1,24 @@
 import { Tab, TabPanel, Tabs, TabsBody, TabsHeader } from '@material-tailwind/react';
 import AdvancedPage from './advanced';
 import BasicPage from './basic';
+import CodePage from './code';
 
 export default function Dashboard() {
     const data = [
         {
             label: 'Basic',
             value: 'basic',
-            desc: <BasicPage />,
+            component: <BasicPage />,
+        },
+        {
+            label: 'Code',
+            value: 'code',
+            component: <CodePage />,
         },
         {
             label: 'Pro',
             value: 'advanced',
-            desc: <AdvancedPage />,
+            component: <AdvancedPage />,
         },
     ];
 
@@ -38,9 +44,9 @@ export default function Dashboard() {
                         unmount: { y: 250 },
                     }}
                 >
-                    {data.map(({ value, desc }) => (
+                    {data.map(({ value, component }) => (
                         <TabPanel key={value} value={value} className="px-0">
-                            {desc}
+                            {component}
                         </TabPanel>
                     ))}
                 </TabsBody>

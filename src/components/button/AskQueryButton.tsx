@@ -1,6 +1,6 @@
 import { OpenAIService } from '@/config';
 import { GPT_API_TYPES } from '@/constants';
-import { SettingsContext } from '@/context';
+import { SettingsContext } from '@/contexts';
 import React, { useCallback, useContext, useState } from 'react';
 import { AiOutlineSend } from 'react-icons/ai';
 import { CustomButton } from '../custom';

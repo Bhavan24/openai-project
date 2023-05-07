@@ -1,22 +1,46 @@
-export const CUSTOM_GPT_OPTIONS = [
+import { DropDownOption } from '@/types';
+
+export const BASIC_GPT_OPTIONS: DropDownOption[] = [
     { value: '', label: 'Default' },
-    { value: 'add comments to the below code.', label: 'Add Code Comments' },
-    { value: 'refactor the below code.', label: 'Refactor Code' },
-    { value: 'explain the below code.', label: 'Explain Code' },
-    { value: 'find the bugs in the below code.', label: 'Find Code Bugs' },
-    { value: 'provide documentation for the below code.', label: 'Document Code' },
-    { value: 'compile and run the below code.', label: 'Compile & Run Code' },
-    { value: 'add unit test for the below code.', label: 'Add Unit Test' },
-    { value: 'convert the below code to ', label: 'Convert Code' },
-    { value: 'translate the below sentance to ', label: 'Translate' },
-    { value: 'what is the meaning of', label: 'Find Meaning' },
-    { value: 'paraphrase the below paragraph.', label: 'Paraphrase' },
-    { value: 'simplify the below paragraph.', label: 'Simplify Complex Paragraph' },
-    { value: 'write an essay on the below topic.', label: 'Write an essay' },
-    { value: 'write an article on the below topic.', label: 'Write an article' },
+    { value: 'Translate the below sentance to ', label: 'Translate' },
+    { value: 'What is the meaning of', label: 'Find Meaning' },
+    { value: 'Paraphrase the below paragraph.', label: 'Paraphrase' },
+    { value: 'Simplify the below paragraph.', label: 'Simplify Complex Paragraph' },
+    { value: 'Write an essay on the below topic.', label: 'Write an essay' },
+    { value: 'Write an article on the below topic.', label: 'Write an article' },
 ];
 
-export const GPT_API_TYPES = [
+export const CODE_GPT_OPTIONS: DropDownOption[] = [
+    { value: '', label: 'Default' },
+    { value: 'Add comments to the below code.', label: 'Add Code Comments' },
+    { value: 'Refactor the below code.', label: 'Refactor Code' },
+    { value: 'Explain the below code.', label: 'Explain Code' },
+    { value: 'Find the bugs in the below code.', label: 'Find Code Bugs' },
+    { value: 'Provide documentation for the below code.', label: 'Document Code' },
+    { value: 'Compile and run the below code.', label: 'Compile & Run Code' },
+    { value: 'Add unit test for the below code.', label: 'Add Unit Test' },
+    { value: 'Convert the below code to ', label: 'Convert Code' },
+];
+
+export const ADVANCED_GPT_OPTIONS: DropDownOption[] = [
+    { value: '', label: 'Default' },
+    { value: 'Translate the below sentance to ', label: 'Translate' },
+    { value: 'What is the meaning of', label: 'Find Meaning' },
+    { value: 'Paraphrase the below paragraph.', label: 'Paraphrase' },
+    { value: 'Simplify the below paragraph.', label: 'Simplify Complex Paragraph' },
+    { value: 'Write an essay on the below topic.', label: 'Write an essay' },
+    { value: 'Write an article on the below topic.', label: 'Write an article' },
+    { value: 'Add comments to the below code.', label: 'Add Code Comments' },
+    { value: 'Refactor the below code.', label: 'Refactor Code' },
+    { value: 'Explain the below code.', label: 'Explain Code' },
+    { value: 'Find the bugs in the below code.', label: 'Find Code Bugs' },
+    { value: 'Provide documentation for the below code.', label: 'Document Code' },
+    { value: 'Compile and run the below code.', label: 'Compile & Run Code' },
+    { value: 'Add unit test for the below code.', label: 'Add Unit Test' },
+    { value: 'Convert the below code to ', label: 'Convert Code' },
+];
+
+export const GPT_API_TYPES: DropDownOption[] = [
     { value: 'create_completion', label: 'Create completion' },
     { value: 'create_chat_completion', label: 'Create chat completion' },
     { value: 'create_edit', label: 'Create edit' },
@@ -41,7 +65,7 @@ export const GPT_API_TYPES = [
     { value: 'retrieve_model', label: 'Retrieve model' },
 ];
 
-export const CUSTOM_GPT_MODELS = [
+export const CUSTOM_GPT_MODELS: string[] = [
     'text-davinci-003',
     'babbage',
     'davinci',
@@ -108,9 +132,9 @@ export const CUSTOM_GPT_MODELS = [
     'text-babbage:001',
 ];
 
-export const DEFAULT_MODEL = CUSTOM_GPT_MODELS[0];
-export const DEFAULT_API_TYPE = GPT_API_TYPES[0].value;
+export const DEFAULT_MODEL: string = CUSTOM_GPT_MODELS[0];
+export const DEFAULT_API_TYPE: string = GPT_API_TYPES[0].value;
 
-export const getFinalCommand = (command: string, subCommand: string, text: string): string => {
+export const GET_GPT_INPUT = (command: string, subCommand: string, text: string): string => {
     return command ? `${command} ${subCommand || ''} <|endofprompt|>  \n\n  ${text}` : `${text}`;
 };

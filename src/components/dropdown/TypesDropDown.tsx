@@ -1,5 +1,5 @@
 import { GPT_API_TYPES } from '@/constants';
-import { SettingsContext } from '@/context';
+import { SettingsContext } from '@/contexts';
 import { Option, Select } from '@material-tailwind/react';
 import React, { useContext } from 'react';
 

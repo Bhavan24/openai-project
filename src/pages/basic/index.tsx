@@ -1,6 +1,6 @@
 import { AskQueryButton, ClearButton, CommandsDropDown, CopyButton, CustomTextArea } from '@/components';
-import { DEFAULT_MODEL, getFinalCommand } from '@/constants';
-import { SettingsContext } from '@/context';
+import { BASIC_GPT_OPTIONS, DEFAULT_MODEL, GET_GPT_INPUT } from '@/constants';
+import { SettingsContext } from '@/contexts';
 import { Input } from '@material-tailwind/react';
 import { useContext, useState } from 'react';
 
@@ -25,14 +25,14 @@ export default function BasicPage() {
                     <div>
                         <AskQueryButton
                             model={DEFAULT_MODEL}
-                            text={getFinalCommand(settings.command, settings.subCommand || '', text)}
+                            text={GET_GPT_INPUT(settings.command, settings.subCommand || '', text)}
                             onComplete={onComplete}
                         />
                         <ClearButton onClear={onClear} />
                     </div>
                     <div className="flex sm:flex-row flex-col justify-between mx-4 gap-5 align-middle">
                         <div className="my-2">
-                            <CommandsDropDown />
+                            <CommandsDropDown options={BASIC_GPT_OPTIONS} />
                         </div>
                         <div className="my-2">
                             <Input
