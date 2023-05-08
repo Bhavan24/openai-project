@@ -69,7 +69,7 @@ const CompletionComponent: React.FC = () => {
                         Completion
                     </Typography>
                     <a
-                        href="https://platform.openai.com/docs/api-reference/completions/create"
+                        href="https://platform.openai.com/docs/api-reference/completions"
                         target="_blank"
                         rel="noreferrer"
                         className="text-gray-500"
@@ -78,12 +78,7 @@ const CompletionComponent: React.FC = () => {
                     </a>
                 </div>
                 <form className="my-2" onSubmit={handleSubmit(onSubmit)}>
-                    <Textarea
-                        label="Prompt"
-                        className="text-white border border-black rounded-none"
-                        rows={5}
-                        {...register('prompt')}
-                    />
+                    <Textarea label="Prompt" className="text-white" rows={5} {...register('prompt')} />
                     <div className="grid grid-cols-3 justify-between gap-5">
                         <Select
                             className="text-white"
@@ -122,12 +117,7 @@ const CompletionComponent: React.FC = () => {
                     </div>
                 </form>
                 <div className="flex flex-col">
-                    <CustomTextArea
-                        text={response}
-                        onChange={(text: string) => {
-                            setReponse(text);
-                        }}
-                    />
+                    <Textarea label="Result" className="text-white" rows={5} />
                 </div>
             </div>
         </>

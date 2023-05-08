@@ -16,7 +16,7 @@ const ChatComponent: React.FC = () => {
                         Chat
                     </Typography>
                     <a
-                        href="https://platform.openai.com/docs/api-reference/chat/create"
+                        href="https://platform.openai.com/docs/api-reference/chat"
                         target="_blank"
                         rel="noreferrer"
                         className="text-gray-500"

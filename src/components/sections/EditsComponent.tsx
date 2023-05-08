@@ -31,7 +31,7 @@ const EditsComponent: React.FC = () => {
                         Edits
                     </Typography>
                     <a
-                        href="https://platform.openai.com/docs/api-reference/edits/create"
+                        href="https://platform.openai.com/docs/api-reference/edits"
                         target="_blank"
                         rel="noreferrer"
                         className="text-gray-500"
@@ -40,24 +40,26 @@ const EditsComponent: React.FC = () => {
                     </a>
                 </div>
                 <form className="flex flex-col gap-2" onSubmit={handleSubmit(onSubmit)}>
-                    <Select
-                        className="text-white"
-                        value={watch('model')}
-                        label="Select Model"
-                        onChange={model => {
-                            setValue('model', model!!);
-                        }}
-                    >
-                        <Option key={'text-davinci-edit-001'} value={'text-davinci-edit-001'}>
-                            {'text-davinci-edit-001'}
-                        </Option>
-                        <Option key={'code-davinci-edit-001'} value={'code-davinci-edit-001'}>
-                            {'code-davinci-edit-001'}
-                        </Option>
-                    </Select>
-                    <Input label="temperature" type="number" {...register('temperature')} />
-                    <Input label="top_p" type="number" {...register('top_p')} />
-                    <Input label="n" type="number" {...register('n')} />
+                    <div className="grid grid-cols-2 justify-between gap-2">
+                        <Select
+                            className="text-white"
+                            value={watch('model')}
+                            label="Select Model"
+                            onChange={model => {
+                                setValue('model', model!!);
+                            }}
+                        >
+                            <Option key={'text-davinci-edit-001'} value={'text-davinci-edit-001'}>
+                                {'text-davinci-edit-001'}
+                            </Option>
+                            <Option key={'code-davinci-edit-001'} value={'code-davinci-edit-001'}>
+                                {'code-davinci-edit-001'}
+                            </Option>
+                        </Select>
+                        <Input label="temperature" type="number" {...register('temperature')} />
+                        <Input label="top_p" type="number" {...register('top_p')} />
+                        <Input label="n" type="number" {...register('n')} />
+                    </div>
                     <Textarea placeholder="Input" rows={3} {...register('input')} />
                     <Textarea placeholder="Instruction" rows={3} {...register('instruction')} />
                     <Button type="submit" disabled={submitting} variant={'gradient'} className={'my-2 w-100'}>
