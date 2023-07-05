@@ -1,12 +1,12 @@
 import { CustomTextArea } from '@/components';
 import { OpenAIService } from '@/config';
 import { CUSTOM_GPT_MODELS, DEFAULT_MODEL } from '@/constants';
-import { Button, Checkbox, Input, Option, Select, Spinner, Textarea, Typography } from '@material-tailwind/react';
+import { Textarea, Select, TextInput, Checkbox, Button } from '@mantine/core';
 import React, { useCallback, useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { AiOutlineSend } from 'react-icons/ai';
 
-interface ICompletionFormInput {
+interface ICompletionFormTextInput {
     model: string;
     prompt: string;
     suffix?: string | null;
@@ -28,22 +28,22 @@ const CompletionComponent: React.FC = () => {
     const [response, setReponse] = useState('');
     const [submitting, setSubmitting] = useState<boolean>(false);
 
-    const { register, handleSubmit, setValue, watch, formState } = useForm<ICompletionFormInput>();
+    const { register, handleSubmit, setValue, watch, formState } = useForm<ICompletionFormTextInput>();
 
-    const onSubmit: SubmitHandler<ICompletionFormInput> = data => {
+    const onSubmit: SubmitHandler<ICompletionFormTextInput> = data => {
         console.log(data);
         // searchGpt(data);
     };
 
-    const searchGpt = useCallback((input: ICompletionFormInput) => {
+    const searchGpt = useCallback((TextInput: ICompletionFormTextInput) => {
         const openAiTest = async () => {
             const { data } = await OpenAIService.createCompletion({
-                model: input.model,
-                prompt: input.prompt,
-                max_tokens: input.max_tokens,
-                n: input.n,
-                stop: input.stop,
-                temperature: input.temperature,
+                model: TextInput.model,
+                prompt: TextInput.prompt,
+                max_tokens: TextInput.max_tokens,
+                n: TextInput.n,
+                stop: TextInput.stop,
+                temperature: TextInput.temperature,
             });
 
             setReponse(JSON.stringify(data));
@@ -65,9 +65,7 @@ const CompletionComponent: React.FC = () => {
         <>
             <div className="text-white">
                 <div className="mb-2">
-                    <Typography variant="h5" color="white" className="my-2">
-                        Completion
-                    </Typography>
+                    <h5>Completion</h5>
                     <a
                         href="https://platform.openai.com/docs/api-reference/completions"
                         target="_blank"
@@ -88,31 +86,29 @@ const CompletionComponent: React.FC = () => {
                                 const currentModel = model || DEFAULT_MODEL;
                                 setValue('model', currentModel);
                             }}
+                            data={CUSTOM_GPT_MODELS}
+                        />
+                        <TextInput label="Suffix" type="text" {...register('suffix')} />
+                        <TextInput label="max_tokens" type="number" {...register('max_tokens')} />
+                        <TextInput label="temperature" type="number" {...register('temperature')} />
+                        <TextInput label="top_p" type="number" {...register('top_p')} />
+                        <TextInput label="n" type="number" {...register('n')} />
+                        <TextInput label="logprobs" type="number" {...register('logprobs')} />
+                        <TextInput label="stop" type="text" {...register('stop')} />
+                        <TextInput label="presence_penalty" type="number" {...register('presence_penalty')} />
+                        <TextInput label="frequency_penalty" type="number" {...register('frequency_penalty')} />
+                        <TextInput label="best_of" type="number" {...register('best_of')} />
+                        <TextInput label="user" type="text" {...register('user')} />
+                        <Checkbox label="stream" {...register('stream')} />
+                        <Checkbox label="echo" {...register('echo')} />
+                        <Button
+                            type="submit"
+                            disabled={submitting}
+                            variant={'gradient'}
+                            rightIcon={<AiOutlineSend />}
+                            className={'my-2 w-100'}
                         >
-                            {CUSTOM_GPT_MODELS.map((model, i) => (
-                                <Option key={i} value={model}>
-                                    {model}
-                                </Option>
-                            ))}
-                        </Select>
-                        <Input label="Suffix" type="text" {...register('suffix')} />
-                        <Input label="max_tokens" type="number" {...register('max_tokens')} />
-                        <Input label="temperature" type="number" {...register('temperature')} />
-                        <Input label="top_p" type="number" {...register('top_p')} />
-                        <Input label="n" type="number" {...register('n')} />
-                        <Input label="logprobs" type="number" {...register('logprobs')} />
-                        <Input label="stop" type="text" {...register('stop')} />
-                        <Input label="presence_penalty" type="number" {...register('presence_penalty')} />
-                        <Input label="frequency_penalty" type="number" {...register('frequency_penalty')} />
-                        <Input label="best_of" type="number" {...register('best_of')} />
-                        <Input label="user" type="text" {...register('user')} />
-                        <Checkbox label="stream" type="checkbox" {...register('stream')} />
-                        <Checkbox label="echo" type="checkbox" {...register('echo')} />
-                        <Button type="submit" disabled={submitting} variant={'gradient'} className={'my-2 w-100'}>
-                            <div className="flex gap-2 items-center justify-center">
-                                {submitting && <Spinner />}
-                                Submit {<AiOutlineSend />}
-                            </div>
+                            Submit
                         </Button>
                     </div>
                 </form>

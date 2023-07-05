@@ -1,4 +1,4 @@
-import { Button, Input, Option, Select, Spinner, Textarea, Typography } from '@material-tailwind/react';
+import { Button, Select, Textarea, TextInput } from '@mantine/core';
 import React, { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { AiOutlineSend } from 'react-icons/ai';
@@ -27,9 +27,7 @@ const EditsComponent: React.FC = () => {
         <>
             <div className="text-white">
                 <div className="mb-2">
-                    <Typography variant="h5" color="white" className="my-2">
-                        Edits
-                    </Typography>
+                    <h5>Edits</h5>
                     <a
                         href="https://platform.openai.com/docs/api-reference/edits"
                         target="_blank"
@@ -45,28 +43,28 @@ const EditsComponent: React.FC = () => {
                             className="text-white"
                             value={watch('model')}
                             label="Select Model"
+                            data={[
+                                { value: 'text-davinci-edit-001', label: 'text-davinci-edit-001' },
+                                { value: 'code-davinci-edit-001', label: 'code-davinci-edit-001' },
+                            ]}
                             onChange={model => {
                                 setValue('model', model!!);
                             }}
-                        >
-                            <Option key={'text-davinci-edit-001'} value={'text-davinci-edit-001'}>
-                                {'text-davinci-edit-001'}
-                            </Option>
-                            <Option key={'code-davinci-edit-001'} value={'code-davinci-edit-001'}>
-                                {'code-davinci-edit-001'}
-                            </Option>
-                        </Select>
-                        <Input label="temperature" type="number" {...register('temperature')} />
-                        <Input label="top_p" type="number" {...register('top_p')} />
-                        <Input label="n" type="number" {...register('n')} />
+                        />
+                        <TextInput label="temperature" type="number" {...register('temperature')} />
+                        <TextInput label="top_p" type="number" {...register('top_p')} />
+                        <TextInput label="n" type="number" {...register('n')} />
                     </div>
                     <Textarea placeholder="Input" rows={3} {...register('input')} />
                     <Textarea placeholder="Instruction" rows={3} {...register('instruction')} />
-                    <Button type="submit" disabled={submitting} variant={'gradient'} className={'my-2 w-100'}>
-                        <div className="flex gap-2 items-center justify-center">
-                            {submitting && <Spinner />}
-                            Submit {<AiOutlineSend />}
-                        </div>
+                    <Button
+                        type="submit"
+                        disabled={submitting}
+                        variant={'gradient'}
+                        rightIcon={<AiOutlineSend />}
+                        className={'my-2 w-100'}
+                    >
+                        Submit
                     </Button>
                 </form>
             </div>

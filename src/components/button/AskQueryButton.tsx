@@ -1,7 +1,7 @@
 import { OpenAIService } from '@/config';
+import { Button } from '@mantine/core';
 import React, { useCallback, useState } from 'react';
 import { AiOutlineSend } from 'react-icons/ai';
-import { CustomButton } from '../custom';
 
 interface AskQueryButtonProps {
     model: string;
@@ -40,15 +40,16 @@ const AskQueryButton: React.FC<AskQueryButtonProps> = ({ model, text, onComplete
     }, [model, onComplete, text]);
 
     return (
-        <CustomButton
+        <Button
             loading={submitting}
             disabled={submitting}
             variant="gradient"
-            text={'Ask Query'}
-            icon={<AiOutlineSend />}
+            leftIcon={<AiOutlineSend />}
             onClick={searchGpt}
             className={'m-2'}
-        />
+        >
+            Ask Query
+        </Button>
     );
 };
 

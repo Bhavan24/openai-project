@@ -1,5 +1,5 @@
 import { CUSTOM_GPT_MODELS, DEFAULT_MODEL } from '@/constants';
-import { Button, Input, Option, Select, Spinner, Textarea, Typography } from '@material-tailwind/react';
+import { Button, Select, Textarea, TextInput } from '@mantine/core';
 import React, { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { AiOutlineSend } from 'react-icons/ai';
@@ -23,9 +23,7 @@ const EmbeddingsComponent: React.FC = () => {
     return (
         <div className="text-white">
             <div className="mb-2">
-                <Typography variant="h5" color="white" className="my-2">
-                    Embeddings
-                </Typography>
+                <h5>Embeddings</h5>
                 <a
                     href="https://platform.openai.com/docs/api-reference/embeddings"
                     target="_blank"
@@ -42,25 +40,23 @@ const EmbeddingsComponent: React.FC = () => {
                         className="text-white"
                         value={watch('model')}
                         label="Select Model"
+                        data={CUSTOM_GPT_MODELS}
                         onChange={model => {
                             const currentModel = model || DEFAULT_MODEL;
                             setValue('model', currentModel);
                         }}
-                    >
-                        {CUSTOM_GPT_MODELS.map((model, i) => (
-                            <Option key={i} value={model}>
-                                {model}
-                            </Option>
-                        ))}
-                    </Select>
-                    <Input label="user" {...register('user')} />
+                    />
+                    <TextInput label="user" {...register('user')} />
                 </div>
                 <Textarea label="Result" className="text-white" rows={5} />
-                <Button type="submit" disabled={submitting} variant={'gradient'} className={'my-2 w-100'}>
-                    <div className="flex gap-2 items-center justify-center">
-                        {submitting && <Spinner />}
-                        Submit {<AiOutlineSend />}
-                    </div>
+                <Button
+                    type="submit"
+                    disabled={submitting}
+                    variant={'gradient'}
+                    rightIcon={<AiOutlineSend />}
+                    className={'my-2 w-100'}
+                >
+                    Submit
                 </Button>
             </form>
         </div>

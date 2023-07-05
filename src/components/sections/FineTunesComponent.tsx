@@ -1,13 +1,10 @@
-import { Typography } from '@material-tailwind/react';
 import React from 'react';
 
 const FineTunesComponent: React.FC = () => {
     return (
         <div className="text-white">
             <div className="mb-2">
-                <Typography variant="h5" color="white" className="my-2">
-                    Fine Tunes
-                </Typography>
+                <h5>Fine Tunes</h5>
                 <a
                     href="https://platform.openai.com/docs/api-reference/fine-tunes"
                     target="_blank"

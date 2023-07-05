@@ -1,6 +1,6 @@
+import { Button } from '@mantine/core';
 import React, { MouseEventHandler } from 'react';
 import { AiOutlineSetting } from 'react-icons/ai';
-import { CustomButton } from '../custom';
 
 interface ClearButtonProps {
     onSettingsClick: MouseEventHandler<HTMLButtonElement>;
@@ -8,13 +8,9 @@ interface ClearButtonProps {
 
 const ClearButton: React.FC<ClearButtonProps> = ({ onSettingsClick }) => {
     return (
-        <CustomButton
-            variant="outlined"
-            text={'Settings'}
-            icon={<AiOutlineSetting />}
-            onClick={onSettingsClick}
-            className={'m-2'}
-        />
+        <Button variant="outlined" leftIcon={<AiOutlineSetting />} onClick={onSettingsClick} className={'m-2'}>
+            Settings
+        </Button>
     );
 };
 

@@ -18,7 +18,7 @@ import {
     PhotoIcon,
     QuestionMarkCircleIcon,
 } from '@heroicons/react/24/solid';
-import { Tab, TabPanel, Tabs, TabsBody, TabsHeader } from '@material-tailwind/react';
+import { Tabs } from '@mantine/core';
 import React from 'react';
 
 export default function AdvancedPage() {
@@ -72,30 +72,23 @@ export default function AdvancedPage() {
             desc: <FineTunesComponent />,
         },
     ];
+
     return (
-        <Tabs value="completions" orientation="vertical">
-            <TabsHeader
-                className="w-[20em] bg-transparent"
-                indicatorProps={{
-                    className: 'bg-blue-500/10 shadow-blue text-blue-500',
-                }}
-            >
+        <Tabs defaultValue="completions">
+            <Tabs.List grow>
                 {data.map(({ label, value, icon }) => (
-                    <Tab key={value} value={value} className="place-items-start text-blue-300">
-                        <div className="flex items-center gap-2">
-                            {React.createElement(icon, { className: 'w-5 h-5' })}
-                            {label}
-                        </div>
-                    </Tab>
+                    <Tabs.Tab key={value} value={value}>
+                        {React.createElement(icon, { className: 'w-5 h-5' })}
+                        {label}
+                    </Tabs.Tab>
                 ))}
-            </TabsHeader>
-            <TabsBody>
-                {data.map(({ value, desc }) => (
-                    <TabPanel key={value} value={value} className="py-0">
-                        {desc}
-                    </TabPanel>
-                ))}
-            </TabsBody>
+            </Tabs.List>
+
+            {data.map(({ value, desc }) => (
+                <Tabs.Panel key={value} value={value} className="py-0">
+                    {desc}
+                </Tabs.Panel>
+            ))}
         </Tabs>
     );
 }

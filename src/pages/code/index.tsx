@@ -1,7 +1,7 @@
 import { AskQueryButton, ClearButton, CommandsDropDown, Editor } from '@/components';
 import { CODE_GPT_OPTIONS, DEFAULT_MODEL, GET_GPT_INPUT } from '@/constants';
 import { SettingsContext } from '@/contexts';
-import { Input } from '@material-tailwind/react';
+import { TextInput } from '@mantine/core';
 import { useContext, useState } from 'react';
 
 export default function CodePage() {
@@ -36,7 +36,7 @@ export default function CodePage() {
                         </div>
                         {settings.command === CODE_GPT_OPTIONS[8].value && (
                             <div className="my-2">
-                                <Input
+                                <TextInput
                                     value={settings.subCommand}
                                     label="Convert To"
                                     onChange={event => {

@@ -1,6 +1,6 @@
 import { SettingsContext } from '@/contexts';
 import { DropDownOption } from '@/types';
-import { Option, Select } from '@material-tailwind/react';
+import { Select } from '@mantine/core';
 import React, { useContext } from 'react';
 
 interface CommandsDropDownProps {
@@ -16,6 +16,7 @@ const CommandsDropDown: React.FC<CommandsDropDownProps> = ({ options }) => {
             color="blue"
             className="text-white"
             value={settings.command}
+            data={options}
             label="Select Custom Prompt"
             onChange={(command: any) => {
                 updateSettings({
@@ -23,13 +24,7 @@ const CommandsDropDown: React.FC<CommandsDropDownProps> = ({ options }) => {
                     command: command,
                 });
             }}
-        >
-            {options.map((option, i) => (
-                <Option key={i} value={option.value}>
-                    {option.label}
-                </Option>
-            ))}
-        </Select>
+        />
     );
 };
 

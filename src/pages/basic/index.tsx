@@ -1,8 +1,7 @@
 import { AskQueryButton, ClearButton, CommandsDropDown, CopyButton, CustomTextArea } from '@/components';
 import { BASIC_GPT_OPTIONS, DEFAULT_MODEL, GET_GPT_INPUT } from '@/constants';
 import { SettingsContext } from '@/contexts';
-import { Textarea } from '@mantine/core';
-import { Input } from '@material-tailwind/react';
+import { TextInput } from '@mantine/core';
 import { useContext, useState } from 'react';
 
 export default function BasicPage() {
@@ -37,7 +36,7 @@ export default function BasicPage() {
                         </div>
                         {settings.command === BASIC_GPT_OPTIONS[1].value && (
                             <div className="my-2">
-                                <Input
+                                <TextInput
                                     value={settings.subCommand}
                                     label="Translate To"
                                     onChange={event => {

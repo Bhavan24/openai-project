@@ -1,13 +1,10 @@
-import { Typography } from '@material-tailwind/react';
 import React from 'react';
 
 const AudioComponent: React.FC = () => {
     return (
         <div className="text-white">
             <div className="mb-2">
-                <Typography variant="h5" color="white" className="my-2">
-                    Audio
-                </Typography>
+                <h5>Audio</h5>
                 <a
                     href="https://platform.openai.com/docs/api-reference/audio"
                     target="_blank"

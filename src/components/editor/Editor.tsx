@@ -1,4 +1,4 @@
-import { Option, Select } from '@material-tailwind/react';
+import { Select } from '@mantine/core';
 import MonacoEditor, { useMonaco } from '@monaco-editor/react';
 import { camelCase } from 'lodash';
 import { useCallback, useEffect, useState } from 'react';
@@ -58,16 +58,11 @@ const Editor: React.FC<IEditor> = ({ response, setReponse }) => {
                         className="text-white"
                         value={language}
                         label="Select Language"
+                        data={MONOCO_LANGUAGES}
                         onChange={(lang: any) => {
                             setLanguage(lang);
                         }}
-                    >
-                        {MONOCO_LANGUAGES.map((language, i) => (
-                            <Option key={i} value={language.value}>
-                                {language.label}
-                            </Option>
-                        ))}
-                    </Select>
+                    />
                 </div>
                 {/* <div>
                     <Select
