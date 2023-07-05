@@ -37,7 +37,7 @@ const EmbeddingsComponent: React.FC = () => {
                 <Textarea placeholder="Input" rows={3} {...register('input')} />
                 <div className="grid grid-cols-2 justify-between gap-2">
                     <Select
-                        className="text-white"
+                        searchable
                         value={watch('model')}
                         label="Select Model"
                         data={CUSTOM_GPT_MODELS}

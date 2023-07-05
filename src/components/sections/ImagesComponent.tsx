@@ -41,7 +41,7 @@ const ImagesComponent: React.FC = () => {
                 <Textarea placeholder="Input" rows={3} {...register('prompt')} />
                 <div className="grid grid-cols-2 justify-between gap-2">
                     <Select
-                        className="text-white"
+                        searchable
                         value={watch('size')}
                         label="Select size"
                         data={[

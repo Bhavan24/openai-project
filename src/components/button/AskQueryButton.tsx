@@ -41,9 +41,9 @@ const AskQueryButton: React.FC<AskQueryButtonProps> = ({ model, text, onComplete
 
     return (
         <Button
+            variant="outline"
             loading={submitting}
             disabled={submitting}
-            variant="gradient"
             leftIcon={<AiOutlineSend />}
             onClick={searchGpt}
             className={'m-2'}

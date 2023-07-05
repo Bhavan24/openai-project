@@ -12,7 +12,7 @@ const ClearButton: React.FC<ClearButtonProps> = ({ text }) => {
     }, [text]);
 
     return (
-        <Button variant="outlined" leftIcon={<AiOutlineCopy />} onClick={copyResults} className={'m-2 w-100'}>
+        <Button variant="outline" leftIcon={<AiOutlineCopy />} onClick={copyResults} className={'m-2 w-100'}>
             Copy
         </Button>
     );

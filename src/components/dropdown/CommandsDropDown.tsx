@@ -14,7 +14,8 @@ const CommandsDropDown: React.FC<CommandsDropDownProps> = ({ options }) => {
         <Select
             size="md"
             color="blue"
-            className="text-white"
+            className="w-[500px]"
+            searchable
             value={settings.command}
             data={options}
             label="Select Custom Prompt"

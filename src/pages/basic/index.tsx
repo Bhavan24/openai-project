@@ -20,7 +20,7 @@ export default function BasicPage() {
 
     return (
         <>
-            <div className="text-white">
+            <div>
                 <div className="flex flex-row justify-between mx-4 gap-5">
                     <div>
                         <AskQueryButton
@@ -29,6 +29,7 @@ export default function BasicPage() {
                             onComplete={onComplete}
                         />
                         <ClearButton onClear={onClear} />
+                        <CopyButton text={response} />
                     </div>
                     <div className="flex sm:flex-row flex-col justify-between mx-4 gap-5 align-middle">
                         <div className="my-2">
@@ -45,9 +46,6 @@ export default function BasicPage() {
                                 />
                             </div>
                         )}
-                        <div>
-                            <CopyButton text={response} />
-                        </div>
                     </div>
                 </div>
                 <div className="flex sm:flex-row flex-col">

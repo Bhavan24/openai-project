@@ -79,7 +79,7 @@ const CompletionComponent: React.FC = () => {
                     <Textarea label="Prompt" className="text-white" rows={5} {...register('prompt')} />
                     <div className="grid grid-cols-3 justify-between gap-5">
                         <Select
-                            className="text-white"
+                            searchable
                             value={watch('model')}
                             label="Select Model"
                             onChange={model => {

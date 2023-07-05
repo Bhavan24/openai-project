@@ -8,7 +8,7 @@ interface ClearButtonProps {
 
 const ClearButton: React.FC<ClearButtonProps> = ({ onClear }) => {
     return (
-        <Button variant="outlined" leftIcon={<AiOutlineDelete />} onClick={onClear} className={'m-2'}>
+        <Button variant="outline" leftIcon={<AiOutlineDelete />} onClick={onClear} className={'m-2'}>
             Clear
         </Button>
     );

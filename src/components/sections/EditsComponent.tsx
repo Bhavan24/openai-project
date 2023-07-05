@@ -40,7 +40,7 @@ const EditsComponent: React.FC = () => {
                 <form className="flex flex-col gap-2" onSubmit={handleSubmit(onSubmit)}>
                     <div className="grid grid-cols-2 justify-between gap-2">
                         <Select
-                            className="text-white"
+                            searchable
                             value={watch('model')}
                             label="Select Model"
                             data={[

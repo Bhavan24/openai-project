@@ -74,19 +74,21 @@ export default function AdvancedPage() {
     ];
 
     return (
-        <Tabs defaultValue="completions">
+        <Tabs defaultValue="completions" orientation="vertical">
             <Tabs.List grow>
                 {data.map(({ label, value, icon }) => (
                     <Tabs.Tab key={value} value={value}>
-                        {React.createElement(icon, { className: 'w-5 h-5' })}
-                        {label}
+                        <div className="flex gap-2 align-center">
+                            {React.createElement(icon, { className: 'w-5 h-5' })}
+                            {label}
+                        </div>
                     </Tabs.Tab>
                 ))}
             </Tabs.List>
 
             {data.map(({ value, desc }) => (
                 <Tabs.Panel key={value} value={value} className="py-0">
-                    {desc}
+                    <div className="p-5 overflow-y-scroll h-[85vh]">{desc}</div>
                 </Tabs.Panel>
             ))}
         </Tabs>

@@ -55,7 +55,7 @@ const Editor: React.FC<IEditor> = ({ response, setReponse }) => {
                 <div className="my-2">
                     <Select
                         color="blue"
-                        className="text-white"
+                        searchable
                         value={language}
                         label="Select Language"
                         data={MONOCO_LANGUAGES}
