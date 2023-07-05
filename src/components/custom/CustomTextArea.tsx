@@ -1,5 +1,5 @@
-import { Textarea } from '@material-tailwind/react';
-import React, { useState } from 'react';
+import { Textarea } from '@mantine/core';
+import React from 'react';
 
 interface CustomTextAreaProps {
     text: string;
@@ -10,13 +10,16 @@ interface CustomTextAreaProps {
 const CustomTextArea: React.FC<CustomTextAreaProps> = ({ text, rows = 20, onChange }) => {
     return (
         <Textarea
-            className="text-white border border-black rounded-none"
+            radius="md"
+            size="md"
+            withAsterisk
             value={text}
-            rows={rows}
-            onChange={e => {
-                const text = e.target.value;
+            minRows={rows}
+            onChange={event => {
+                const text = event.currentTarget.value;
                 onChange(text);
             }}
+            className="text-white "
         />
     );
 };

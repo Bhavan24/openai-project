@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 <title>Bhavan GPT</title>
             </Head>
             <SettingsProvider>
-                <Component {...pageProps} className="bg-gray-900" />
+                <Component {...pageProps} />
             </SettingsProvider>
         </>
     );

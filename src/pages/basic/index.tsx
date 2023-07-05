@@ -1,6 +1,7 @@
 import { AskQueryButton, ClearButton, CommandsDropDown, CopyButton, CustomTextArea } from '@/components';
 import { BASIC_GPT_OPTIONS, DEFAULT_MODEL, GET_GPT_INPUT } from '@/constants';
 import { SettingsContext } from '@/contexts';
+import { Textarea } from '@mantine/core';
 import { Input } from '@material-tailwind/react';
 import { useContext, useState } from 'react';
 
