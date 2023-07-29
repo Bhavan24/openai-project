@@ -1,4 +1,4 @@
-import { AskQueryButton, ClearButton, CommandsDropDown, CopyButton, CustomTextArea } from '@/components';
+import { AskQueryButton, ClearButton, CommandsDropDown, CopyButton, CustomTextArea, SpeechButton } from '@/components';
 import { BASIC_GPT_OPTIONS, DEFAULT_MODEL, GET_GPT_INPUT } from '@/constants';
 import { SettingsContext } from '@/contexts';
 import { TextInput } from '@mantine/core';
@@ -22,7 +22,12 @@ export default function BasicPage() {
         <>
             <div>
                 <div className="flex flex-row justify-between mx-4 gap-5">
-                    <div>
+                    <div className="flex flex-row gap-3 items-center">
+                        <SpeechButton
+                            onChange={(text: any) => {
+                                setText(text);
+                            }}
+                        />
                         <AskQueryButton
                             model={DEFAULT_MODEL}
                             text={GET_GPT_INPUT(settings.command, settings.subCommand || '', text)}

@@ -19,11 +19,11 @@ export default function Dashboard() {
             value: 'code',
             component: <CodePage />,
         },
-        {
-            label: 'Pro',
-            value: 'advanced',
-            component: <AdvancedPage />,
-        },
+        // {
+        //     label: 'Pro',
+        //     value: 'advanced',
+        //     component: <AdvancedPage />,
+        // },
     ];
 
     return (
