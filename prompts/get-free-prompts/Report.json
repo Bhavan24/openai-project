@@ -1,0 +1,33 @@
+{
+    "success": true,
+    "prompts": [
+        {
+            "_id": "645f85a80217db55b352eb11",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Introduction Writer",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Content", "Blog", "Report"],
+            "prompt": {
+                "a5c9b73b-2cb5-40d1-a237-06d3aae59770": {
+                    "value": "Act like the top content writer in the world. Write an introduction for my blog topic given below. Start with a strong hook to keep the reader engaged, write the right purpose for reading the blog according to the topic, and add the main points in the introduction if I have given them to you. Keep it short and easy to understand. \n\nTopic Name:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "2a01f24d-0c24-4952-a93e-1fc1458c324a": { "value": "Enter topic name", "type": "text" },
+                "d5b89fd4-c419-4019-a717-29cd98aa3270": {
+                    "value": "Blog main points:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "2f41564b-58ea-4b80-af37-689fa7c45154": {
+                    "value": "Enter blog main points(Introduction)",
+                    "type": "textarea"
+                }
+            },
+            "created_at": "2023-05-13T12:42:16.759Z",
+            "updated_at": "2023-05-13T12:42:16.759Z",
+            "__v": 0
+        }
+    ]
+}

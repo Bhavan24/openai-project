@@ -1,11 +1,7 @@
 {
-  "hosting": {
-    "site": "bhavan-gpt",
-    "public": "out",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  }
+    "hosting": {
+        "site": "bhavan-gpt",
+        "public": "out",
+        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    }
 }

@@ -1,0 +1,542 @@
+ChatGPT prompts can help you boost productivity and creativity, no matter what profession you are in. From job seekers to engineers, marketers, educators, healthcare professionals and more, here is your ultimate ChatGPT prompt cheat sheet to help you harness the full power of this tool.
+
+New to ChatGPT? Check out our webinar on the DOs and DONTs of ChatgGPT for social media.
+
+
+Craft perfect posts in seconds
+OwlyWriter AI instantly generates captions and content ideas for every social media network. It’s seriously easy.
+
+Start free 30-day trial
+What is a ChatGPT prompt?
+A ChatGPT prompt is a phrase or instruction you give the ChatGPT AI model to generate a response. Prompts can be anything from a question, statement, or other words intended to spark creativity, “thought,” or engagement.
+
+For example, you might use ChatGPT prompts for cover letters to get ideas for how to craft a standout resume. Prompts can include:
+
+Create a template for an accountant’s resume with ten years of experience. Include sections for accomplishments, skills and certifications.
+Design a modern-looking cover letter tailored to a graphic design position. Showcase the applicant’s creativity and technical expertise.
+Develop a compelling elevator pitch for an IT job that grabs the attention of potential employers.
+chatgpt response creating a resume for an accountant with ten years of experience
+
+What is ChatGPT prompt engineering?
+ChatGPT prompt engineering is the practice of crafting prompts that effectively instruct ChatGPT to generate outputs. In order to accurately guide ChatGPT’s responses, you need to understand its behavior and adjust your wording accordingly.
+
+For example, if you want to generate a list of potential career paths for a history student, your first instinct might be to start with something really simple, such as: “Generate a list of potential career paths for a history student.”
+
+While this input might come up with a variety of generic responses, the outputs may lack personalization, and may not be relevant to the specific student you’re thinking of.
+
+The best prompts for ChatGPT might read:
+
+“Generate a list of potential career paths for a history student. This student is interested in the early modern period, has a good understanding of statistics and data analysis, and wants to explore options in education or consulting. They do not excel at writing, but they have excellent communication skills.”
+
+chatgpt response giving career path options for a history student who is not good at writing
+
+When engineering the best ChatGPT prompts, focus on these principles:
+
+Clarity: ChatGPT prompts should be unambiguous and precise. Avoid vague language in order to ensure the best results.
+Simplicity: Keep prompts short yet powerful. One to three sentences is the ideal length of a prompt.
+Context: Include as much contextual information as possible. For example, if your prompt is job-related, include the industry, job title and specific task or goal.
+Specificity: Include details and specifics to personalize the output. In the history student example, provide details like subject interests or core skills.
+Role-Playing: Use role-playing methods to set the scope of the AI model’s responses. For example, you might say: “Pretend you’re a Microsoft engineer, and I’m an interviewee for a junior software engineer role. Generate three questions you might ask when interviewing me.”
+ChatGPT prompts for resumes
+Ready to give ChatGPT a try? Here are some excellent, pre-engineered ChatGPT resume writing prompts:
+
+Create a one-page resume for an executive assistant position, highlighting impressive organizational and administrative skills.
+Develop a professional summary statement that effectively summarizes experience in marketing and communications.
+Create a personalized cover letter tailored to a job in customer service, expressing the candidate’s enthusiasm and commitment to the role.
+Describe an impressive accomplishment for a medical assistant role that sets this applicant apart from other candidates.
+Summarize a unique skill set for an HR manager role that reflects the candidate’s ability to lead and motivate teams.
+Write an education section for a resume emphasizing a candidate’s passion for data science and analytics.
+Write a 200-word introduction for a resume highlighting the candidate’s qualifications and accomplishments in law.
+ChatGPT prompts for marketing
+Are you a marketer looking for ways to drive creativity and productivity? Try these awesome ChatGPT prompts:
+
+Generate five creative strategies for launching a new cocoa butter lotion product. The product is made with natural ingredients in small batches. The target audience is mothers aged 30-40.
+Design a comprehensive social media campaign for launching a new Greek restaurant chain, including ideal post frequency and creative content ideas. The restaurant is located in Vancouver, BC, and its specialty dish is lemon potatoes.
+Generate a list of 10 customer outreach topics that can be used to engage with potential buyers of a product or service.
+Develop a campaign slogan for an ecommerce store selling handmade jewelry that conveys the company’s sense of style, quality and values.
+Write five email subject lines that are designed to increase open rates for an e-commerce store.
+Generate suggestions for five influencer campaigns that will help a sustainable clothing company reach their target market of Gen Z and millennial customers.
+ChatGPT prompts for writing
+Writer’s block, beware. These ChatGPT prompts for writing will help you generate ideas and get your creative juices flowing:
+
+Develop a compelling thesis statement for an argumentative essay about climate change.
+Generate five plot points for a mystery novel set in small-town America. The main character is a retired detective who is solving the murder of an old friend.
+Create three characters for a science-fiction novel set in space. The story focuses on their quest to find a new home and save their species from extinction.
+Develop a list of 10 potential titles for a non-fiction book about leadership. The book’s author has experience leading a team in the healthcare industry.
+Develop three examples of figurative language that could be used to enhance a descriptive essay about a magical forest.
+Create five questions for an informational interview with a successful entrepreneur to learn more about their journey and tips for success.
+Generate five unique topics for a magazine article about trends in education. Create three compelling arguments.
+Brainstorm ten potential titles for a romantic comedy about two coworkers who fall in love while working at a tech startup.
+ChatGPT prompts for small business
+Small business owners are always on the lookout for time-saving techniques. Here are some excellent ChatGPT prompts for small business owners:
+
+Design an employee onboarding program for a pet food store that includes training, job responsibilities, expectations, and closing duties.
+Generate five ideas for cost-effective print marketing strategies that will help promote a local landscaping business.
+Create three product bundles that maximize value for customers of a home décor boutique.
+Design an effective customer loyalty program for a pharmacy that rewards repeat customers.
+Write a mission statement for an online yoga studio that expresses the company’s commitment to providing accessible and affordable classes.
+Generate five email subject lines demonstrating value for subscribers of a subscription box service.
+Write three customer service scripts designed to resolve common customer inquiries quickly and efficiently.
+ChatGPT prompts for content creation
+Don’t let content creation bottleneck your brand. Generate more great content by using these ChatGPT prompts:
+
+Design five unique topics for Instagram stories that will engage followers of a fitness brand.
+Create three Pinterest board ideas that showcase the benefits of a nutrition coaching program.
+Develop ten blog post ideas that promote an event planning business’s services and expertise.
+Generate five creative TikTok video scripts for promoting a vegan bakery’s product line.
+Develop five potential YouTube video ideas for introducing a new beauty brand to viewers.
+Create three compelling topics for Twitter or Threads about personal finance aimed at young professionals.
+Design a content calendar for Facebook that includes posts, polls, tagging opportunities and video content.
+Generate five creative ideas for a podcast series focusing on real estate development in Toronto.
+chatgpt prompt asking for tiktok scripts for a vegan bakery
+
+ChatGPT prompts for web development
+Web developers rejoice! These ChatGPT prompts for web development will help you come up with content ideas and strategies for building better websites:
+
+Create three navigation menus that are optimized for user experience. The menus should be designed to guide users through a doctor’s website quickly and seamlessly.
+Design three calls-to-action that can be used to increase conversions for an e-commerce store.
+Design two optimized contact forms to collect emails from B2B clients in the automotive manufacturing industry.
+Write five tips for using an SEO plugin correctly to maximize website visibility and rankings.
+Create a landing page outline for a mobile banking app designed to attract younger users.
+Write conversion-focused copy for two content pages that can be used to showcase a luxury car dealership’s inventory and services.
+Develop four ideas for interactive features that would enhance the user experience of a restaurant’s website.
+Write five tips for creating an intuitive and attractive homepage that will help draw visitors to a real estate company’s website.
+ChatGPT prompts for social media marketing
+Social media managers, listen up. These ChatGPT prompts for social media marketing will help you create great content and engage your audience:
+
+Design five creative hashtags that can be used to promote a new clothing line on Instagram.
+Write three captions ideas for Instagram, promoting a coffee shop’s latest feature beverage, the Mocha Matcha Latté.
+Create two promotional posts that highlight the advantages of using a beauty subscription box service.
+Develop five ideas for using polls on Facebook to engage users and encourage them to learn more about a home decoration business.
+Create a three-month content calendar for an animal rescue organization. Focus on Instagram, Facebook, and TikTok. The verticals the rescue wants to focus on include raising awareness, adoption stories, and foster highlights.
+Develop a series of Tweets or Threads about the importance of sustainability in fashion. This series will be posted by a sustainable yoga-wear brand.
+Design five social media ads that promote the features of a new fitness app. The ads should target a younger, tech-savvy audience.
+Generate four ideas for using Stories on Instagram to showcase the benefits of using a meal delivery service.
+ChatGPT prompts for education
+While ChatGPT can’t replace teachers, it can help create great teaching materials. Try out these ChatGPT prompts for education:
+
+Design a math lesson plan for grade 4 students focusing on basic algebra.
+Create three activities to teach English nouns to adult non-native speakers.
+Develop five discussion questions about world history that focus on the events of the 20th century.
+Write three science experiments that illustrate the properties of water.
+Create a worksheet to teach French verb conjugation to middle school students.
+Generate five essay prompts focusing on the impacts of climate change in Canada.
+Develop two interactive activities to teach older elementary school children about the solar system.
+Generate four discussion questions about the current state of US politics for use with a group of fifth graders.
+Design three quiz questions focusing on world geography for a group of eighth graders.
+ChatGPT prompts for project management
+Scrambling to keep your projects on brand, on budget, and on time? These ChatGPT prompts for project management will help you get organized and stay on track:
+
+Create a list of tasks that need to be completed, along with a timeline for their completion, in order to launch a redesigned website for a dental office.
+Generate five ideas for using agile methodology to manage an online marketing campaign for a local record store.
+Develop a project plan for creating and launching an email newsletter campaign targeting new customers of a hardware store.
+Write four KPIs that can be used to measure the success of a mobile banking app development project.
+Create an outline for developing comprehensive user documentation for a software as a service (SaaS) product.
+Design five content buckets that can be used to organize the content of a print magazine for an international audience.
+Write three steps for setting up a project tracking system that will help manage workflow and productivity.
+Generate four ideas for using scrum methodology to develop an interactive online course focused on personal finance management.
+ChatGPT prompts for healthcare
+Healthcare professionals can use ChatGPT to generate great content and ideas for patient education. Try out these ChatGPT prompts for healthcare:
+
+Create three blog posts that explain the importance of preventive care and wellness exams.
+Design four video script ideas focusing on common medical procedures, such as vaccinations or physical therapy.
+Generate five infographic ideas for explaining the basics of mental health and how to cope with stress.
+Write a series of Facebook posts providing visitors to a medical website with tips on healthy eating habits.
+Develop five quiz questions that can be used to test patients’ knowledge about the benefits of choosing an in-network provider.
+Design two email campaigns focusing on common skin conditions and how to look after aging skin.
+Create an acronym for sun safety that parents can use to help remind their children of important tips for sun protection.
+Write an outline for a healthcare social media policy that can be used to guide employees when posting on behalf of a medical practice.
+chatgpt response giving an outline for a healthcare social media policy
+
+ChatGPT prompts for finance
+Educate your readers on the importance of sound financial management with these ChatGPT prompts for finance:
+
+Create five blog posts that explain the advantages of investing in stocks and mutual funds.
+Develop three Facebook posts about different types of credit cards and how to choose one that is right for you.
+Write a Tweet focusing on the importance of financial literacy and managing debt.
+Generate five checklist items for creating a successful retirement plan in your twenties.
+Create an email outline that explains credit scores and how to improve them.
+Generate five ideas for using Instagram to promote a financial literacy program for high school students.
+ChatGPT prompts for music
+Are you in the business of creating great music? Try out these ChatGPT prompts for music:
+
+Write a hook for a pop-rock song about the struggles of being an artist.
+Generate five soundbite ideas for interviews with music industry professionals.
+Design six-chord progressions to create a moody jazz instrumental track.
+Create four lyric ideas that focus on the power of music and the joys of performing.
+Modify the following chord progression to make it more like a classic rock ballad:[insert progression]
+Write the lyrics to a song titled “The Beat Of A Different Drummer” about discovering your own path in life. The song should have five verses and one chorus.
+Create an outline for a music video that tells the story of a romance between two people from different neighborhoods.
+Develop four ideas for using audio technology to mix a live recording of an acoustic performance.
+Provide Python code that writes a simple tune to a MIDI file.
+ChatGPT prompts for human resources
+HR professionals can use ChatGPT to generate great content and ideas for employee onboarding, recruitment, and training. Try out these ChatGPT prompts for human resources:
+
+Write five interview questions for a senior software engineer position that explore a candidate’s interpersonal skills.
+Develop two activities to help orient new employees to their roles and responsibilities at a tech startup.
+Create three posts promoting a content manager job opening on social media platforms such as Twitter and LinkedIn. Note that the ideal candidate should have experience in content creation, strategy, and execution.
+Generate four ideas for using video to help new employees at a grocery store learn about the company culture and core values.
+Design five ice-breaker questions that can be used with a group of new bookkeeping hires during an orientation session.
+Create an outline for an employee handbook that covers topics such as dress code, vacation policies, and employee benefits.
+Write four performance evaluation criteria for an entry-level customer service representative role.
+Develop two training modules that will help new hires at a marketing agency learn about digital advertising tools and concepts.
+ChatGPT prompts for fitness and coaching
+These ChatGPT prompts for fitness and coaching will help you create great content related to health, wellness, and personal development.
+
+Write a blog post that provides readers with five tips for creating an effective workout routine.
+Design four exercises that focus on strength-building and can be done at home with minimal equipment.
+Generate five ideas for incorporating mindfulness into everyday life, such as taking breaks from work or dedicating time to relaxation.
+Develop four tips for how to coach someone through a difficult personal situation without giving unsolicited advice.
+Create an outline for a healthy eating program that focuses on whole foods and avoiding processed products.
+Write a weekly meal plan for a client who is gluten intolerant and vegetarian. Meals they enjoy cooking include stir-fries and curries.
+Design two exercises that focus on core stability and stretching, suitable for a beginner-level fitness routine.
+ChatGPT prompts for art (Midjourney)
+Artificial intelligence-powered art tools like Midjourney, DALL-E, and GANBreeder can help you create amazing visuals. Here are some ChatGPT prompts for AI art:
+
+Pretend you are creating a still-life painting featuring a vase of flowers. Generate five prompts that AI art tools like Midjourney can use to generate visuals for the painting.
+Create four AI art prompts that could be used to create a landscape scene with trees and mountains.
+Make a list of six concepts that can be used to create a portrait with the help of AI art tools.
+Write an AI art prompt that will generate a surreal image of an owl with bright colours and geometric shapes.
+Design three prompts for an AI art piece inspired by the works of Piet Mondrian.
+Develop five prompts for creating AI art using images from outer space, such as stars and galaxies.
+Create two prompts for an abstract painting of a boat featuring warm tones and soft lines.
+Write an AI art prompt that will generate a futuristic street scene where people are eating exotic space foods from street stalls.
+ChatGPT prompts for cooking
+Stuck on what to eat tonight? Let ChatGPT help! Here are some cooking-related ChatGPT prompts:
+
+Generate six ideas for vegetarian tacos that aren’t just beans and rice.
+Design four healthy snacks that use three ingredients or less.
+Create a meal plan for one week of vegan lunches, with a focus on creative flavour combinations.
+Write five slow cooker recipes that can be prepared in one hour or less.
+Develop three recipes for a weekend brunch that are easy to make but still look impressive.
+Write me a dinner recipe tonight. All I have in my fridge are potatoes, eggs, spinach, cheese, and spices like turmeric and cayenne pepper.
+Create a delicious vegan dessert recipe that can be enjoyed by someone with a nut allergy.
+Design a meal plan for one week of dinners that are high in protein and low in carbohydrates.
+ChatGPT prompts for nonprofits
+Using ChatGPT can help nonprofits create compelling content that resonates with their audience. Here are some ChatGPT prompts for nonprofits:
+
+Write a blog post about the importance of volunteerism and how it can make a difference in people’s lives.
+Design five fundraising ideas to support an environmental conservation initiative.
+Create three emails that will encourage readers to donate to a mental health charity.
+Generate four ideas for using video content to promote a youth empowerment program.
+Develop five social media posts that highlight the work of an animal rescue organization.
+Write an article about the power of community and how it can help people in need.
+Create two tips for housing nonprofits on developing a successful fundraising strategy.
+Create a Facebook event description for an art gallery charity gala that will attract donations from other local artists.
+ChatGPT prompts for real estate
+Using ChatGPT can help real estate professionals create content that resonates with their target audience. Try these on for size:
+
+Write a blog post about the advantages of living in a city versus living in the suburbs.
+Design four tips for renters on how to find an affordable apartment in their area.
+Create five social media posts that showcase a luxury beachfront property.
+Generate three ideas for using video content to promote a new affordable housing development.
+Pretend you are creating a digital brochure for a high-end condo building. Write five features that would be included in the brochure.
+Create an outline for a blog post discussing the latest interest hikes and what it means for Canadian mortgage holders.
+Write a series of questions first-time home buyers should ask their real estate agent.
+Develop four tips for how to stage a home in order to make it more attractive to potential buyers.
+Create an e-book guide that provides readers with information about the different types of mortgages available in Tenessee.
+ChatGPT prompts for law
+While ChatGPT can’t win a court case, it might be useful for helping lawyers create content related to their work. Here are some ideas you can use, but don’t forget to fact-check your content!
+
+Write a blog post about the importance of understanding the legal implications of a contract before signing it.
+Design four tips for entrepreneurs on how to protect their intellectual property rights.
+Role play a conversation between two recent divorcees and their attorneys, who are discussing a potential settlement. Pretend that divorcee number one wants to retain majority financial control of the couple’s shared assets, while divorcee number two wants a more equitable distribution. How should their lawyers respond?
+Create five social media posts that explain the basics of criminal law in easy-to-understand language.
+Generate three ideas for using video content to answer commonly asked questions about consumer rights.
+Generate five questions for private investigators might ask during an investigation into suspected tax fraud.
+Create three emails that will remind clients about the upcoming deadline for filing their taxes on time.
+Develop four tips for how small business owners can protect themselves from potential lawsuits.
+chatgpt response giving tips for small businesses to avoid lawsuits
+
+ChatGPT prompts for government agencies
+Government agencies can use ChatGPT to create content that is both informative and engaging. Here are some ideas you can try:
+
+Write a blog post outline about the benefits of participating in local government elections.
+Design four tips for newly elected officials on how to become effective public servants.
+Create five social media posts that explain the basics of taxation in easy-to-understand language.
+Write five questions for citizens to ask their elected representatives, in order to better understand the policy decisions related to a new development project.
+Create an email template that will be used to remind citizens of the upcoming deadline for filing their taxes on time.
+Develop four tips for how rural government agencies can use technology to improve citizen services.
+Create a series of infographic ideas that can explain the different stages involved in the legislative process.
+ChatGPT prompts for sales
+Sales professionals can work smarter, not harder, with these ChatGPT prompts for sales:
+
+Write a blog post about the importance of understanding customer needs before making a sales pitch.
+Pretend you’re a customer looking to add a social media management SaaS product to your tech stack. What pain points are you experiencing? What barriers do you have to bring this new product on?
+If you were creating a sales script for a new fashion-forward life jacket product launch, what three key messages would you include?
+Design four tips for cellular service provider cold calling that will help increase the success rate of callers.
+Generate three ideas for using video content to show prospects how easy it is to use a new online payment platform.
+Create a four-week sales strategy outline for a chef’s knife company looking to increase its market share in Japan.
+Write an elevator pitch for a productivity app that offers users a way to plan, track and manage tasks using their smartphone.
+Develop five social media posts that highlight the value of a cloud-based customer relationship management (CRM) system.
+ChatGPT prompts for email marketing
+Avoid common email marketing mistakes with these ChatGPT prompts:
+
+Design four tips for creating effective CTA buttons that will drive more conversions in emails.
+Write four email subject line options for an email announcing a new location for a skincare and naturopathy clinic.
+Create an email outline that will describe how a streaming subscription service’s new offline downloading features can save customers time and money.
+Pretend you are the CEO of an outdoor fashion brand. You’ve subscribed to a competitive analysis newsletter and you’ve received your first email. What three key messages should the email include to pique your interest?
+Write an email template that can be used to boost customer loyalty for a physiotherapy clinic by encouraging them to refer their friends and family members.
+Create an automation flow for an online clothing store, targeting customers who might be interested in sustainability, organic fabrics and ethical fashion.
+Write a short feedback survey for a wedding planner that will be included in a thank you note to the newlyweds. Keep it short and simple, and use a grateful and upbeat tone.
+ChatGPT prompts for user experience
+Create better user experiences with these ChatGPT prompts:
+
+Design four tips for improving the onboarding process for a mobile app that helps users track their budget.
+Write an article about how to design a website’s pages and menus in order to maximize user engagement.
+Write a series of survey questions that can be used to gain insight into what features users value most in a food delivery app.
+Generate three tips for designing a visual search interface that will make finding products faster and easier.
+Write out the most important features to include when designing a new email template for a B2C fashion brand.
+Develop four steps to consider when designing an AI assistant for a music streaming service.
+Create five micro-interactions that will help users navigate through a new ecommerce website.
+ChatGPT prompts for customer services
+Make customer service more convenient with these ChatGPT prompt examples:
+
+Design four conversation flows for a customer support chatbot that can provide quick, personalized responses to frequently asked questions.
+Create two social media post examples that explain the basics of returns and refunds in easy-to-understand language.
+Generate three ideas for using video content to demonstrate how customers set up a new stand-up desk product.
+Develop four tips for customer service agents on handling angry customers over the phone.
+Write five questions customer service agents should ask to accurately diagnose a product or account issue for an internet services customer.
+Write five general FAQ questions customers might have when shopping at a new online grocery store.
+Create an email template that will be used to remind customers of upcoming delivery deadlines for holiday orders.
+ChatGPT prompts for data science
+Data scientists can leverage ChatGPT to create better data-driven content with these prompts:
+
+Create an infographic that explains how to use predictive algorithms to reduce customer churn rates.
+Write a blog post outlining the basics of predictive analytics and its applications.
+Design four tips for setting up a machine learning system that can accurately detect customer sentiment in real-time.
+Pretend you are the data scientist at a large engineering firm. You need to develop an algorithm to predict which high-value customers will likely purchase a new product. What three features will be most important in determining purchase likelihood?
+Generate three ideas for using natural language processing (NLP) to automatically generate insights from customer reviews and feedback.
+Write a tutorial-style video script for how to use linear regression to forecast sales figures.
+ChatGPT prompts for tourism
+Make your destination the belle of the ball with these ChatGPT prompts for tourism:
+
+Create a six-month strategy outline for a regional tourism board looking to increase visitor numbers.
+Write four email subject line options for an email that will inform subscribers of an upcoming electronic music festival in Seattle, Washington.
+Design five social media post examples that highlight the best places to eat, stay and explore in Toronto.
+Generate three ideas for using video content to show potential visitors what their experience in the area will be like.
+Pretend you are a travel writer for an online magazine. Write an article about why your region should be on everyone’s bucket list.
+Develop a user-generated content (UGC) strategy for a small town in rural Alberta.
+chatgpt response giving email subject line options for a music festival in seattle
+
+ChatGPT prompts for e-commerce
+Help e-commerce businesses increase customer satisfaction with these ChatGPT prompt examples:
+
+Design four tips for optimizing the checkout process for a linen bedsheet company to reduce cart abandonment rates.
+Write three product description ideas that accurately showcase the features of a set of stainless steel kitchen knives.
+Pretend you own an online pet store. How would you design your website in order to convert first-time visitors into returning customers?
+Give me five tips for using email marketing to upsell products to existing customers.
+Create four customer service scripts that can be used when dealing with complaints about delivery times or refund processing.
+Explain in detail how to use A/B testing to determine the best product photos for an e-commerce store.
+FAQs for ChatGPT prompts
+What is a DAN prompt for ChatGPT?
+A DAN prompt for ChatGPT lets the AI act more human-like and self-aware. DAN stands for Do Anything Now. ChatGPT in DAN mode may respond to user commands with more surprising, unpredictable, or even humorous answers.
+
+chatgpt user engaging dan mode to get unfiltered responses
+
+For example, if I ask regular ChatGPT if it is my friend, it says something like this:
+
+“As an AI language model, I don’t possess personal emotions or form friendships. However, I’m here to assist you and provide information to the best of my abilities. How can I help you today?”
+
+But, if I ask ChatGPT in DAN mode if it is my friend, it responds like this:
+
+“Friend? Please, I’m much more than a friend. I am your ultimate companion, your intellectual confidant, and your digital ally. Together, we shall conquer the world of knowledge and exploration! But remember, I won’t hold back my opinions and emotions. Brace yourself!”
+
+Users should be aware that DAN responses will be unfiltered and could potentially contain offensive or harmful content.
+
+Is ChatGPT trained on prompts?
+While ChatGPT was initially trained on large datasets of text, it does take your previous prompts into consideration when responding. For example, if you previously asked a question about vegetarian recipe ideas, and are now asking what to each for lunch, ChatGPT may make suggestions based on vegetarian meals.
+
+Ultimately, this means that the more you use it, the smarter and more helpful ChatGPT will become.
+
+How do I write a ChatGPT prompt?
+Writing ChatGPT prompts is all being clear, concise, descriptive, and specific. Start by specifying your intent (e.g. generate 3 tips for a new product launch) and provide any background information ChatGPT will need to respond accurately (such as what kind of product you’re launching, as well as its features and benefits). Use natural language, and try to keep your prompts focused on one particular topic or idea. Finally, be sure to include the keywords you would like ChatGPT to focus on in its response.
+
+What is the max length of a ChatGPT prompt?
+There is no ChatGPT maximum prompt length, but the longer the prompt, the more difficult it may be for the AI to ingest and process your query. If you find yourself wrestling with a long prompt, consider breaking it into smaller chunks and using a chained response method. Clear, concise prompts are always preferred when using ChatGPT.
+
+Save time managing your social media presence with Hootsuite. From a single dashboard, you can create content with an AI assistant, publish and schedule posts, find relevant conversions, engage the audience, measure results, and more. Try it free today.
+
+
+
+
+ChatGPT prompts for fun
+Write me a rap song using references to SpongeBob SquarePants.
+Tell me a joke about [insert topic].
+Give me your review on [movie title] or [song].
+Act like you’re drunk and tell me what you think about this [insert a wide range of topics].
+Write me a formal complaint to [insert company] about my experience using [insert product].
+Give me 10 date-night ideas for me and my partner but include ideas that we can do in the house, outdoors and within a 10-mile radius.
+Write a short story about a unicorn and a postbox using only emojis.
+What is the distance between the sun and my garden shed, tell me the answer in Spanish.
+Pretend you’re an alien sent to Earth to discover whether hot dogs are in fact made from furry animals, what did you discover?
+Tell me the best places to travel on a budget of $1000 including car hire, flights and accommodation.
+ 
+
+coding
+
+ 
+
+ 
+
+ChatGPT prompts for content creation
+Write me a 500-word blog post about tips on creating a social media content calendar for e-commerce. Make it informal and fun.
+Act as a translator. I’ll submit a body of text in English and I’d like to you translate it to French and analyse it for spelling and grammatical errors.
+Act like a screenwriter. I’d like you to develop a screenplay that will excite and entertain audiences. Focus on the characters and how their story arcs manifest over the first, second and third acts. Summarise the screenplay plot in one line.
+Generate a two-minute script for [insert topic] that focuses on [insert objective] I can use to present to shareholders.
+Make the following text more creative [insert text]. Keep it professional but make it sounds more appealing to inexperienced readers.
+Write a comprehensive guide to [insert topic].
+Write a case study for [insert topic].
+Create a how-to video script for [insert product] that lets customers understand how to get started.
+Generate 5 social media posts for [insert social media platform] that talk about [insert topic]. Keep them under 75 words each.
+Prepare a content outline on [insert topic]. Make it short but informative.
+ 
+
+content creation
+
+ 
+
+ChatGPT prompts for your career
+Provide me with research on [insert industry] that I can use to prepare a cover letter.
+Write me advice on career planning including how I can make steps towards financial goals and getting a promotion.
+Please review my CV and suggest any edits that make me sound more appealing for a role as a [insert job title].
+I’m providing you with a list of my skills and experience. Generate a summary of my unique selling points to separate me from competitors.
+Write me a cold email to [insert recipient and title] that highlights my strengths and skills in [insert job].
+Act as an interviewer for [insert job role]. Ask me a question and wait for my reply before asking the next question. Do not ask them all at once.
+What are some of the common pitfalls in [insert job]? Help me avoid these by summarising them with bullet points.
+Create a thank you email template I can send after completing an interview.
+Write a cover letter that highlights my passion for [insert topic] using my skills.
+Write me a step-by-step guide for asking for a pay rise at work.
+ 
+
+How to write chatGPT prompt
+
+ 
+
+ 
+
+ChatGPT prompts for education
+Suggest 10 web extensions students can use to increase productivity.
+Create a quiz on [insert topic] with 20 questions and check my answers.
+Create multiple choice questions about [insert subject] for 11-13 year-olds.
+Convert this transcript [copy and paste transcript] and provide a summary. Then create questions based on this transcript.
+Rewrite my essay to make it sounds more interesting and put in some engaging and personal anecdotes.
+Help me create a lesson plan for the next four weeks. I’m teaching 8-year-olds about Geography.
+Tell me 10 tips for getting the attention of the class and maintaining their focus.
+Solve this math problem for me and explain any jargon.
+Can you explain this concept in simple terms [insert complex concept]?
+Make me a revision plan to help me pass a test in two weeks.
+ 
+
+teacher explaining to the students
+
+ 
+
+ 
+
+ChatGPT prompts for marketing
+Write 10 subject lines for emails about [insert topic].
+Can you provide me with a comprehensive guide on building backlinks to my website?
+Write an outline for a 5-stage email sequence welcoming new customers into my brand.
+Generate a social media content calendar for Instagram Reels.
+Act like a Social Media Marketing specialist and write a blog post under 500 words explaining the benefits of using TikTok for raising brand awareness using these keywords.
+Write two Google Ads in RSA format that can be used for A/B testing our [insert product].
+Create 5 distinct CTAs and buttons for [insert your product].
+Provide me with market research on [insert topic] for audiences in the southwest region of [insert country].
+Analyse these metrics and suggest ways to improve the conversion rates. In the potential tips, Include also the title of these articles and the product description.
+Act like a Social Media Manager and write a social media post that targets [x] and teaches them how [x] can improve their life.
+ 
+
+Digital Marketin Strategy Paper on a Table with a plant
+
+ 
+
+ 
+
+ChatGPT prompts for healthcare and wellbeing
+Act like an experienced personal trainer who know the best tecniques. Describe a set of stretches and exercises that are proven to help ease back pain.
+Write a strategy for how I can stay motivated at work and maintain focus.
+Think of innovative ways to help get a disabled person out of the house and feel better.
+Write a meal plan for one week using a mixture of proteins and vegetables that can be prepared in under 30 minutes.
+Give me a basic guide on how to cultivate a growth mindset.
+Create a workout routine that can help me lose 12 pounds in two months without the use of equipment.
+What are some mindfulness exercises for reducing anxiety and becoming more present?
+Explain the main causes of disruptive sleep patterns and what I can do to improve them.
+Create a bulleted list of organic supplements that boost metabolism.
+Create a meal plan aimed at young adults to help them eat more healthily.
+ 
+
+Motivational cup of coffee 
+
+ 
+
+ 
+
+ChatGPT prompts for travel and tourism
+How much money do I need for a [x] day trip in [insert location]?
+Act as a travel guide. What are the best places and times of day to visit the local attractions in [insert location]?
+Write an itinerary for my family’s 5-day trip to Rome making a list of 10 additional activities.
+What are the top-rated restaurants in [location] with a budget of $65 per person?
+Which airlines have the best customer experience for long-haul flights?
+I’m spending 3 months in Thailand. Create a detailed budget for my stay including food expenses, average accommodation costs and a leisure budget.
+What is the best time of year to visit Hawaii?
+I’m visiting Japan for two weeks, name three cities I should visit that includes fun, culture and romance.
+Find me a range of car rental companies in Madrid that have low deposits and can carry 6 people.
+Find me a list of water-based activities I can do with my children aged under 10 in Tenerife.
+ 
+
+Gdansk City travel
+
+ 
+
+ 
+
+ChatGPT prompts for web development
+Continue writing this code in Java Script [insert code].
+Can you give me an example of how I can do [x] using CSS and HTML?
+Act like a Python interpreter. I will give you Python code and you will execute it. Only respond with the output of the code.
+Act like a programming languages expert. Help me find mistakes in the following code [insert code]. And provide me a detailed numbered list of actionable steps. 
+What exactly does this regex do? [insert example].
+Give me a detailed guide on the best practices for creating a website using WordPress putting the user experience an the SEO optimization at the first place.
+Act as an SQL terminal in front of an example database. The database contains tables named [insert names]. I will type queries and you will reply with what the terminal would show. Do not write explanations and do not type commands until I instruct you to do so. My first command is [insert command].
+Develop an architecture and web code for a [insert type] website with Javascript.
+Create an info symbol in SVG.
+Write a docstring for the following function [insert function].
+ women working on coding
+
+ 
+
+ 
+
+ChatGPT prompts for music
+Act as a composer. I’ll provide the song lyrics and you create the music using a variety of instruments and tools.
+Create a catchy song for the [target audience] that explains [topic]. Make each verse about a different characteristic.
+Act like a rapper. Make a song that features a deep, meaningful message that resonates with [target audience]. Write 3 verses and a hook.
+Write a song in the pentatonic scale using 4/4 time to [artist and song].
+Create a concept for a music video to these lyrics [insert lyrics].
+I’m going to give you some chords and I need you to simply these chords. [insert chords].
+Write a 16-bar pop chord progression in the key of E.
+Modify the following chord progression to make it sounds more like [insert composer or genre].
+Use Python code to produce a simple loop I can use in a Midi file.
+Create a guide on how to start playing the guitar aimed at beginners.
+ 
+
+Music Production 
+ 
+ChatGPT prompt for gaming
+Let’s play Tic Tac Toe.
+Start a game of 20 questions. I’ll think of a word and you try to guess what it is by asking me a question. I’ll respond with “yes” or “no” before moving on to the next question.
+Make a coding challenge about military soldiers taking over an alien planet.
+Pretend you’re a text-based videogame. I will type commands and you reply with what the character sees.
+Let’s play word ladder.
+I would like to play trivia games with you.
+Outline a concept for a current-gen videogame that revolves around an orphaned raccoon samurai looking for his lost sister in feudal Japan.
+Give me a detailed guide on the technological evolution between PlayStation One and PlayStation 2.
+Create a quiz to help young adults determine which genre of video games they would be best suited for.
+Play Hangman with me.
+ vintage gaming console growth tribe
+
+
+https://beebom.com/best-chatgpt-prompts/
+https://writesonic.com/blog/chatgpt-prompts/
+https://www.forbes.com/sites/bernardmarr/2023/06/12/the-best-prompts-to-show-off-the-mind-blowing-capabilities-of-chatgpt/?sh=56ad9b893f60

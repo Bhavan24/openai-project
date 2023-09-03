@@ -29,7 +29,7 @@ export default function BasicPage() {
                             }}
                         />
                         <AskQueryButton
-                            model={DEFAULT_MODEL}
+                            model="gpt-3.5-turbo-16k"
                             text={GET_GPT_INPUT(settings.command, settings.subCommand || '', text)}
                             onComplete={onComplete}
                         />

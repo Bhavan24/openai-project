@@ -1,0 +1,22 @@
+{
+    "success": true,
+    "prompts": [
+        {
+            "_id": "6451fbe2764513e7e2a757e0",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Page Information Summarizer",
+            "category": ["Content", "Tools"],
+            "prompt": {
+                "3d50ca06-bb79-4d36-ac8a-6569798da3c0": {
+                    "value": "I will pass you the url of the article, news, or informational page, summarize the numbers, provide an explanation, or provide any important information to me.",
+                    "type": "string",
+                    "editorState": true
+                },
+                "160ec97e-01b5-4f76-ab5c-f47f93e0dea2": { "value": "Paste URL", "type": "text" }
+            },
+            "created_at": "2023-05-03T06:14:58.677Z",
+            "updated_at": "2023-05-03T07:08:22.220Z",
+            "__v": 0
+        }
+    ]
+}

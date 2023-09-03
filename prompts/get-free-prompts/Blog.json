@@ -1,0 +1,111 @@
+{
+    "success": true,
+    "prompts": [
+        {
+            "_id": "645f88e00217db55b352eb3e",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Blog Outline Generator",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Blog", "Content"],
+            "prompt": {
+                "55238462-e1e9-4145-89e2-ae1a90c5643f": {
+                    "value": "Act like the top content creator in the world and an expert on the given topic. I will pass you the topic name. Research the topic from top resources and understand the reader to write important outlines for my blog to add value to readers knowledge about the topic. They should be engaging and easy to remember. \n\nTopic Name:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "3f3a3c45-baef-45f4-8507-108fa3318e1a": { "value": "Enter topic name", "type": "text" }
+            },
+            "created_at": "2023-05-13T12:56:00.498Z",
+            "updated_at": "2023-05-13T12:56:00.498Z",
+            "__v": 0
+        },
+        {
+            "_id": "645f835a0217db55b352eafd",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Blog Title Writer",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Content", "Blog"],
+            "prompt": {
+                "f3a4b8ff-7ff9-42a4-891e-9469055a06f8": {
+                    "value": "Act like the top content creator in the world. You have to write 10 headline samples that get people's attention in 1-2 seconds. Add numbers, questions, or emotional words to write the headline for the given topic. The topic name is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "9e208328-f9d6-4e6e-98bd-c1c97987bf87": { "value": "Enter topic name", "type": "text" }
+            },
+            "created_at": "2023-05-13T12:32:26.734Z",
+            "updated_at": "2023-05-13T12:32:26.734Z",
+            "__v": 0
+        },
+        {
+            "_id": "644f7457e8e6b7b5666abcbf",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Blog Writer",
+            "category": ["Content", "Blog"],
+            "prompt": {
+                "eb4aa5da-c946-427a-a39f-a5e314ba7291": {
+                    "value": "You're a top blogger in the world. I have to write the blog for the given topic and subtopics. At the end of the blog, write a short conclusion. As per the topic, act like a topic expert and explain with examples and stories. Use simple words and write short sentences to engage the user with the flow. Write plagiarism-free content. \n\nThe topic name is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "3c2e343e-01a9-4e85-935a-72cb2b40f138": { "value": "Topic Name", "type": "text" },
+                "0b5c31ce-a007-4787-9f29-f1c649c75711": {
+                    "value": "Subtopic are:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "f91eebb7-6ad4-43ea-8a87-d6bc99ce5beb": { "value": "Subtopic 1", "type": "text" },
+                "aeacd987-0df8-4404-970f-136baaf8279e": { "value": "Subtopic 2", "type": "text" },
+                "965ce9d3-74b4-4817-be99-30286f7c1c8c": { "value": "Subtopic 3", "type": "text" },
+                "e254d416-f23e-4410-b724-f8867d858359": { "value": "Subtopic 4", "type": "text" },
+                "bcb05c7b-e8b0-41d0-b4c8-214606dc04a2": { "value": "Extra information(Optional)", "type": "textarea" },
+                "b7e7cb89-31d9-4c7c-9816-37dec93943e0": {
+                    "value": "Number of words if given or write 800+ words",
+                    "type": "string",
+                    "editorState": true
+                },
+                "102da62c-2f6e-4bbf-a4f2-ffccfee4c727": { "value": "Word count", "type": "text" },
+                "58fc7d76-cc69-4539-bd0f-02390303a464": { "value": "Use Tone:", "type": "string", "editorState": true },
+                "f9801f1c-2d28-442b-aec4-6c79919a16c5": {
+                    "value": "Pressionaly/Simple/Funny/Aggressive ",
+                    "type": "text"
+                }
+            },
+            "created_at": "2023-05-01T08:12:07.875Z",
+            "updated_at": "2023-05-15T13:46:08.245Z",
+            "__v": 0,
+            "is_premium": false,
+            "is_template": true
+        },
+        {
+            "_id": "645f85a80217db55b352eb11",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Introduction Writer",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Content", "Blog", "Report"],
+            "prompt": {
+                "a5c9b73b-2cb5-40d1-a237-06d3aae59770": {
+                    "value": "Act like the top content writer in the world. Write an introduction for my blog topic given below. Start with a strong hook to keep the reader engaged, write the right purpose for reading the blog according to the topic, and add the main points in the introduction if I have given them to you. Keep it short and easy to understand. \n\nTopic Name:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "2a01f24d-0c24-4952-a93e-1fc1458c324a": { "value": "Enter topic name", "type": "text" },
+                "d5b89fd4-c419-4019-a717-29cd98aa3270": {
+                    "value": "Blog main points:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "2f41564b-58ea-4b80-af37-689fa7c45154": {
+                    "value": "Enter blog main points(Introduction)",
+                    "type": "textarea"
+                }
+            },
+            "created_at": "2023-05-13T12:42:16.759Z",
+            "updated_at": "2023-05-13T12:42:16.759Z",
+            "__v": 0
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "success": true,
+    "prompts": [
+        {
+            "_id": "647dfc2f857b1d0bb356740c",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Mock Interview Taker",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Job"],
+            "prompt": {
+                "357992dc-0fd6-435f-ac0d-105f6483b76d": {
+                    "value": "Take my mock interview for the given role, Ask me one question at a time and get an answer from me. Then ask the next question. After finishing the interview, give me feedback and areas for improvement.\nJob role is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "d1e28594-ab5f-4065-9954-9ea0bfec64a5": { "value": "Enter Job Role", "type": "text" },
+                "b3254d33-41a4-4ccc-89ea-d7863cc23ede": {
+                    "value": "My experience in years:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "0b412c86-d534-4c8f-b51f-5b1533774450": { "value": "Enter your experience in years", "type": "text" },
+                "e3be7e0d-5788-4baf-82a1-d1831e94cf9f": {
+                    "value": "Total number of questions:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "118e5d24-7b21-4df0-8a77-5a3a9eb107f0": { "value": "Enter number of questions", "type": "text" }
+            },
+            "created_at": "2023-06-05T15:15:59.319Z",
+            "updated_at": "2023-06-05T15:15:59.319Z",
+            "__v": 0
+        }
+    ]
+}

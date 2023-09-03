@@ -1,0 +1,36 @@
+{
+    "success": true,
+    "prompts": [
+        {
+            "_id": "6480b0a4d10f00ca1bdc8331",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Software Ideas Generator",
+            "is_template": true,
+            "is_premium": true,
+            "category": ["Software Development", "Business"],
+            "prompt": {
+                "3aaf05fb-7236-4a50-b15d-1f868bf3467f": {
+                    "value": "I'm in the process of initiating a new software project, and I'm seeking innovative ideas that can make the project features unique and engaging and achieve my objectives, keeping a focus on both user experience and business growth. Here are some details: \nIndustry:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "a507c9f1-126c-4faf-b8aa-cb99be680157": { "value": "Enter industry", "type": "text" },
+                "f51fc482-b6af-4e30-84ac-0a195793ba4f": {
+                    "value": "Intended User Base:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "d635283c-1b3b-467b-8233-f0c5d41f18de": { "value": "Enter Intended User Base", "type": "text" },
+                "0de748d9-41ba-45e9-b8ca-969b9706238c": {
+                    "value": "Key Objectives for the Project:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "e3b4dff4-3432-4ead-9e0f-b95769541880": { "value": "Enter Key Objectives", "type": "textarea" }
+            },
+            "created_at": "2023-06-07T16:30:28.192Z",
+            "updated_at": "2023-06-07T16:30:28.192Z",
+            "__v": 0
+        }
+    ]
+}

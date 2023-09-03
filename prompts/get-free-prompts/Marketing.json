@@ -1,0 +1,61 @@
+{
+    "success": true,
+    "prompts": [
+        {
+            "_id": "64686e8e8ff8c0cc72812f09",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Email Template Generator",
+            "is_template": true,
+            "is_premium": true,
+            "category": ["Coding", "UI Development", "Marketing"],
+            "prompt": {
+                "27527f3e-efbd-4bce-9587-dad12f696a3e": {
+                    "value": "Act like a senior UI developer with marketing skills. Create a responsive email template that contains the brand logo, a title, email content, a call to action button, a website link, social media icons, and an unsubscribe link. It should work on all email clients and browsers. Make a template for:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "327969e2-15ac-4493-8b8e-af12284e4cef": { "value": "Enter template requirement", "type": "textarea" }
+            },
+            "created_at": "2023-05-20T06:54:06.292Z",
+            "updated_at": "2023-05-20T07:09:19.722Z",
+            "__v": 0
+        },
+        {
+            "_id": "644fbed13181124f34a4aa61",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Product Tagline Generator",
+            "category": ["Copywriting", "Marketing"],
+            "prompt": {
+                "b54d4f62-dae3-4008-8e9a-4c2e1e1257ce": {
+                    "value": "Act like a top copywriter. I will explain the business requirements. Write 10 product taglines that are easy to remember, explain my product, and grab the user's attention.Use as few words as possible. My product description is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "0bd4f5c9-194f-43a0-92be-2eb8b135eed0": { "value": "Explain about your product. ", "type": "textarea" },
+                "27fd1c97-9179-416b-81c6-804f039dd2a9": {
+                    "value": "My products solve the following problems:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "670d52ca-8cd5-4079-a489-9cdfc95b2844": {
+                    "value": "Explain what problem your product solves.",
+                    "type": "textarea"
+                },
+                "33ca4ccd-460c-4462-8614-8c872c2d8f43": {
+                    "value": "Benefits of using my product:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "e8964c73-e1d5-41a4-ab87-c2a01307dea5": {
+                    "value": "Explain the benifits of using your products. ",
+                    "type": "textarea"
+                }
+            },
+            "created_at": "2023-05-01T13:29:53.078Z",
+            "updated_at": "2023-05-20T06:44:46.938Z",
+            "__v": 0,
+            "is_premium": true,
+            "is_template": true
+        }
+    ]
+}

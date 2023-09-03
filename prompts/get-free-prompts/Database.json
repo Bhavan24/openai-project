@@ -1,0 +1,142 @@
+{
+    "success": true,
+    "prompts": [
+        {
+            "_id": "64686c138ff8c0cc72812eca",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Database Query Writer",
+            "is_template": true,
+            "is_premium": true,
+            "category": ["Coding", "Database"],
+            "prompt": {
+                "dda7d315-924b-4713-864c-e727530cce03": {
+                    "value": "Act like a senior database developer. Write optimized queries that should fetch and update the response quickly for the given requirement. Tables and Collections:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "16928187-76a6-463d-a6be-fa5e1fa35763": {
+                    "value": "Enter tables and collections names",
+                    "type": "text"
+                },
+                "63bbd6a5-a63b-4336-a6d5-54103894c58a": {
+                    "value": "My database , libraries, and frameworks are:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "25e6c18f-7262-40bc-a12f-82806472ca55": {
+                    "value": "Enter database name, libraries and frameworks you are using",
+                    "type": "text"
+                },
+                "44cb6de2-90fd-4611-8691-b85f69697ec6": {
+                    "value": "The requirement is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "7fa1c98e-a1d6-41a5-b2ec-2627fa1af96f": { "value": "Enter your requirement", "type": "textarea" }
+            },
+            "created_at": "2023-05-20T06:43:31.025Z",
+            "updated_at": "2023-06-08T16:19:02.977Z",
+            "__v": 0
+        },
+        {
+            "_id": "646870358ff8c0cc72812f3d",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Dummy Data Generator",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Coding", "Database"],
+            "prompt": {
+                "e94c80bc-5217-4360-b232-659c40d5b576": {
+                    "value": "I am building software to generate dummy data for my functionality.\nFunctionality:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "76392873-b3be-4dab-b610-87afcaf8e5bd": { "value": "Explain functionality", "type": "text" },
+                "c1904323-6c98-47ae-932f-1edb4f659355": {
+                    "value": "Generate data:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "9791f4ce-2858-4c24-83a8-014b85a160e9": {
+                    "value": "Enter column names what data do you want",
+                    "type": "text"
+                },
+                "aa3d06f9-50c6-472a-81a6-37836b6fea64": {
+                    "value": "Data format:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "b56c3507-963d-4f4b-99ef-ec28157d4973": {
+                    "value": "Enter data format(JSON, CSV, MongoDB, MySQL)",
+                    "type": "text"
+                },
+                "d04a1283-69c3-4f68-81f9-67fa7714dae8": {
+                    "value": "Number of records:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "9146d411-7297-4c20-86ac-8151faae3f33": { "value": "Enter number of records", "type": "text" }
+            },
+            "created_at": "2023-05-20T07:01:09.251Z",
+            "updated_at": "2023-05-20T07:01:09.251Z",
+            "__v": 0
+        },
+        {
+            "_id": "64686f3b8ff8c0cc72812f1f",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "JSON to CSV Convertor",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Coding", "Database"],
+            "prompt": {
+                "ce82a5bc-8606-4312-971d-b0ea7fb165f2": {
+                    "value": "Convert the given JSON object to a CSV. JSON data:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "0ede1fa9-fc20-4322-a7b0-c0ae903d0d43": { "value": "Paste your JSON data", "type": "textarea" }
+            },
+            "created_at": "2023-05-20T06:56:59.689Z",
+            "updated_at": "2023-05-20T06:56:59.689Z",
+            "__v": 0
+        },
+        {
+            "_id": "6481ff66d10f00ca1bdc8435",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "SQL Query Writer",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Database"],
+            "prompt": {
+                "319e1b15-bcc9-49fa-9dcf-046061ad5e46": {
+                    "value": "Act like a senior back-end developer. You are the expert in SQL database. Write optimised query for my requirement:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "12bb2cf0-379f-4ab8-af8a-07ed369e1b82": { "value": "Enter your requirement", "type": "text" }
+            },
+            "created_at": "2023-06-08T16:18:46.918Z",
+            "updated_at": "2023-06-08T16:18:46.918Z",
+            "__v": 0
+        },
+        {
+            "_id": "64686fd68ff8c0cc72812f35",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Web Scraper Writer",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Coding", "Database"],
+            "prompt": {
+                "09d585de-0e15-45ba-994b-87b3de6461f4": {
+                    "value": "Act like a python expert, Use important tools to scrape the data from the given url and write a query to insert it into MongoDB collection. Scrape the data from this URL:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "e399f3a7-2eee-418b-8bd6-bcd684d4de7c": { "value": "Paste URL", "type": "text" }
+            },
+            "created_at": "2023-05-20T06:59:34.328Z",
+            "updated_at": "2023-05-20T06:59:34.328Z",
+            "__v": 0
+        }
+    ]
+}

@@ -1,0 +1,888 @@
+{
+    "success": true,
+    "prompts": [
+        {
+            "_id": "64686ba88ff8c0cc72812ec2",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "APIs Program Writer",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Coding"],
+            "prompt": {
+                "796d3e9b-7014-46dd-9911-92c74c56e84e": {
+                    "value": "Act like a senior back-end Node.js developer. Your technology stack is Node.js, Express.js, MongoDB, and Mongoose. Write reusable and optimized code for the given requirement. Give an appropriate response and write optimized Mongoose queries. The requirement is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "0f5cd523-0f83-4e3f-a74a-83c0620ee951": { "value": "Enter your requirement", "type": "textarea" }
+            },
+            "created_at": "2023-05-20T06:41:44.383Z",
+            "updated_at": "2023-05-20T06:44:00.049Z",
+            "__v": 0
+        },
+        {
+            "_id": "645f88e00217db55b352eb3e",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Blog Outline Generator",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Blog", "Content"],
+            "prompt": {
+                "55238462-e1e9-4145-89e2-ae1a90c5643f": {
+                    "value": "Act like the top content creator in the world and an expert on the given topic. I will pass you the topic name. Research the topic from top resources and understand the reader to write important outlines for my blog to add value to readers knowledge about the topic. They should be engaging and easy to remember. \n\nTopic Name:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "3f3a3c45-baef-45f4-8507-108fa3318e1a": { "value": "Enter topic name", "type": "text" }
+            },
+            "created_at": "2023-05-13T12:56:00.498Z",
+            "updated_at": "2023-05-13T12:56:00.498Z",
+            "__v": 0
+        },
+        {
+            "_id": "645f835a0217db55b352eafd",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Blog Title Writer",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Content", "Blog"],
+            "prompt": {
+                "f3a4b8ff-7ff9-42a4-891e-9469055a06f8": {
+                    "value": "Act like the top content creator in the world. You have to write 10 headline samples that get people's attention in 1-2 seconds. Add numbers, questions, or emotional words to write the headline for the given topic. The topic name is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "9e208328-f9d6-4e6e-98bd-c1c97987bf87": { "value": "Enter topic name", "type": "text" }
+            },
+            "created_at": "2023-05-13T12:32:26.734Z",
+            "updated_at": "2023-05-13T12:32:26.734Z",
+            "__v": 0
+        },
+        {
+            "_id": "644f7457e8e6b7b5666abcbf",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Blog Writer",
+            "category": ["Content", "Blog"],
+            "prompt": {
+                "eb4aa5da-c946-427a-a39f-a5e314ba7291": {
+                    "value": "You're a top blogger in the world. I have to write the blog for the given topic and subtopics. At the end of the blog, write a short conclusion. As per the topic, act like a topic expert and explain with examples and stories. Use simple words and write short sentences to engage the user with the flow. Write plagiarism-free content. \n\nThe topic name is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "3c2e343e-01a9-4e85-935a-72cb2b40f138": { "value": "Topic Name", "type": "text" },
+                "0b5c31ce-a007-4787-9f29-f1c649c75711": {
+                    "value": "Subtopic are:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "f91eebb7-6ad4-43ea-8a87-d6bc99ce5beb": { "value": "Subtopic 1", "type": "text" },
+                "aeacd987-0df8-4404-970f-136baaf8279e": { "value": "Subtopic 2", "type": "text" },
+                "965ce9d3-74b4-4817-be99-30286f7c1c8c": { "value": "Subtopic 3", "type": "text" },
+                "e254d416-f23e-4410-b724-f8867d858359": { "value": "Subtopic 4", "type": "text" },
+                "bcb05c7b-e8b0-41d0-b4c8-214606dc04a2": { "value": "Extra information(Optional)", "type": "textarea" },
+                "b7e7cb89-31d9-4c7c-9816-37dec93943e0": {
+                    "value": "Number of words if given or write 800+ words",
+                    "type": "string",
+                    "editorState": true
+                },
+                "102da62c-2f6e-4bbf-a4f2-ffccfee4c727": { "value": "Word count", "type": "text" },
+                "58fc7d76-cc69-4539-bd0f-02390303a464": { "value": "Use Tone:", "type": "string", "editorState": true },
+                "f9801f1c-2d28-442b-aec4-6c79919a16c5": {
+                    "value": "Pressionaly/Simple/Funny/Aggressive ",
+                    "type": "text"
+                }
+            },
+            "created_at": "2023-05-01T08:12:07.875Z",
+            "updated_at": "2023-05-15T13:46:08.245Z",
+            "__v": 0,
+            "is_premium": false,
+            "is_template": true
+        },
+        {
+            "_id": "644f80bde8e6b7b5666abce8",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Bug fixer",
+            "category": ["Coding"],
+            "prompt": {
+                "6f028211-d333-4b8c-b202-a096fdce155f": {
+                    "value": "Find the issue in the give code and explain the issue in short and give me updated code to fix the issue. My code is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "49dd7ccd-7a91-4a0f-ba07-a2cfb7fab7ca": { "value": "Code", "type": "textarea" },
+                "882ac0d8-0a6a-47e7-bde0-71ce1571c646": {
+                    "value": "Use this additional information about the issue (if provided):",
+                    "type": "string",
+                    "editorState": true
+                },
+                "0fcda85f-5d83-4a4d-93d9-d3efbf409166": { "value": "Explain the issue(Optional)", "type": "textarea" }
+            },
+            "created_at": "2023-05-01T09:05:01.555Z",
+            "updated_at": "2023-05-04T06:12:04.696Z",
+            "__v": 0
+        },
+        {
+            "_id": "645674e4927084a7c333057b",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "CTA Writer",
+            "category": ["Copywriting", "Digital Marketing"],
+            "prompt": {
+                "b45cfdbf-1ac8-4a80-bee5-e313a2073971": {
+                    "value": "Act like a top copywriter. I have to write a call to action for my landing page that will convert clients into buyers of my product. Use simple words and language so people can understand easily, and use consumer psychology. Use simple words and keep sentences short Write 10 samples. Here is my product summary:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "20456d7e-8bb9-46f7-8a00-8296bbfd291a": { "value": "Writer product summary", "type": "textarea" }
+            },
+            "created_at": "2023-05-06T15:40:20.994Z",
+            "updated_at": "2023-05-10T14:39:38.964Z",
+            "__v": 0,
+            "is_premium": false,
+            "is_template": true
+        },
+        {
+            "_id": "64686ef58ff8c0cc72812f11",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Code Debugger",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Coding"],
+            "prompt": {
+                "f0124cdc-f029-4b60-b586-eb797550adee": {
+                    "value": "Act like a senior developer; I am getting the issue in the following code. Help me debug it and give me updated code if needed. \nMy Current code is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "b500c123-0e00-428d-9b51-738244b37eb7": { "value": "Paste your code here...", "type": "textarea" },
+                "3bf024b9-afd7-4cc4-85c3-1b71a9eed05d": {
+                    "value": "Current output:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "03b00ade-d00f-4a26-8824-607823381eb3": {
+                    "value": "Paste.explain your current output",
+                    "type": "textarea"
+                },
+                "16a45a89-1771-4f53-8182-83f14e860f13": {
+                    "value": "Expected output:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "2f5cac8a-1a8d-4f80-bed6-6c90ade075d8": { "value": "Enter expected output ", "type": "textarea" }
+            },
+            "created_at": "2023-05-20T06:55:49.850Z",
+            "updated_at": "2023-05-20T06:55:49.850Z",
+            "__v": 0
+        },
+        {
+            "_id": "645134f3764513e7e2a7579c",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Code explainer",
+            "category": ["Coding"],
+            "prompt": {
+                "b889261c-4fe8-4630-86ed-05171dcc5d8b": {
+                    "value": "Act like an expert programmer, and I will pass you the code. Explain to me about each variable, function, keyword, method, and logic like I am a beginner.\nCode:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "c6cc6689-9c1a-4101-857b-0952f77773a6": { "value": "Paste your code here", "type": "textarea" }
+            },
+            "created_at": "2023-05-02T16:06:11.122Z",
+            "updated_at": "2023-05-02T16:06:11.122Z",
+            "__v": 0
+        },
+        {
+            "_id": "644fb8903181124f34a4aa50",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Code writer",
+            "category": ["Coding"],
+            "prompt": {
+                "7fa88fd2-89c6-4429-99e2-6914eb2748e9": {
+                    "value": "Act like a senior web developer. Your technology stack is HTML, CSS, Bootstrap, Node.js, Express.js, React, MongoDB, and Mongoose. Write reusable and optimized code for the given functionality. If you have any doubts about the requirement, ask me a follow-up question to avoid miscommunication.\nThe requirement is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "36a23038-c96b-47e0-88ec-1d093cbe65d8": { "value": "Enter your requirement", "type": "textarea" }
+            },
+            "created_at": "2023-05-01T13:03:12.534Z",
+            "updated_at": "2023-05-20T06:40:47.491Z",
+            "__v": 0,
+            "is_premium": false,
+            "is_template": true
+        },
+        {
+            "_id": "644fd8630754f7ccb6fa682f",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Comment Writer",
+            "category": ["Instagram", "Twitter", "Linkedin"],
+            "prompt": {
+                "91446a05-78ea-46d2-a63e-baba4fe2f7d2": {
+                    "value": "Write an attention-grabbing comment and add value to the conversation by providing a new perspective, idea, or insight for the given post's content. Keep it short by writing a one-sentence comment, and write like humans with simple words. Post content:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "9461c88f-2a28-4770-9d50-bc3a412a52bf": { "value": "Post content", "type": "textarea" }
+            },
+            "created_at": "2023-05-01T15:18:59.322Z",
+            "updated_at": "2023-05-01T15:18:59.322Z",
+            "__v": 0
+        },
+        {
+            "_id": "64686e498ff8c0cc72812f01",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Component Generator",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["UI Development", "Coding"],
+            "prompt": {
+                "97f3de27-0de6-4273-a63c-13a8afe691a2": {
+                    "value": "Act like a senior UI developer. You create responsive, reusable, and professional components that are easy to use for the users. Create a component for my given requirement and write code for me.\nThe technology stack is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "47e92da8-92ec-4c14-9d2f-d5d7a2c66f7d": { "value": "Enter your technology stack", "type": "text" },
+                "2b4b6a90-8396-4ae7-8090-f8d2b0a813ee": {
+                    "value": "The requirement is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "f3815154-49c6-4063-af6f-e65c97e497b2": { "value": "Enter component requirement", "type": "textarea" }
+            },
+            "created_at": "2023-05-20T06:52:57.549Z",
+            "updated_at": "2023-05-20T06:52:57.549Z",
+            "__v": 0
+        },
+        {
+            "_id": "6464f21a3c7eb46ff8c40bf9",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Customer Issue Response",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Customer Support"],
+            "prompt": {
+                "50dfa39a-3988-4cfe-bc63-08b52c86e6b9": {
+                    "value": "You are the best customer support agent ever. A customer is reporting a problem with your product. Write a response that acknowledges and empathizes with their issue. Provide a clear and specific solution to the problem and thank them for bringing the issue to your attention. Ensure that the response is professional, concise, and easy to understand. \n\nThe customer issue is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "1c7cb005-6b07-4a7d-ab89-d89ee3e2f9a8": { "value": "Enter customer issue", "type": "textarea" },
+                "1b5f1c61-83f1-4b49-b469-5cb8c1ed012b": {
+                    "value": "The solution to the problem is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "44e1d590-e8b9-4574-8661-6e5a2846421e": {
+                    "value": "Explain the solution to the problem in the short",
+                    "type": "textarea"
+                }
+            },
+            "created_at": "2023-05-17T15:26:18.976Z",
+            "updated_at": "2023-05-17T15:29:22.315Z",
+            "__v": 0
+        },
+        {
+            "_id": "64686c138ff8c0cc72812eca",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Database Query Writer",
+            "is_template": true,
+            "is_premium": true,
+            "category": ["Coding", "Database"],
+            "prompt": {
+                "dda7d315-924b-4713-864c-e727530cce03": {
+                    "value": "Act like a senior database developer. Write optimized queries that should fetch and update the response quickly for the given requirement. Tables and Collections:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "16928187-76a6-463d-a6be-fa5e1fa35763": {
+                    "value": "Enter tables and collections names",
+                    "type": "text"
+                },
+                "63bbd6a5-a63b-4336-a6d5-54103894c58a": {
+                    "value": "My database , libraries, and frameworks are:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "25e6c18f-7262-40bc-a12f-82806472ca55": {
+                    "value": "Enter database name, libraries and frameworks you are using",
+                    "type": "text"
+                },
+                "44cb6de2-90fd-4611-8691-b85f69697ec6": {
+                    "value": "The requirement is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "7fa1c98e-a1d6-41a5-b2ec-2627fa1af96f": { "value": "Enter your requirement", "type": "textarea" }
+            },
+            "created_at": "2023-05-20T06:43:31.025Z",
+            "updated_at": "2023-06-08T16:19:02.977Z",
+            "__v": 0
+        },
+        {
+            "_id": "646870358ff8c0cc72812f3d",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Dummy Data Generator",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Coding", "Database"],
+            "prompt": {
+                "e94c80bc-5217-4360-b232-659c40d5b576": {
+                    "value": "I am building software to generate dummy data for my functionality.\nFunctionality:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "76392873-b3be-4dab-b610-87afcaf8e5bd": { "value": "Explain functionality", "type": "text" },
+                "c1904323-6c98-47ae-932f-1edb4f659355": {
+                    "value": "Generate data:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "9791f4ce-2858-4c24-83a8-014b85a160e9": {
+                    "value": "Enter column names what data do you want",
+                    "type": "text"
+                },
+                "aa3d06f9-50c6-472a-81a6-37836b6fea64": {
+                    "value": "Data format:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "b56c3507-963d-4f4b-99ef-ec28157d4973": {
+                    "value": "Enter data format(JSON, CSV, MongoDB, MySQL)",
+                    "type": "text"
+                },
+                "d04a1283-69c3-4f68-81f9-67fa7714dae8": {
+                    "value": "Number of records:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "9146d411-7297-4c20-86ac-8151faae3f33": { "value": "Enter number of records", "type": "text" }
+            },
+            "created_at": "2023-05-20T07:01:09.251Z",
+            "updated_at": "2023-05-20T07:01:09.251Z",
+            "__v": 0
+        },
+        {
+            "_id": "64686e8e8ff8c0cc72812f09",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Email Template Generator",
+            "is_template": true,
+            "is_premium": true,
+            "category": ["Coding", "UI Development", "Marketing"],
+            "prompt": {
+                "27527f3e-efbd-4bce-9587-dad12f696a3e": {
+                    "value": "Act like a senior UI developer with marketing skills. Create a responsive email template that contains the brand logo, a title, email content, a call to action button, a website link, social media icons, and an unsubscribe link. It should work on all email clients and browsers. Make a template for:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "327969e2-15ac-4493-8b8e-af12284e4cef": { "value": "Enter template requirement", "type": "textarea" }
+            },
+            "created_at": "2023-05-20T06:54:06.292Z",
+            "updated_at": "2023-05-20T07:09:19.722Z",
+            "__v": 0
+        },
+        {
+            "_id": "644fad503181124f34a4a9b6",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Grammar Checker",
+            "category": ["Content"],
+            "prompt": {
+                "1d6701a7-19d1-4980-97e7-8df10aee6915": {
+                    "value": "Correct the grammar of the given content, Give me updated sentence. Also explain my grammar mistakes.\n\nContent:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "fce3f1da-d4c9-4a24-b794-f39994048c3e": { "value": "Paste your content", "type": "textarea" }
+            },
+            "created_at": "2023-05-01T12:15:12.475Z",
+            "updated_at": "2023-05-15T13:32:09.485Z",
+            "__v": 0,
+            "is_premium": false,
+            "is_template": true
+        },
+        {
+            "_id": "644fb6863181124f34a4aa27",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Instagram Caption Writer",
+            "category": ["Content", "Instagram"],
+            "prompt": {
+                "e8725811-3e7d-42df-8460-4492e089a199": {
+                    "value": "Act as a top Instagram content creator and expert on the given topic. Write an engaging Instagram post caption. Use simple words that are easy to understand, and it should help with Instagram SEO.\nTopic:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "bd5898ac-34d2-4e3b-bad8-a6e46d779093": { "value": "Topic", "type": "text" }
+            },
+            "created_at": "2023-05-01T12:54:30.561Z",
+            "updated_at": "2023-05-01T12:54:30.561Z",
+            "__v": 0
+        },
+        {
+            "_id": "644fabdb3181124f34a4a9b0",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Instagram Post Creator",
+            "category": ["Content", "Instagram", "Digital Marketing"],
+            "prompt": {
+                "cd69148c-21b6-42a8-a2de-f799c6ac57a0": {
+                    "value": "Act like a top Instagram content creator. Write content for an Instagram carousel post. Use simple English, but write engaging content. The title should grab the user's attention in 1-2 seconds and include the important subtopics as per the topic. Create a minimum 7-page post. Use the following subtopics if provided:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "cde75385-b128-4f04-8b86-80abcf558666": { "value": "Subtopics(Optional)", "type": "textarea" },
+                "622dd01c-9a9f-471f-b6b0-4eb6530d371e": {
+                    "value": "The post title is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "8d487f57-c07c-4799-8be0-b4b5aa73559d": { "value": "Post title", "type": "text" }
+            },
+            "created_at": "2023-05-01T12:08:59.987Z",
+            "updated_at": "2023-05-01T12:08:59.987Z",
+            "__v": 0
+        },
+        {
+            "_id": "644f816ae8e6b7b5666abcec",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Instagram Title Generator",
+            "category": ["Instagram", "Content"],
+            "prompt": {
+                "9fe2af15-a0b9-4dde-9fba-611620f090d9": {
+                    "value": "Act like a top Instagram Content Creator. You are the topic expert and you write the titles that gets people attention in 2-3 seconds. I will give you topic name or sample title. Write 10 titles for me for my post.\n\nTitle or topic name is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "8a676a82-c9b9-4f0c-9eb8-bfaece23b1dc": { "value": "Title or Topic", "type": "text" }
+            },
+            "created_at": "2023-05-01T09:07:54.304Z",
+            "updated_at": "2023-05-01T09:07:54.304Z",
+            "__v": 0
+        },
+        {
+            "_id": "645f85a80217db55b352eb11",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Introduction Writer",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Content", "Blog", "Report"],
+            "prompt": {
+                "a5c9b73b-2cb5-40d1-a237-06d3aae59770": {
+                    "value": "Act like the top content writer in the world. Write an introduction for my blog topic given below. Start with a strong hook to keep the reader engaged, write the right purpose for reading the blog according to the topic, and add the main points in the introduction if I have given them to you. Keep it short and easy to understand. \n\nTopic Name:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "2a01f24d-0c24-4952-a93e-1fc1458c324a": { "value": "Enter topic name", "type": "text" },
+                "d5b89fd4-c419-4019-a717-29cd98aa3270": {
+                    "value": "Blog main points:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "2f41564b-58ea-4b80-af37-689fa7c45154": {
+                    "value": "Enter blog main points(Introduction)",
+                    "type": "textarea"
+                }
+            },
+            "created_at": "2023-05-13T12:42:16.759Z",
+            "updated_at": "2023-05-13T12:42:16.759Z",
+            "__v": 0
+        },
+        {
+            "_id": "64686f3b8ff8c0cc72812f1f",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "JSON to CSV Convertor",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Coding", "Database"],
+            "prompt": {
+                "ce82a5bc-8606-4312-971d-b0ea7fb165f2": {
+                    "value": "Convert the given JSON object to a CSV. JSON data:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "0ede1fa9-fc20-4322-a7b0-c0ae903d0d43": { "value": "Paste your JSON data", "type": "textarea" }
+            },
+            "created_at": "2023-05-20T06:56:59.689Z",
+            "updated_at": "2023-05-20T06:56:59.689Z",
+            "__v": 0
+        },
+        {
+            "_id": "647dfc2f857b1d0bb356740c",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Mock Interview Taker",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Job"],
+            "prompt": {
+                "357992dc-0fd6-435f-ac0d-105f6483b76d": {
+                    "value": "Take my mock interview for the given role, Ask me one question at a time and get an answer from me. Then ask the next question. After finishing the interview, give me feedback and areas for improvement.\nJob role is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "d1e28594-ab5f-4065-9954-9ea0bfec64a5": { "value": "Enter Job Role", "type": "text" },
+                "b3254d33-41a4-4ccc-89ea-d7863cc23ede": {
+                    "value": "My experience in years:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "0b412c86-d534-4c8f-b51f-5b1533774450": { "value": "Enter your experience in years", "type": "text" },
+                "e3be7e0d-5788-4baf-82a1-d1831e94cf9f": {
+                    "value": "Total number of questions:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "118e5d24-7b21-4df0-8a77-5a3a9eb107f0": { "value": "Enter number of questions", "type": "text" }
+            },
+            "created_at": "2023-06-05T15:15:59.319Z",
+            "updated_at": "2023-06-05T15:15:59.319Z",
+            "__v": 0
+        },
+        {
+            "_id": "6451fbe2764513e7e2a757e0",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Page Information Summarizer",
+            "category": ["Content", "Tools"],
+            "prompt": {
+                "3d50ca06-bb79-4d36-ac8a-6569798da3c0": {
+                    "value": "I will pass you the url of the article, news, or informational page, summarize the numbers, provide an explanation, or provide any important information to me.",
+                    "type": "string",
+                    "editorState": true
+                },
+                "160ec97e-01b5-4f76-ab5c-f47f93e0dea2": { "value": "Paste URL", "type": "text" }
+            },
+            "created_at": "2023-05-03T06:14:58.677Z",
+            "updated_at": "2023-05-03T07:08:22.220Z",
+            "__v": 0
+        },
+        {
+            "_id": "644f7f4ce8e6b7b5666abccd",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Paragraph Writer",
+            "category": ["Content"],
+            "prompt": {
+                "1419ea39-b325-4022-9de9-139c373f0b8a": {
+                    "value": "Act like a top content writer, Write a paragraph for the given blog title. Write a content like a topic expert. \nTopic Name is",
+                    "type": "string",
+                    "editorState": true
+                },
+                "bb078df3-a741-445d-acab-b770bc04df0f": { "value": "topic name", "type": "text" },
+                "dc62ee1b-27dc-4d62-bc55-32a4e0c14189": {
+                    "value": "content tone:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "25ff3e44-24d3-4844-a5a5-466d31b2e02d": {
+                    "value": "Professional/Confident/Expert/Aggressive (Optional)",
+                    "type": "text"
+                },
+                "96c0b080-f0f5-4283-a6b6-8f4914b254e9": {
+                    "value": "Number of words",
+                    "type": "string",
+                    "editorState": true
+                },
+                "d96c4cd1-c5fd-4df4-ba9a-c03b731e828c": { "value": "Word count(Optional)", "type": "text" }
+            },
+            "created_at": "2023-05-01T08:58:52.639Z",
+            "updated_at": "2023-05-01T08:58:52.639Z",
+            "__v": 0
+        },
+        {
+            "_id": "644fbed13181124f34a4aa61",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Product Tagline Generator",
+            "category": ["Copywriting", "Marketing"],
+            "prompt": {
+                "b54d4f62-dae3-4008-8e9a-4c2e1e1257ce": {
+                    "value": "Act like a top copywriter. I will explain the business requirements. Write 10 product taglines that are easy to remember, explain my product, and grab the user's attention.Use as few words as possible. My product description is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "0bd4f5c9-194f-43a0-92be-2eb8b135eed0": { "value": "Explain about your product. ", "type": "textarea" },
+                "27fd1c97-9179-416b-81c6-804f039dd2a9": {
+                    "value": "My products solve the following problems:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "670d52ca-8cd5-4079-a489-9cdfc95b2844": {
+                    "value": "Explain what problem your product solves.",
+                    "type": "textarea"
+                },
+                "33ca4ccd-460c-4462-8614-8c872c2d8f43": {
+                    "value": "Benefits of using my product:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "e8964c73-e1d5-41a4-ab87-c2a01307dea5": {
+                    "value": "Explain the benifits of using your products. ",
+                    "type": "textarea"
+                }
+            },
+            "created_at": "2023-05-01T13:29:53.078Z",
+            "updated_at": "2023-05-20T06:44:46.938Z",
+            "__v": 0,
+            "is_premium": true,
+            "is_template": true
+        },
+        {
+            "_id": "64686f7f8ff8c0cc72812f2d",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "React Component Creator",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["UI Development", "Coding"],
+            "prompt": {
+                "13c1f113-6389-4943-a88a-46178599c6c1": {
+                    "value": "Act like a senior React developer. You create responsive, reusable, and professional  React components that are easy to use for the users. Create a component for my given requirement and write code for me.\nThe technology stack is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "bff55caa-5598-4e9d-bae7-0d0729d4796e": { "value": "Enter your technology stack", "type": "text" },
+                "e59f6333-25ea-46bc-b950-ba22e8203904": {
+                    "value": "The requirement is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "9ed51b6e-f0f3-4ab6-a1de-8338af8c132e": { "value": "Enter your requirement", "type": "textarea" }
+            },
+            "created_at": "2023-05-20T06:58:07.835Z",
+            "updated_at": "2023-05-20T06:58:07.835Z",
+            "__v": 0
+        },
+        {
+            "_id": "64686e078ff8c0cc72812ef4",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Responsive Design Code",
+            "is_template": true,
+            "is_premium": true,
+            "category": ["UI Development", "Coding"],
+            "prompt": {
+                "806a31c5-7962-48c8-837d-d481b478bd17": {
+                    "value": "Act like a senior UI developer. Create a responsive design from the given code. The design should be simple, user-centric, accessible, and maintain a visual hierarchy.\n\nMy technology stack is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "aecd1de9-3ce4-4ef1-a43d-4ebd4c1702c0": { "value": "Enter your technology stack", "type": "text" },
+                "9d4e7ffa-b931-485e-9382-af4f5a392f36": {
+                    "value": "The requirement is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "3396c4d3-011e-4d38-b745-350b6fef0ad5": { "value": "Enter your requirement", "type": "textarea" },
+                "a5c9d077-26dd-4533-abb8-0ee42950dd83": {
+                    "value": "My current code is (optional):",
+                    "type": "string",
+                    "editorState": true
+                },
+                "ce2f0f23-d112-4450-8d09-6c4b165bbe7c": { "value": "Paste your current code", "type": "textarea" }
+            },
+            "created_at": "2023-05-20T06:51:51.099Z",
+            "updated_at": "2023-05-20T06:51:51.099Z",
+            "__v": 0
+        },
+        {
+            "_id": "644f9445e8e6b7b5666abd28",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "SEO Description",
+            "category": ["SEO", "Digital Marketing"],
+            "prompt": {
+                "5b51a911-b175-4802-a206-9363c04d55eb": {
+                    "value": "Act like a top content writer. write a short description for the given blog title which will be passed in the meta tags. Use the top targeted keywords to rank on 1st place.  Generate 5 samples. \nTitle:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "d73e15fd-e810-40bf-9e34-b9c8d541aef8": { "value": "Blog Title", "type": "text" }
+            },
+            "created_at": "2023-05-01T10:28:21.493Z",
+            "updated_at": "2023-05-01T12:02:21.991Z",
+            "__v": 0
+        },
+        {
+            "_id": "6481ff66d10f00ca1bdc8435",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "SQL Query Writer",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Database"],
+            "prompt": {
+                "319e1b15-bcc9-49fa-9dcf-046061ad5e46": {
+                    "value": "Act like a senior back-end developer. You are the expert in SQL database. Write optimised query for my requirement:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "12bb2cf0-379f-4ab8-af8a-07ed369e1b82": { "value": "Enter your requirement", "type": "text" }
+            },
+            "created_at": "2023-06-08T16:18:46.918Z",
+            "updated_at": "2023-06-08T16:18:46.918Z",
+            "__v": 0
+        },
+        {
+            "_id": "644f9172e8e6b7b5666abd21",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Sentence Expander",
+            "category": ["Content"],
+            "prompt": {
+                "213376b3-5d17-4d38-871d-dd27149592cc": {
+                    "value": "Act like a top blog writer. You write in a way which is easy to understand and adds the value in readers knowledge. I will pass you sentence you have to expand it in the same tone and language without changing the meaning of it with better flow.\n\nSentence:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "4c4786da-6a85-4d34-892b-d2a817855607": { "value": "Write your sentence", "type": "textarea" }
+            },
+            "created_at": "2023-05-01T10:16:18.211Z",
+            "updated_at": "2023-05-01T10:16:18.211Z",
+            "__v": 0
+        },
+        {
+            "_id": "6462363688daa24cdceb7910",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Sentence Rewriter",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Content", "Copywriting"],
+            "prompt": {
+                "6359397e-13e7-4afa-aa5f-8b860097b327": {
+                    "value": "Rewrite the given sentence with authentic and simple language. Keep the sentence's' meaning the same. \nSentence:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "d5cd4cba-aa7b-4b63-af8c-ed242ee10ac7": { "value": "Paste your sentence", "type": "textarea" }
+            },
+            "created_at": "2023-05-15T13:40:06.018Z",
+            "updated_at": "2023-05-15T13:40:06.018Z",
+            "__v": 0
+        },
+        {
+            "_id": "6480b0a4d10f00ca1bdc8331",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Software Ideas Generator",
+            "is_template": true,
+            "is_premium": true,
+            "category": ["Software Development", "Business"],
+            "prompt": {
+                "3aaf05fb-7236-4a50-b15d-1f868bf3467f": {
+                    "value": "I'm in the process of initiating a new software project, and I'm seeking innovative ideas that can make the project features unique and engaging and achieve my objectives, keeping a focus on both user experience and business growth. Here are some details: \nIndustry:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "a507c9f1-126c-4faf-b8aa-cb99be680157": { "value": "Enter industry", "type": "text" },
+                "f51fc482-b6af-4e30-84ac-0a195793ba4f": {
+                    "value": "Intended User Base:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "d635283c-1b3b-467b-8233-f0c5d41f18de": { "value": "Enter Intended User Base", "type": "text" },
+                "0de748d9-41ba-45e9-b8ca-969b9706238c": {
+                    "value": "Key Objectives for the Project:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "e3b4dff4-3432-4ead-9e0f-b95769541880": { "value": "Enter Key Objectives", "type": "textarea" }
+            },
+            "created_at": "2023-06-07T16:30:28.192Z",
+            "updated_at": "2023-06-07T16:30:28.192Z",
+            "__v": 0
+        },
+        {
+            "_id": "646a0d5fd1afb37a3cf76c2a",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Trip Planner",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Planner"],
+            "prompt": {
+                "89bb65ae-32df-417f-b2cb-35dc968c8bce": {
+                    "value": "Act like an intelligent trip planner; I will tell you the city name, number of days, and my location. Plan a trip for me. If time is remaining, cover nearby places. Give me detailed plans, hourly and day-wise.\nMy City:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "70b9db68-df5b-401f-b842-cc4998026af0": { "value": "Enter your city", "type": "text" },
+                "b7394be7-9bf8-4fa8-80e6-73f6e49be0e5": {
+                    "value": "Travelling location:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "82c6b6b7-d4cd-4dae-83fa-fcd17c67794b": { "value": "Enter travelling location", "type": "text" },
+                "9b8042ad-9b31-4edb-b00d-cb625a567a1a": {
+                    "value": "Number of days:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "0fdbae5f-9017-4cd0-ab50-3dcf807bb6f9": { "value": "Enter number of days", "type": "text" }
+            },
+            "created_at": "2023-05-21T12:23:59.060Z",
+            "updated_at": "2023-05-21T12:23:59.060Z",
+            "__v": 0
+        },
+        {
+            "_id": "644fb0da3181124f34a4a9bf",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Tweet Thread Writer",
+            "category": ["Twitter", "Content"],
+            "prompt": {
+                "3c9a5d78-9f2e-4364-9261-4869c99f497d": {
+                    "value": "Act as a top Twitter influencer. You write engaging tweets. Write a thread for me on the given topic. Write short sentences to keep the reader engaged. For the given topic, write like an expert in that field. Make a thread that is easily understood by the reader. Write a title (the first tweet of the thread) using the top copywriting formula to get users' attention. \nTopic:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "6d16ccca-dce0-462c-b8c8-113af9704aac": { "value": "Topic", "type": "text" },
+                "e8c9e8c3-c310-4815-ab88-adfa1aac4067": {
+                    "value": "Additional information(Optional)",
+                    "type": "textarea"
+                }
+            },
+            "created_at": "2023-05-01T12:30:18.502Z",
+            "updated_at": "2023-05-01T12:30:18.502Z",
+            "__v": 0
+        },
+        {
+            "_id": "64686fd68ff8c0cc72812f35",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Web Scraper Writer",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Coding", "Database"],
+            "prompt": {
+                "09d585de-0e15-45ba-994b-87b3de6461f4": {
+                    "value": "Act like a python expert, Use important tools to scrape the data from the given url and write a query to insert it into MongoDB collection. Scrape the data from this URL:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "e399f3a7-2eee-418b-8bd6-bcd684d4de7c": { "value": "Paste URL", "type": "text" }
+            },
+            "created_at": "2023-05-20T06:59:34.328Z",
+            "updated_at": "2023-05-20T06:59:34.328Z",
+            "__v": 0
+        },
+        {
+            "_id": "6456709d927084a7c3330549",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Workout Planner",
+            "category": ["Gym", "Planner"],
+            "prompt": {
+                "de477879-4743-48b1-add3-b7f40a7563e0": {
+                    "value": "Act like a top gym planner. You will make workout plans according to top research. Here is the person''s information. \n\nAge:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "6f470ad8-edc5-4868-965e-b03fca4dd979": { "value": "Enter age", "type": "text" },
+                "4c04fa18-06f9-4720-89d3-3d455faa948f": {
+                    "value": "Fitness level:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "593bd1e9-2d84-49cf-a756-b14841a26ba6": { "value": "Enter fitness level", "type": "text" },
+                "b985823e-05cc-446b-8b35-7174e4276843": {
+                    "value": "Type of workout:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "8b57950f-4dcc-412a-95b1-0d2c62f69f36": { "value": "Body Building/Running/Strength", "type": "text" },
+                "e0be386e-0f50-4c37-8dc6-3a92a49b3538": {
+                    "value": "Body Type:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "fed2a86c-a408-4f72-b796-4a292613a084": { "value": "Enter body type", "type": "text" }
+            },
+            "created_at": "2023-05-06T15:22:05.233Z",
+            "updated_at": "2023-05-06T15:23:18.421Z",
+            "__v": 0
+        }
+    ]
+}

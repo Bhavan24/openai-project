@@ -1,0 +1,22 @@
+{
+    "success": true,
+    "prompts": [
+        {
+            "_id": "644fd8630754f7ccb6fa682f",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Comment Writer",
+            "category": ["Instagram", "Twitter", "Linkedin"],
+            "prompt": {
+                "91446a05-78ea-46d2-a63e-baba4fe2f7d2": {
+                    "value": "Write an attention-grabbing comment and add value to the conversation by providing a new perspective, idea, or insight for the given post's content. Keep it short by writing a one-sentence comment, and write like humans with simple words. Post content:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "9461c88f-2a28-4770-9d50-bc3a412a52bf": { "value": "Post content", "type": "textarea" }
+            },
+            "created_at": "2023-05-01T15:18:59.322Z",
+            "updated_at": "2023-05-01T15:18:59.322Z",
+            "__v": 0
+        }
+    ]
+}

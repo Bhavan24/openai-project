@@ -1,0 +1,33 @@
+{
+    "success": true,
+    "prompts": [
+        {
+            "_id": "6464f21a3c7eb46ff8c40bf9",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Customer Issue Response",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Customer Support"],
+            "prompt": {
+                "50dfa39a-3988-4cfe-bc63-08b52c86e6b9": {
+                    "value": "You are the best customer support agent ever. A customer is reporting a problem with your product. Write a response that acknowledges and empathizes with their issue. Provide a clear and specific solution to the problem and thank them for bringing the issue to your attention. Ensure that the response is professional, concise, and easy to understand. \n\nThe customer issue is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "1c7cb005-6b07-4a7d-ab89-d89ee3e2f9a8": { "value": "Enter customer issue", "type": "textarea" },
+                "1b5f1c61-83f1-4b49-b469-5cb8c1ed012b": {
+                    "value": "The solution to the problem is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "44e1d590-e8b9-4574-8661-6e5a2846421e": {
+                    "value": "Explain the solution to the problem in the short",
+                    "type": "textarea"
+                }
+            },
+            "created_at": "2023-05-17T15:26:18.976Z",
+            "updated_at": "2023-05-17T15:29:22.315Z",
+            "__v": 0
+        }
+    ]
+}

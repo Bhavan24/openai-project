@@ -1,0 +1,40 @@
+{
+    "success": true,
+    "prompts": [
+        {
+            "_id": "6456709d927084a7c3330549",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Workout Planner",
+            "category": ["Gym", "Planner"],
+            "prompt": {
+                "de477879-4743-48b1-add3-b7f40a7563e0": {
+                    "value": "Act like a top gym planner. You will make workout plans according to top research. Here is the person''s information. \n\nAge:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "6f470ad8-edc5-4868-965e-b03fca4dd979": { "value": "Enter age", "type": "text" },
+                "4c04fa18-06f9-4720-89d3-3d455faa948f": {
+                    "value": "Fitness level:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "593bd1e9-2d84-49cf-a756-b14841a26ba6": { "value": "Enter fitness level", "type": "text" },
+                "b985823e-05cc-446b-8b35-7174e4276843": {
+                    "value": "Type of workout:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "8b57950f-4dcc-412a-95b1-0d2c62f69f36": { "value": "Body Building/Running/Strength", "type": "text" },
+                "e0be386e-0f50-4c37-8dc6-3a92a49b3538": {
+                    "value": "Body Type:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "fed2a86c-a408-4f72-b796-4a292613a084": { "value": "Enter body type", "type": "text" }
+            },
+            "created_at": "2023-05-06T15:22:05.233Z",
+            "updated_at": "2023-05-06T15:23:18.421Z",
+            "__v": 0
+        }
+    ]
+}

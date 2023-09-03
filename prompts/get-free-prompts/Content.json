@@ -1,0 +1,293 @@
+{
+    "success": true,
+    "prompts": [
+        {
+            "_id": "645f88e00217db55b352eb3e",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Blog Outline Generator",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Blog", "Content"],
+            "prompt": {
+                "55238462-e1e9-4145-89e2-ae1a90c5643f": {
+                    "value": "Act like the top content creator in the world and an expert on the given topic. I will pass you the topic name. Research the topic from top resources and understand the reader to write important outlines for my blog to add value to readers knowledge about the topic. They should be engaging and easy to remember. \n\nTopic Name:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "3f3a3c45-baef-45f4-8507-108fa3318e1a": { "value": "Enter topic name", "type": "text" }
+            },
+            "created_at": "2023-05-13T12:56:00.498Z",
+            "updated_at": "2023-05-13T12:56:00.498Z",
+            "__v": 0
+        },
+        {
+            "_id": "645f835a0217db55b352eafd",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Blog Title Writer",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Content", "Blog"],
+            "prompt": {
+                "f3a4b8ff-7ff9-42a4-891e-9469055a06f8": {
+                    "value": "Act like the top content creator in the world. You have to write 10 headline samples that get people's attention in 1-2 seconds. Add numbers, questions, or emotional words to write the headline for the given topic. The topic name is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "9e208328-f9d6-4e6e-98bd-c1c97987bf87": { "value": "Enter topic name", "type": "text" }
+            },
+            "created_at": "2023-05-13T12:32:26.734Z",
+            "updated_at": "2023-05-13T12:32:26.734Z",
+            "__v": 0
+        },
+        {
+            "_id": "644f7457e8e6b7b5666abcbf",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Blog Writer",
+            "category": ["Content", "Blog"],
+            "prompt": {
+                "eb4aa5da-c946-427a-a39f-a5e314ba7291": {
+                    "value": "You're a top blogger in the world. I have to write the blog for the given topic and subtopics. At the end of the blog, write a short conclusion. As per the topic, act like a topic expert and explain with examples and stories. Use simple words and write short sentences to engage the user with the flow. Write plagiarism-free content. \n\nThe topic name is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "3c2e343e-01a9-4e85-935a-72cb2b40f138": { "value": "Topic Name", "type": "text" },
+                "0b5c31ce-a007-4787-9f29-f1c649c75711": {
+                    "value": "Subtopic are:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "f91eebb7-6ad4-43ea-8a87-d6bc99ce5beb": { "value": "Subtopic 1", "type": "text" },
+                "aeacd987-0df8-4404-970f-136baaf8279e": { "value": "Subtopic 2", "type": "text" },
+                "965ce9d3-74b4-4817-be99-30286f7c1c8c": { "value": "Subtopic 3", "type": "text" },
+                "e254d416-f23e-4410-b724-f8867d858359": { "value": "Subtopic 4", "type": "text" },
+                "bcb05c7b-e8b0-41d0-b4c8-214606dc04a2": { "value": "Extra information(Optional)", "type": "textarea" },
+                "b7e7cb89-31d9-4c7c-9816-37dec93943e0": {
+                    "value": "Number of words if given or write 800+ words",
+                    "type": "string",
+                    "editorState": true
+                },
+                "102da62c-2f6e-4bbf-a4f2-ffccfee4c727": { "value": "Word count", "type": "text" },
+                "58fc7d76-cc69-4539-bd0f-02390303a464": { "value": "Use Tone:", "type": "string", "editorState": true },
+                "f9801f1c-2d28-442b-aec4-6c79919a16c5": {
+                    "value": "Pressionaly/Simple/Funny/Aggressive ",
+                    "type": "text"
+                }
+            },
+            "created_at": "2023-05-01T08:12:07.875Z",
+            "updated_at": "2023-05-15T13:46:08.245Z",
+            "__v": 0,
+            "is_premium": false,
+            "is_template": true
+        },
+        {
+            "_id": "644fad503181124f34a4a9b6",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Grammar Checker",
+            "category": ["Content"],
+            "prompt": {
+                "1d6701a7-19d1-4980-97e7-8df10aee6915": {
+                    "value": "Correct the grammar of the given content, Give me updated sentence. Also explain my grammar mistakes.\n\nContent:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "fce3f1da-d4c9-4a24-b794-f39994048c3e": { "value": "Paste your content", "type": "textarea" }
+            },
+            "created_at": "2023-05-01T12:15:12.475Z",
+            "updated_at": "2023-05-15T13:32:09.485Z",
+            "__v": 0,
+            "is_premium": false,
+            "is_template": true
+        },
+        {
+            "_id": "644fb6863181124f34a4aa27",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Instagram Caption Writer",
+            "category": ["Content", "Instagram"],
+            "prompt": {
+                "e8725811-3e7d-42df-8460-4492e089a199": {
+                    "value": "Act as a top Instagram content creator and expert on the given topic. Write an engaging Instagram post caption. Use simple words that are easy to understand, and it should help with Instagram SEO.\nTopic:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "bd5898ac-34d2-4e3b-bad8-a6e46d779093": { "value": "Topic", "type": "text" }
+            },
+            "created_at": "2023-05-01T12:54:30.561Z",
+            "updated_at": "2023-05-01T12:54:30.561Z",
+            "__v": 0
+        },
+        {
+            "_id": "644fabdb3181124f34a4a9b0",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Instagram Post Creator",
+            "category": ["Content", "Instagram", "Digital Marketing"],
+            "prompt": {
+                "cd69148c-21b6-42a8-a2de-f799c6ac57a0": {
+                    "value": "Act like a top Instagram content creator. Write content for an Instagram carousel post. Use simple English, but write engaging content. The title should grab the user's attention in 1-2 seconds and include the important subtopics as per the topic. Create a minimum 7-page post. Use the following subtopics if provided:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "cde75385-b128-4f04-8b86-80abcf558666": { "value": "Subtopics(Optional)", "type": "textarea" },
+                "622dd01c-9a9f-471f-b6b0-4eb6530d371e": {
+                    "value": "The post title is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "8d487f57-c07c-4799-8be0-b4b5aa73559d": { "value": "Post title", "type": "text" }
+            },
+            "created_at": "2023-05-01T12:08:59.987Z",
+            "updated_at": "2023-05-01T12:08:59.987Z",
+            "__v": 0
+        },
+        {
+            "_id": "644f816ae8e6b7b5666abcec",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Instagram Title Generator",
+            "category": ["Instagram", "Content"],
+            "prompt": {
+                "9fe2af15-a0b9-4dde-9fba-611620f090d9": {
+                    "value": "Act like a top Instagram Content Creator. You are the topic expert and you write the titles that gets people attention in 2-3 seconds. I will give you topic name or sample title. Write 10 titles for me for my post.\n\nTitle or topic name is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "8a676a82-c9b9-4f0c-9eb8-bfaece23b1dc": { "value": "Title or Topic", "type": "text" }
+            },
+            "created_at": "2023-05-01T09:07:54.304Z",
+            "updated_at": "2023-05-01T09:07:54.304Z",
+            "__v": 0
+        },
+        {
+            "_id": "645f85a80217db55b352eb11",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Introduction Writer",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Content", "Blog", "Report"],
+            "prompt": {
+                "a5c9b73b-2cb5-40d1-a237-06d3aae59770": {
+                    "value": "Act like the top content writer in the world. Write an introduction for my blog topic given below. Start with a strong hook to keep the reader engaged, write the right purpose for reading the blog according to the topic, and add the main points in the introduction if I have given them to you. Keep it short and easy to understand. \n\nTopic Name:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "2a01f24d-0c24-4952-a93e-1fc1458c324a": { "value": "Enter topic name", "type": "text" },
+                "d5b89fd4-c419-4019-a717-29cd98aa3270": {
+                    "value": "Blog main points:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "2f41564b-58ea-4b80-af37-689fa7c45154": {
+                    "value": "Enter blog main points(Introduction)",
+                    "type": "textarea"
+                }
+            },
+            "created_at": "2023-05-13T12:42:16.759Z",
+            "updated_at": "2023-05-13T12:42:16.759Z",
+            "__v": 0
+        },
+        {
+            "_id": "6451fbe2764513e7e2a757e0",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Page Information Summarizer",
+            "category": ["Content", "Tools"],
+            "prompt": {
+                "3d50ca06-bb79-4d36-ac8a-6569798da3c0": {
+                    "value": "I will pass you the url of the article, news, or informational page, summarize the numbers, provide an explanation, or provide any important information to me.",
+                    "type": "string",
+                    "editorState": true
+                },
+                "160ec97e-01b5-4f76-ab5c-f47f93e0dea2": { "value": "Paste URL", "type": "text" }
+            },
+            "created_at": "2023-05-03T06:14:58.677Z",
+            "updated_at": "2023-05-03T07:08:22.220Z",
+            "__v": 0
+        },
+        {
+            "_id": "644f7f4ce8e6b7b5666abccd",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Paragraph Writer",
+            "category": ["Content"],
+            "prompt": {
+                "1419ea39-b325-4022-9de9-139c373f0b8a": {
+                    "value": "Act like a top content writer, Write a paragraph for the given blog title. Write a content like a topic expert. \nTopic Name is",
+                    "type": "string",
+                    "editorState": true
+                },
+                "bb078df3-a741-445d-acab-b770bc04df0f": { "value": "topic name", "type": "text" },
+                "dc62ee1b-27dc-4d62-bc55-32a4e0c14189": {
+                    "value": "content tone:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "25ff3e44-24d3-4844-a5a5-466d31b2e02d": {
+                    "value": "Professional/Confident/Expert/Aggressive (Optional)",
+                    "type": "text"
+                },
+                "96c0b080-f0f5-4283-a6b6-8f4914b254e9": {
+                    "value": "Number of words",
+                    "type": "string",
+                    "editorState": true
+                },
+                "d96c4cd1-c5fd-4df4-ba9a-c03b731e828c": { "value": "Word count(Optional)", "type": "text" }
+            },
+            "created_at": "2023-05-01T08:58:52.639Z",
+            "updated_at": "2023-05-01T08:58:52.639Z",
+            "__v": 0
+        },
+        {
+            "_id": "644f9172e8e6b7b5666abd21",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Sentence Expander",
+            "category": ["Content"],
+            "prompt": {
+                "213376b3-5d17-4d38-871d-dd27149592cc": {
+                    "value": "Act like a top blog writer. You write in a way which is easy to understand and adds the value in readers knowledge. I will pass you sentence you have to expand it in the same tone and language without changing the meaning of it with better flow.\n\nSentence:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "4c4786da-6a85-4d34-892b-d2a817855607": { "value": "Write your sentence", "type": "textarea" }
+            },
+            "created_at": "2023-05-01T10:16:18.211Z",
+            "updated_at": "2023-05-01T10:16:18.211Z",
+            "__v": 0
+        },
+        {
+            "_id": "6462363688daa24cdceb7910",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Sentence Rewriter",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["Content", "Copywriting"],
+            "prompt": {
+                "6359397e-13e7-4afa-aa5f-8b860097b327": {
+                    "value": "Rewrite the given sentence with authentic and simple language. Keep the sentence's' meaning the same. \nSentence:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "d5cd4cba-aa7b-4b63-af8c-ed242ee10ac7": { "value": "Paste your sentence", "type": "textarea" }
+            },
+            "created_at": "2023-05-15T13:40:06.018Z",
+            "updated_at": "2023-05-15T13:40:06.018Z",
+            "__v": 0
+        },
+        {
+            "_id": "644fb0da3181124f34a4a9bf",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Tweet Thread Writer",
+            "category": ["Twitter", "Content"],
+            "prompt": {
+                "3c9a5d78-9f2e-4364-9261-4869c99f497d": {
+                    "value": "Act as a top Twitter influencer. You write engaging tweets. Write a thread for me on the given topic. Write short sentences to keep the reader engaged. For the given topic, write like an expert in that field. Make a thread that is easily understood by the reader. Write a title (the first tweet of the thread) using the top copywriting formula to get users' attention. \nTopic:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "6d16ccca-dce0-462c-b8c8-113af9704aac": { "value": "Topic", "type": "text" },
+                "e8c9e8c3-c310-4815-ab88-adfa1aac4067": {
+                    "value": "Additional information(Optional)",
+                    "type": "textarea"
+                }
+            },
+            "created_at": "2023-05-01T12:30:18.502Z",
+            "updated_at": "2023-05-01T12:30:18.502Z",
+            "__v": 0
+        }
+    ]
+}

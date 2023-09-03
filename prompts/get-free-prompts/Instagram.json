@@ -1,0 +1,79 @@
+{
+    "success": true,
+    "prompts": [
+        {
+            "_id": "644fd8630754f7ccb6fa682f",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Comment Writer",
+            "category": ["Instagram", "Twitter", "Linkedin"],
+            "prompt": {
+                "91446a05-78ea-46d2-a63e-baba4fe2f7d2": {
+                    "value": "Write an attention-grabbing comment and add value to the conversation by providing a new perspective, idea, or insight for the given post's content. Keep it short by writing a one-sentence comment, and write like humans with simple words. Post content:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "9461c88f-2a28-4770-9d50-bc3a412a52bf": { "value": "Post content", "type": "textarea" }
+            },
+            "created_at": "2023-05-01T15:18:59.322Z",
+            "updated_at": "2023-05-01T15:18:59.322Z",
+            "__v": 0
+        },
+        {
+            "_id": "644fb6863181124f34a4aa27",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Instagram Caption Writer",
+            "category": ["Content", "Instagram"],
+            "prompt": {
+                "e8725811-3e7d-42df-8460-4492e089a199": {
+                    "value": "Act as a top Instagram content creator and expert on the given topic. Write an engaging Instagram post caption. Use simple words that are easy to understand, and it should help with Instagram SEO.\nTopic:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "bd5898ac-34d2-4e3b-bad8-a6e46d779093": { "value": "Topic", "type": "text" }
+            },
+            "created_at": "2023-05-01T12:54:30.561Z",
+            "updated_at": "2023-05-01T12:54:30.561Z",
+            "__v": 0
+        },
+        {
+            "_id": "644fabdb3181124f34a4a9b0",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Instagram Post Creator",
+            "category": ["Content", "Instagram", "Digital Marketing"],
+            "prompt": {
+                "cd69148c-21b6-42a8-a2de-f799c6ac57a0": {
+                    "value": "Act like a top Instagram content creator. Write content for an Instagram carousel post. Use simple English, but write engaging content. The title should grab the user's attention in 1-2 seconds and include the important subtopics as per the topic. Create a minimum 7-page post. Use the following subtopics if provided:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "cde75385-b128-4f04-8b86-80abcf558666": { "value": "Subtopics(Optional)", "type": "textarea" },
+                "622dd01c-9a9f-471f-b6b0-4eb6530d371e": {
+                    "value": "The post title is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "8d487f57-c07c-4799-8be0-b4b5aa73559d": { "value": "Post title", "type": "text" }
+            },
+            "created_at": "2023-05-01T12:08:59.987Z",
+            "updated_at": "2023-05-01T12:08:59.987Z",
+            "__v": 0
+        },
+        {
+            "_id": "644f816ae8e6b7b5666abcec",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Instagram Title Generator",
+            "category": ["Instagram", "Content"],
+            "prompt": {
+                "9fe2af15-a0b9-4dde-9fba-611620f090d9": {
+                    "value": "Act like a top Instagram Content Creator. You are the topic expert and you write the titles that gets people attention in 2-3 seconds. I will give you topic name or sample title. Write 10 titles for me for my post.\n\nTitle or topic name is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "8a676a82-c9b9-4f0c-9eb8-bfaece23b1dc": { "value": "Title or Topic", "type": "text" }
+            },
+            "created_at": "2023-05-01T09:07:54.304Z",
+            "updated_at": "2023-05-01T09:07:54.304Z",
+            "__v": 0
+        }
+    ]
+}

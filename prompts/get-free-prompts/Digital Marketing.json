@@ -1,0 +1,64 @@
+{
+    "success": true,
+    "prompts": [
+        {
+            "_id": "645674e4927084a7c333057b",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "CTA Writer",
+            "category": ["Copywriting", "Digital Marketing"],
+            "prompt": {
+                "b45cfdbf-1ac8-4a80-bee5-e313a2073971": {
+                    "value": "Act like a top copywriter. I have to write a call to action for my landing page that will convert clients into buyers of my product. Use simple words and language so people can understand easily, and use consumer psychology. Use simple words and keep sentences short Write 10 samples. Here is my product summary:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "20456d7e-8bb9-46f7-8a00-8296bbfd291a": { "value": "Writer product summary", "type": "textarea" }
+            },
+            "created_at": "2023-05-06T15:40:20.994Z",
+            "updated_at": "2023-05-10T14:39:38.964Z",
+            "__v": 0,
+            "is_premium": false,
+            "is_template": true
+        },
+        {
+            "_id": "644fabdb3181124f34a4a9b0",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Instagram Post Creator",
+            "category": ["Content", "Instagram", "Digital Marketing"],
+            "prompt": {
+                "cd69148c-21b6-42a8-a2de-f799c6ac57a0": {
+                    "value": "Act like a top Instagram content creator. Write content for an Instagram carousel post. Use simple English, but write engaging content. The title should grab the user's attention in 1-2 seconds and include the important subtopics as per the topic. Create a minimum 7-page post. Use the following subtopics if provided:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "cde75385-b128-4f04-8b86-80abcf558666": { "value": "Subtopics(Optional)", "type": "textarea" },
+                "622dd01c-9a9f-471f-b6b0-4eb6530d371e": {
+                    "value": "The post title is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "8d487f57-c07c-4799-8be0-b4b5aa73559d": { "value": "Post title", "type": "text" }
+            },
+            "created_at": "2023-05-01T12:08:59.987Z",
+            "updated_at": "2023-05-01T12:08:59.987Z",
+            "__v": 0
+        },
+        {
+            "_id": "644f9445e8e6b7b5666abd28",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "SEO Description",
+            "category": ["SEO", "Digital Marketing"],
+            "prompt": {
+                "5b51a911-b175-4802-a206-9363c04d55eb": {
+                    "value": "Act like a top content writer. write a short description for the given blog title which will be passed in the meta tags. Use the top targeted keywords to rank on 1st place.  Generate 5 samples. \nTitle:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "d73e15fd-e810-40bf-9e34-b9c8d541aef8": { "value": "Blog Title", "type": "text" }
+            },
+            "created_at": "2023-05-01T10:28:21.493Z",
+            "updated_at": "2023-05-01T12:02:21.991Z",
+            "__v": 0
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "success": true,
+    "prompts": [
+        {
+            "_id": "64686e498ff8c0cc72812f01",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Component Generator",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["UI Development", "Coding"],
+            "prompt": {
+                "97f3de27-0de6-4273-a63c-13a8afe691a2": {
+                    "value": "Act like a senior UI developer. You create responsive, reusable, and professional components that are easy to use for the users. Create a component for my given requirement and write code for me.\nThe technology stack is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "47e92da8-92ec-4c14-9d2f-d5d7a2c66f7d": { "value": "Enter your technology stack", "type": "text" },
+                "2b4b6a90-8396-4ae7-8090-f8d2b0a813ee": {
+                    "value": "The requirement is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "f3815154-49c6-4063-af6f-e65c97e497b2": { "value": "Enter component requirement", "type": "textarea" }
+            },
+            "created_at": "2023-05-20T06:52:57.549Z",
+            "updated_at": "2023-05-20T06:52:57.549Z",
+            "__v": 0
+        },
+        {
+            "_id": "64686e8e8ff8c0cc72812f09",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Email Template Generator",
+            "is_template": true,
+            "is_premium": true,
+            "category": ["Coding", "UI Development", "Marketing"],
+            "prompt": {
+                "27527f3e-efbd-4bce-9587-dad12f696a3e": {
+                    "value": "Act like a senior UI developer with marketing skills. Create a responsive email template that contains the brand logo, a title, email content, a call to action button, a website link, social media icons, and an unsubscribe link. It should work on all email clients and browsers. Make a template for:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "327969e2-15ac-4493-8b8e-af12284e4cef": { "value": "Enter template requirement", "type": "textarea" }
+            },
+            "created_at": "2023-05-20T06:54:06.292Z",
+            "updated_at": "2023-05-20T07:09:19.722Z",
+            "__v": 0
+        },
+        {
+            "_id": "64686f7f8ff8c0cc72812f2d",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "React Component Creator",
+            "is_template": true,
+            "is_premium": false,
+            "category": ["UI Development", "Coding"],
+            "prompt": {
+                "13c1f113-6389-4943-a88a-46178599c6c1": {
+                    "value": "Act like a senior React developer. You create responsive, reusable, and professional  React components that are easy to use for the users. Create a component for my given requirement and write code for me.\nThe technology stack is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "bff55caa-5598-4e9d-bae7-0d0729d4796e": { "value": "Enter your technology stack", "type": "text" },
+                "e59f6333-25ea-46bc-b950-ba22e8203904": {
+                    "value": "The requirement is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "9ed51b6e-f0f3-4ab6-a1de-8338af8c132e": { "value": "Enter your requirement", "type": "textarea" }
+            },
+            "created_at": "2023-05-20T06:58:07.835Z",
+            "updated_at": "2023-05-20T06:58:07.835Z",
+            "__v": 0
+        },
+        {
+            "_id": "64686e078ff8c0cc72812ef4",
+            "user_id": "644a28d333e75d2de1161089",
+            "name": "Responsive Design Code",
+            "is_template": true,
+            "is_premium": true,
+            "category": ["UI Development", "Coding"],
+            "prompt": {
+                "806a31c5-7962-48c8-837d-d481b478bd17": {
+                    "value": "Act like a senior UI developer. Create a responsive design from the given code. The design should be simple, user-centric, accessible, and maintain a visual hierarchy.\n\nMy technology stack is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "aecd1de9-3ce4-4ef1-a43d-4ebd4c1702c0": { "value": "Enter your technology stack", "type": "text" },
+                "9d4e7ffa-b931-485e-9382-af4f5a392f36": {
+                    "value": "The requirement is:",
+                    "type": "string",
+                    "editorState": true
+                },
+                "3396c4d3-011e-4d38-b745-350b6fef0ad5": { "value": "Enter your requirement", "type": "textarea" },
+                "a5c9d077-26dd-4533-abb8-0ee42950dd83": {
+                    "value": "My current code is (optional):",
+                    "type": "string",
+                    "editorState": true
+                },
+                "ce2f0f23-d112-4450-8d09-6c4b165bbe7c": { "value": "Paste your current code", "type": "textarea" }
+            },
+            "created_at": "2023-05-20T06:51:51.099Z",
+            "updated_at": "2023-05-20T06:51:51.099Z",
+            "__v": 0
+        }
+    ]
+}

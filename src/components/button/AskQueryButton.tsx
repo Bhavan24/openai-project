@@ -14,16 +14,18 @@ const AskQueryButton: React.FC<AskQueryButtonProps> = ({ model, text, onComplete
 
     const searchGpt = useCallback(() => {
         const openAiTest = async () => {
-            const { data } = await OpenAIService.createCompletion({
+            const newPrompt = text?.trim() || '';
+
+            const { data } = await OpenAIService.createChatCompletion({
                 model: model,
-                prompt: text.trim(),
+                messages: [{ role: 'user', content: newPrompt }],
                 max_tokens: 2048,
                 n: 1,
                 stop: '',
                 temperature: 0.5,
             });
 
-            const response = data.choices[0].text?.trim() || '';
+            const response = data.choices[0].message?.content?.trim() || '';
             onComplete(response);
         };
 
