@@ -540,3 +540,6 @@ Play Hangman with me.
 https://beebom.com/best-chatgpt-prompts/
 https://writesonic.com/blog/chatgpt-prompts/
 https://www.forbes.com/sites/bernardmarr/2023/06/12/the-best-prompts-to-show-off-the-mind-blowing-capabilities-of-chatgpt/?sh=56ad9b893f60
+https://platform.openai.com/examples
+https://writesonic.com/blog/chatgpt-alternatives/#chatsonic
+https://platform.openai.com/docs/guides/gpt-best-practices/six-strategies-for-getting-better-results
